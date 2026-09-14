@@ -1,0 +1,6 @@
+*.jpg
+*.h5
+*.pyc
+/.vscode
+*.avi
+/data

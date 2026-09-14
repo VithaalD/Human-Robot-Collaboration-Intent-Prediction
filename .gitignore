@@ -1,0 +1,26 @@
+
+# Local data and generated files
+raw videos for mecha lab*/
+Camera Recordings/
+__pycache__/
+*.pyc
+
+# Videos remain local, including copies in legacy training folders.
+*.[mM][oO][vV]
+*.[mM][pP]4
+*.[aA][vV][iI]
+*.[mM][kK][vV]
+*.[wW][mM][vV]
+*.[wW][eE][bB][mM]
+*.[mM]4[vV]
+*.[mM][pP][eE][gG]
+*.[mM][pP][gG]
+
+# Machine-specific files, generated logs, and local backups.
+.DS_Store
+Thumbs.db
+tf_logs/
+*.bak
+.venv/
+venv/
+.env

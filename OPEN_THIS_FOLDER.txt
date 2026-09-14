@@ -1,0 +1,5 @@
+This is the complete working project moved out of OneDrive.
+Double-click Start Intent Monitor.cmd here.
+The monitor finds videos and the epoch-196 checkpoint inside this folder or in the external raw-videos folder next to it. See Intent Monitor/START_HERE.md for custom locations.
+All original files, including Git history, were preserved and verified during the move.
+Other pre-existing Downloads copies were left untouched.

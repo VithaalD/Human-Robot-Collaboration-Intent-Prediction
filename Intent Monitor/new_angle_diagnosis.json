@@ -1,0 +1,698 @@
+[
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 3,
+    "variant": "baseline",
+    "probs": [
+      0.7243918180465698,
+      0.24389615654945374,
+      0.03171202912926674
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 3,
+    "variant": "16frames",
+    "probs": [
+      0.9087620377540588,
+      0.08673936873674393,
+      0.004498663824051619
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 3,
+    "variant": "static",
+    "probs": [
+      0.7248135209083557,
+      0.24543152749538422,
+      0.029755059629678726
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 3,
+    "variant": "gray",
+    "probs": [
+      0.22382496297359467,
+      0.7022621035575867,
+      0.07391291856765747
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 5,
+    "variant": "baseline",
+    "probs": [
+      0.6793693900108337,
+      0.28184476494789124,
+      0.03878582641482353
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 5,
+    "variant": "16frames",
+    "probs": [
+      0.9873821139335632,
+      0.011702416464686394,
+      0.0009154815343208611
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 5,
+    "variant": "static",
+    "probs": [
+      0.7258107662200928,
+      0.24278531968593597,
+      0.03140394017100334
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 5,
+    "variant": "gray",
+    "probs": [
+      0.17714610695838928,
+      0.7501599192619324,
+      0.07269398123025894
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 7,
+    "variant": "baseline",
+    "probs": [
+      0.9918015599250793,
+      0.007002190686762333,
+      0.0011963050346821547
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 7,
+    "variant": "16frames",
+    "probs": [
+      0.9984644651412964,
+      0.0013990041334182024,
+      0.00013654028589371592
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 7,
+    "variant": "static",
+    "probs": [
+      0.991306483745575,
+      0.007434355095028877,
+      0.0012591141276061535
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 7,
+    "variant": "gray",
+    "probs": [
+      0.9915797710418701,
+      0.00713985413312912,
+      0.0012804354773834348
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 10,
+    "variant": "baseline",
+    "probs": [
+      0.6737852096557617,
+      0.27281954884529114,
+      0.05339527502655983
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 10,
+    "variant": "16frames",
+    "probs": [
+      0.9254526495933533,
+      0.06923405826091766,
+      0.005313383415341377
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 10,
+    "variant": "static",
+    "probs": [
+      0.6331368088722229,
+      0.3032177686691284,
+      0.06364544481039047
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 10,
+    "variant": "gray",
+    "probs": [
+      0.30663609504699707,
+      0.5793972015380859,
+      0.1139666959643364
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 12,
+    "variant": "baseline",
+    "probs": [
+      0.6490117311477661,
+      0.32104817032814026,
+      0.029940111562609673
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 12,
+    "variant": "16frames",
+    "probs": [
+      0.9184034466743469,
+      0.07863327115774155,
+      0.0029631967190653086
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 12,
+    "variant": "static",
+    "probs": [
+      0.39156243205070496,
+      0.5874176621437073,
+      0.021019980311393738
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 12,
+    "variant": "gray",
+    "probs": [
+      0.4857443571090698,
+      0.4070362448692322,
+      0.10721935331821442
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 15,
+    "variant": "baseline",
+    "probs": [
+      0.6312828660011292,
+      0.3408447206020355,
+      0.027872450649738312
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 15,
+    "variant": "16frames",
+    "probs": [
+      0.9216329455375671,
+      0.07588552683591843,
+      0.0024816226214170456
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 15,
+    "variant": "static",
+    "probs": [
+      0.6308695673942566,
+      0.3445095717906952,
+      0.024620860815048218
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 15,
+    "variant": "gray",
+    "probs": [
+      0.3938601315021515,
+      0.4283423125743866,
+      0.17779752612113953
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 18,
+    "variant": "baseline",
+    "probs": [
+      0.872523844242096,
+      0.11161103844642639,
+      0.015865126624703407
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 18,
+    "variant": "16frames",
+    "probs": [
+      0.9626158475875854,
+      0.03563728556036949,
+      0.001746832043863833
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 18,
+    "variant": "static",
+    "probs": [
+      0.8491451144218445,
+      0.1310410052537918,
+      0.019813857972621918
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 18,
+    "variant": "gray",
+    "probs": [
+      0.5694791078567505,
+      0.3542460799217224,
+      0.07627477496862411
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 20,
+    "variant": "baseline",
+    "probs": [
+      0.700439989566803,
+      0.2641553580760956,
+      0.03540467098355293
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 20,
+    "variant": "16frames",
+    "probs": [
+      0.9739305377006531,
+      0.02491593360900879,
+      0.001153435674495995
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 20,
+    "variant": "static",
+    "probs": [
+      0.6933941841125488,
+      0.27756693959236145,
+      0.02903883531689644
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "INTERACTION",
+    "time": 20,
+    "variant": "gray",
+    "probs": [
+      0.11233119666576385,
+      0.8366667032241821,
+      0.05100208520889282
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 25,
+    "variant": "baseline",
+    "probs": [
+      0.9770547151565552,
+      0.018899280577898026,
+      0.004045937675982714
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 25,
+    "variant": "16frames",
+    "probs": [
+      0.9774307608604431,
+      0.02100512944161892,
+      0.0015641411300748587
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 25,
+    "variant": "static",
+    "probs": [
+      0.5221655368804932,
+      0.4397924244403839,
+      0.03804207965731621
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 25,
+    "variant": "gray",
+    "probs": [
+      0.2297351211309433,
+      0.702961802482605,
+      0.06730305403470993
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 26,
+    "variant": "baseline",
+    "probs": [
+      0.6033132076263428,
+      0.35218942165374756,
+      0.04449738562107086
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 26,
+    "variant": "16frames",
+    "probs": [
+      0.8956888318061829,
+      0.09924737364053726,
+      0.005063769873231649
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 26,
+    "variant": "static",
+    "probs": [
+      0.9922066330909729,
+      0.006597957573831081,
+      0.0011954647488892078
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "screen_preview",
+    "expected": "WAIT",
+    "time": 26,
+    "variant": "gray",
+    "probs": [
+      0.2866251468658447,
+      0.6413617134094238,
+      0.07201310992240906
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "int1.mov",
+    "expected": "INTERACTION",
+    "time": 0.5,
+    "variant": "baseline",
+    "probs": [
+      0.8221957087516785,
+      0.16369684040546417,
+      0.014107460156083107
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "int1.mov",
+    "expected": "INTERACTION",
+    "time": 0.5,
+    "variant": "static",
+    "probs": [
+      0.49832719564437866,
+      0.4765380620956421,
+      0.02513468638062477
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "int1.mov",
+    "expected": "INTERACTION",
+    "time": 1,
+    "variant": "baseline",
+    "probs": [
+      0.6994926333427429,
+      0.2774924337863922,
+      0.02301492728292942
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "int1.mov",
+    "expected": "INTERACTION",
+    "time": 1,
+    "variant": "static",
+    "probs": [
+      0.5347352623939514,
+      0.42016807198524475,
+      0.04509667307138443
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "int1.mov",
+    "expected": "INTERACTION",
+    "time": 1.5,
+    "variant": "baseline",
+    "probs": [
+      0.5862976312637329,
+      0.3681034743785858,
+      0.04559884965419769
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "int1.mov",
+    "expected": "INTERACTION",
+    "time": 1.5,
+    "variant": "static",
+    "probs": [
+      0.6768762469291687,
+      0.2912672162055969,
+      0.03185643255710602
+    ],
+    "prediction": "INTERACTION"
+  },
+  {
+    "source": "pass1.mov",
+    "expected": "PASSTHRU",
+    "time": 0.5,
+    "variant": "baseline",
+    "probs": [
+      0.17474627494812012,
+      0.7142365574836731,
+      0.11101716756820679
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "pass1.mov",
+    "expected": "PASSTHRU",
+    "time": 0.5,
+    "variant": "static",
+    "probs": [
+      0.17583228647708893,
+      0.6125757098197937,
+      0.21159206330776215
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "pass1.mov",
+    "expected": "PASSTHRU",
+    "time": 1,
+    "variant": "baseline",
+    "probs": [
+      0.04406598582863808,
+      0.9438086152076721,
+      0.012125343084335327
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "pass1.mov",
+    "expected": "PASSTHRU",
+    "time": 1,
+    "variant": "static",
+    "probs": [
+      0.06327872723340988,
+      0.9236817359924316,
+      0.013039509765803814
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "pass1.mov",
+    "expected": "PASSTHRU",
+    "time": 1.5,
+    "variant": "baseline",
+    "probs": [
+      0.032750580459833145,
+      0.9639209508895874,
+      0.0033283920492976904
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "pass1.mov",
+    "expected": "PASSTHRU",
+    "time": 1.5,
+    "variant": "static",
+    "probs": [
+      0.017035970464348793,
+      0.9802150726318359,
+      0.0027489340864121914
+    ],
+    "prediction": "PASSTHRU"
+  },
+  {
+    "source": "wait1.mov",
+    "expected": "WAIT",
+    "time": 0.5,
+    "variant": "baseline",
+    "probs": [
+      0.029023773968219757,
+      0.0316937156021595,
+      0.9392824769020081
+    ],
+    "prediction": "WAIT"
+  },
+  {
+    "source": "wait1.mov",
+    "expected": "WAIT",
+    "time": 0.5,
+    "variant": "static",
+    "probs": [
+      0.019009733572602272,
+      0.021281762048602104,
+      0.959708571434021
+    ],
+    "prediction": "WAIT"
+  },
+  {
+    "source": "wait1.mov",
+    "expected": "WAIT",
+    "time": 1,
+    "variant": "baseline",
+    "probs": [
+      0.029710104689002037,
+      0.032413188368082047,
+      0.9378766417503357
+    ],
+    "prediction": "WAIT"
+  },
+  {
+    "source": "wait1.mov",
+    "expected": "WAIT",
+    "time": 1,
+    "variant": "static",
+    "probs": [
+      0.046641942113637924,
+      0.05143240839242935,
+      0.9019256234169006
+    ],
+    "prediction": "WAIT"
+  },
+  {
+    "source": "wait1.mov",
+    "expected": "WAIT",
+    "time": 1.5,
+    "variant": "baseline",
+    "probs": [
+      0.03315424919128418,
+      0.03595634922385216,
+      0.930889368057251
+    ],
+    "prediction": "WAIT"
+  },
+  {
+    "source": "wait1.mov",
+    "expected": "WAIT",
+    "time": 1.5,
+    "variant": "static",
+    "probs": [
+      0.02785496599972248,
+      0.031069347634911537,
+      0.9410757422447205
+    ],
+    "prediction": "WAIT"
+  }
+]
