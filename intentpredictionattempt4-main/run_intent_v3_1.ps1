@@ -1,7 +1,8 @@
 param(
     [string]$VideoPath = "",
     [int]$CameraIndex = 0,
-    [int]$SampleDuration = 8,
+    [ValidateRange(1, 4096)]
+    [int]$SampleDuration = 16,
     [double]$RunSeconds = 0,
     [double]$StatusInterval = 0.5,
     [string]$DataDirectory = $env:INTENT_DATA_DIR,
@@ -10,7 +11,15 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$intentPython = Join-Path $env:USERPROFILE "anaconda3\envs\DEEPLABCUT\python.exe"
+$intentPython = $env:INTENT_PYTHON
+if (-not $intentPython) {
+    $intentGpuPython = Join-Path $env:USERPROFILE ".venvs\intent-gpu\Scripts\python.exe"
+    if (Test-Path -LiteralPath $intentGpuPython -PathType Leaf) {
+        $intentPython = $intentGpuPython
+    } else {
+        $intentPython = Join-Path $env:USERPROFILE "anaconda3\envs\DEEPLABCUT\python.exe"
+    }
+}
 $intentScript = Join-Path $PSScriptRoot "intent_engine_v3_1_windows.py"
 $intentProject = Split-Path -Parent $PSScriptRoot
 $intentDataRelative = "raw videos for mecha lab-20260904T185555Z-1-001\raw videos for mecha lab"

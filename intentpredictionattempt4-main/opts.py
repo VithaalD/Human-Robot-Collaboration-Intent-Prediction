@@ -4,7 +4,7 @@ import argparse
 def parse_opts():
 	parser = argparse.ArgumentParser()
 	parser.add_argument('--dataset', type=str,
-						default='uf101', help='dataset type')
+						default='ucf101', help='dataset type')
 	parser.add_argument(
 		'--root_path',
 		default='/root/data/ActivityNet',
@@ -19,7 +19,7 @@ def parse_opts():
         '--sample_duration',
         default=16,
         type=int,
-        help='Temporal duration of inputs')
+        help='Frames per training and validation clip (must match inference)')
 	parser.add_argument(
         '--n_val_samples',
         default=3,
@@ -137,5 +137,7 @@ def parse_opts():
 		help='If true, inputs are normalized by standard deviation.')
 
 	args = parser.parse_args()
+	if args.sample_duration <= 0:
+		parser.error("--sample_duration must be positive")
 
 	return args

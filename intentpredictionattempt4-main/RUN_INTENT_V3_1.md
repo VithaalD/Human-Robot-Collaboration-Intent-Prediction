@@ -6,7 +6,7 @@ This Windows-ready runner uses the supplied epoch-196 ResNet-101 + LSTM checkpoi
 2. `PASSTHRU` -> `CAUTION`
 3. `WAIT` -> `CLEAR`
 
-It preserves v3.1's 150 x 150 preprocessing, pixel normalization, eight-frame default window, three-prediction smoothing window, and 0.75 stop threshold.
+It uses 150 x 150 preprocessing, original pixel normalization, a configurable 16-frame default window, three-prediction smoothing, and a 0.75 stop threshold. Training and inference now honor the same frame setting. Use `-SampleDuration 8` only for an intentional legacy comparison. See [FRAME_SAMPLING.md](../FRAME_SAMPLING.md) for the old checkpoint's unknown historical settings and new compatibility checks.
 
 ## Run one of the supplied videos
 
@@ -44,7 +44,7 @@ powershell -ExecutionPolicy Bypass -File .\run_intent_v3_1.ps1 -VideoPath "C:\pa
 - `CLEAR` means wait/no action was predicted, or interaction confidence was below the stop threshold.
 - This program reports an intent flag; it does not send a physical stop command to a robot.
 
-The currently available PyTorch environment is CPU-only. It ran at roughly two inference windows per second during validation. Installing a CUDA-enabled PyTorch environment can use the laptop's RTX 5070 for substantially better live responsiveness without changing the learned weights.
+The runner prefers the isolated `intent-gpu` environment created by `setup_gpu.ps1`, and otherwise falls back to the original DEEPLABCUT environment. `INTENT_PYTHON` overrides the executable. The RTX 5070 GPU environment and repeatable checks are documented in [RECORDING_AND_GPU.md](../RECORDING_AND_GPU.md).
 
 ## External data and collaborator setup
 

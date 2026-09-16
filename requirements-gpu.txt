@@ -1,0 +1,12 @@
+# Install the CUDA build of torch/torchvision first with setup_gpu.ps1.
+torch==2.10.0
+torchvision==0.25.0
+numpy==1.26.4
+opencv-python==4.11.0.86
+Pillow>=10,<13
+ultralytics>=8.3,<9
+tensorboardX>=2.6,<3
+tensorboard>=2.16,<3
+matplotlib>=3.8,<4
+scikit-learn>=1.4,<2
+pytest>=8,<10

@@ -2,6 +2,7 @@ import random
 import math
 import numbers
 import collections
+from collections.abc import Iterable
 import numpy as np
 import torch
 from PIL import Image, ImageOps

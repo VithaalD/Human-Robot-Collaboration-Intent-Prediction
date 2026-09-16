@@ -6,6 +6,8 @@ from datasets.ucf101 import UCF101
 
 def get_training_set(opt, spatial_transform, temporal_transform,
                      target_transform):
+    if opt.dataset != 'ucf101':
+        raise ValueError(f'Unsupported dataset: {opt.dataset}; use ucf101.')
     if opt.dataset == 'ucf101':
         training_data = UCF101(
             opt.video_path,
@@ -13,12 +15,15 @@ def get_training_set(opt, spatial_transform, temporal_transform,
             'training',
             spatial_transform=spatial_transform,
             temporal_transform=temporal_transform,
-            target_transform=target_transform)
+            target_transform=target_transform,
+            sample_duration=opt.sample_duration)
 
     return training_data
 
 def get_validation_set(opt, spatial_transform, temporal_transform,
                        target_transform):
+    if opt.dataset != 'ucf101':
+        raise ValueError(f'Unsupported dataset: {opt.dataset}; use ucf101.')
     if opt.dataset == 'ucf101':
         validation_data = UCF101(
             opt.video_path,

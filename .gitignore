@@ -24,3 +24,8 @@ tf_logs/
 .venv/
 venv/
 .env
+
+# Local training/verification output
+.pytest_cache/
+.gpu-verification/
+runs/

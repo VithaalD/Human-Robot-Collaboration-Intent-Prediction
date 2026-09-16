@@ -22,22 +22,50 @@ from target_transforms import ClassLabel, VideoID
 from target_transforms import Compose as TargetCompose
 
 
+def build_input_config(opt, training_data):
+	"""Save preprocessing and class-index order with each checkpoint."""
+	labels = [training_data.class_names[i] for i in sorted(training_data.class_names)]
+	if len(labels) != opt.n_classes:
+		raise ValueError(f"--n_classes={opt.n_classes} but annotations contain {len(labels)} classes.")
+	mean = get_mean(opt.norm_value, dataset=opt.mean_dataset)
+	if opt.no_mean_norm and not opt.std_norm:
+		mean = [0.0, 0.0, 0.0]
+	return {
+		'sample_duration': opt.sample_duration, 'sample_size': opt.sample_size,
+		'norm_value': opt.norm_value, 'mean': mean,
+		'std': get_std(opt.norm_value) if opt.std_norm else [1.0, 1.0, 1.0],
+		'color_order': 'RGB', 'n_classes': opt.n_classes, 'class_labels': labels,
+	}
+
+
 def resume_model(opt, model, optimizer):
-	""" Resume model 
-	"""
-	checkpoint = torch.load(opt.resume_path)
+	"""Resume on the selected device, rejecting a changed input contract."""
+	device = next(model.parameters()).device
+	try:
+		checkpoint = torch.load(opt.resume_path, map_location=device, weights_only=True)
+	except TypeError:  # Older PyTorch versions did not expose weights_only.
+		checkpoint = torch.load(opt.resume_path, map_location=device)
+	saved_input = checkpoint.get('input_config')
+	if saved_input:
+		for key, value in getattr(opt, 'input_config', {}).items():
+			if key in saved_input and saved_input[key] != value:
+				raise ValueError(f"Cannot resume: checkpoint {key}={saved_input[key]!r}, current {key}={value!r}. Match the original training settings.")
+	else:
+		print("Legacy checkpoint has no input metadata; its historical frame duration is unknown.")
 	model.load_state_dict(checkpoint['state_dict'])
 	optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
 	print("Model Restored from Epoch {}".format(checkpoint['epoch']))
-	start_epoch = checkpoint['epoch'] + 1
-	return start_epoch
+	return checkpoint['epoch'] + 1
 
 
 def get_loaders(opt):
 	""" Make dataloaders for train and validation sets
 	"""
+	if opt.sample_duration <= 0:
+		raise ValueError("--sample_duration must be positive.")
 	# train loader
 	opt.mean = get_mean(opt.norm_value, dataset=opt.mean_dataset)
+	opt.std = get_std(opt.norm_value)
 	if opt.no_mean_norm and not opt.std_norm:
 		norm_method = Normalize([0, 0, 0], [1, 1, 1])
 	elif not opt.std_norm:
@@ -50,7 +78,7 @@ def get_loaders(opt):
 		# RandomHorizontalFlip(),
 		ToTensor(opt.norm_value), norm_method
 	])
-	temporal_transform = TemporalRandomCrop(16)
+	temporal_transform = TemporalRandomCrop(opt.sample_duration)
 	target_transform = ClassLabel()
 	training_data = get_training_set(opt, spatial_transform,
 									 temporal_transform, target_transform)
@@ -68,7 +96,7 @@ def get_loaders(opt):
 		ToTensor(opt.norm_value), norm_method
 	])
 	target_transform = ClassLabel()
-	temporal_transform = LoopPadding(16)
+	temporal_transform = LoopPadding(opt.sample_duration)
 	validation_data = get_validation_set(
 		opt, spatial_transform, temporal_transform, target_transform)
 	val_loader = torch.utils.data.DataLoader(
@@ -99,6 +127,8 @@ def main_worker():
 	model =  generate_model(opt, device)
 	# get data loaders
 	train_loader, val_loader = get_loaders(opt)
+	opt.input_config = build_input_config(opt, train_loader.dataset)
+	os.makedirs("snapshots", exist_ok=True)
 
 	# optimizer
 	crnn_params = list(model.parameters())
@@ -134,7 +164,7 @@ def main_worker():
 			summary_writer.add_scalar(
 				'acc/val_acc', val_acc * 100, global_step=epoch)
 
-			state = {'epoch': epoch, 'state_dict': model.state_dict(), 'optimizer_state_dict': optimizer.state_dict()}
+			state = {'epoch': epoch, 'state_dict': model.state_dict(), 'optimizer_state_dict': optimizer.state_dict(), 'input_config': opt.input_config}
 			torch.save(state, os.path.join('snapshots', f'{opt.model}-Epoch-{epoch}-Loss-{val_loss}.pth'))
 			print("Epoch {} model saved!\n".format(epoch))
 

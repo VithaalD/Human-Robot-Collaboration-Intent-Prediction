@@ -17,7 +17,7 @@ Usage:
         --annotation_path /home/robotics/Documents/human_robot_collab/gearbox/intentpredictionattempt4-1/datasets/labels.json \
         --n_classes        3 \
         --sample_size      150 \
-        --sample_duration  8 \
+        --sample_duration  16 \
         --smoothing_window 3 \
         --confidence_threshold 0.75
 
@@ -399,7 +399,10 @@ class EngineConfig:
     n_classes: int = 3
 
     sample_size: int             = 150
-    sample_duration: int         = 8
+    sample_duration: int         = 16
+    norm_value: float            = 1.0
+    mean: List[float]            = field(default_factory=lambda: [114.7748, 107.7354, 99.4750])
+    std: List[float]             = field(default_factory=lambda: [1.0, 1.0, 1.0])
     confidence_threshold: float  = 0.75
     smoothing_window: int        = 3
 
@@ -423,6 +426,44 @@ class EngineConfig:
 
     stop_class:    str = "INTERACTION"
     caution_class: str = "PASSTHRU"
+
+
+def _validate_checkpoint_input(checkpoint, cfg, class_labels):
+    """Reject preprocessing/class-order drift when checkpoint metadata exists."""
+    if cfg.sample_duration <= 0 or cfg.sample_size <= 0:
+        raise ValueError("sample_duration and sample_size must be positive.")
+    if cfg.norm_value <= 0 or len(cfg.mean) != 3 or len(cfg.std) != 3 or any(value <= 0 for value in cfg.std):
+        raise ValueError("Use positive norm_value, three mean values, and three positive std values.")
+    saved = checkpoint.get("input_config") if isinstance(checkpoint, dict) else None
+    if not saved:
+        log.warning(
+            "Legacy checkpoint has no input metadata: historical frame duration is unknown. "
+            "Using %s frames; 16 matches the source trainer default, and --sample_duration 8 "
+            "is available for comparison. Validate on held-out recordings.", cfg.sample_duration)
+        return
+    if not isinstance(saved, dict):
+        raise ValueError("Checkpoint input_config must be a dictionary.")
+    actual = {
+        "sample_duration": cfg.sample_duration, "sample_size": cfg.sample_size,
+        "norm_value": cfg.norm_value, "mean": list(cfg.mean), "std": list(cfg.std),
+        "color_order": "RGB", "n_classes": cfg.n_classes,
+        "class_labels": list(class_labels),
+    }
+    for key, expected in saved.items():
+        if key not in actual:
+            continue
+        value = actual[key]
+        matches = (np.allclose(value, expected, rtol=1e-6, atol=1e-6)
+                   if key in ("mean", "std", "norm_value") else value == expected)
+        if not matches:
+            setting = " ".join(str(item) for item in expected) if isinstance(expected, list) else str(expected)
+            correction = (f"Set --{key} {setting} (or EngineConfig.{key}) to match the checkpoint."
+                          if key != "color_order" else "This engine requires RGB input checkpoints.")
+            raise ValueError(
+                f"Checkpoint input mismatch: {key} was {expected!r} during training, "
+                f"but inference uses {value!r}. {correction}")
+    log.info("Verified checkpoint input metadata: %s frames, class order %s",
+             cfg.sample_duration, class_labels)
 
 
 class IntentEngine:
@@ -563,13 +604,11 @@ class IntentEngine:
         return self.flag == self.FLAG_STOP
 
     def _build_transform(self) -> transforms.Compose:
-        mean = [114.7748, 107.7354, 99.4750]
-        std  = [1.0, 1.0, 1.0]
         return transforms.Compose([
             transforms.Resize((self.cfg.sample_size, self.cfg.sample_size)),
             transforms.ToTensor(),
-            transforms.Lambda(lambda x: x * 255.0),
-            transforms.Normalize(mean, std),
+            transforms.Lambda(lambda x: x * (255.0 / self.cfg.norm_value)),
+            transforms.Normalize(self.cfg.mean, self.cfg.std),
         ])
 
     def _load_model(self) -> nn.Module:
@@ -578,16 +617,16 @@ class IntentEngine:
         if not os.path.isfile(self.cfg.resume_path):
             raise FileNotFoundError(f"Weights not found: {self.cfg.resume_path}")
 
-        model = CNNLSTM(num_classes=self.cfg.n_classes).to(self.device)
-
         load_kwargs: dict = {"map_location": self.device}
         try:
             checkpoint = torch.load(
                 self.cfg.resume_path, weights_only=True, **load_kwargs
             )
-        except Exception:
+        except TypeError:  # Older PyTorch did not expose weights_only.
             checkpoint = torch.load(self.cfg.resume_path, **load_kwargs)
 
+        _validate_checkpoint_input(checkpoint, self.cfg, self.class_labels)
+        model = CNNLSTM(num_classes=self.cfg.n_classes).to(self.device)
         state_dict = checkpoint.get("state_dict", checkpoint)
 
         if any(k.startswith("module.") for k in state_dict):
@@ -740,7 +779,10 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--class_labels",          nargs="+", default=[])
     p.add_argument("--n_classes",             type=int,   default=3)
     p.add_argument("--sample_size",           type=int,   default=150)
-    p.add_argument("--sample_duration",       type=int,   default=8)
+    p.add_argument("--sample_duration",       type=int,   default=16)
+    p.add_argument("--norm_value",            type=float, default=1.0)
+    p.add_argument("--mean",                  type=float, nargs=3, default=[114.7748, 107.7354, 99.4750])
+    p.add_argument("--std",                   type=float, nargs=3, default=[1.0, 1.0, 1.0])
     p.add_argument("--confidence_threshold",  type=float, default=0.75)
     p.add_argument("--smoothing_window",      type=int,   default=3)
     p.add_argument("--max_infer_hz",          type=float, default=10.0)
@@ -771,6 +813,9 @@ def main() -> None:
         n_classes            = args.n_classes,
         sample_size          = args.sample_size,
         sample_duration      = args.sample_duration,
+        norm_value           = args.norm_value,
+        mean                 = args.mean,
+        std                  = args.std,
         confidence_threshold = args.confidence_threshold,
         smoothing_window     = args.smoothing_window,
         max_infer_hz         = args.max_infer_hz,

@@ -27,7 +27,7 @@ Obtain the raw videos separately from the project owner. They are intentionally 
 
 The runners look for `raw videos for mecha lab-20260904T185555Z-1-001/raw videos for mecha lab` inside the project or next to it. For a different layout, set `INTENT_DATA_DIR` to the inner data folder and `INTENT_WEIGHTS_PATH` to the full checkpoint path. The GUI also has Browse buttons; the PowerShell runner accepts `-DataDirectory`, `-WeightsPath`, and `-VideoPath`. Webcam inference needs the checkpoint but does not need prerecorded videos.
 
-The Windows launchers currently expect Python at `%USERPROFILE%\anaconda3\envs\DEEPLABCUT\python.exe`. Collaborators can create that environment or run `python "Intent Monitor/intent_monitor.py"` using their own environment. The monitor needs PyTorch, TorchVision, OpenCV, Pillow, NumPy, and Tkinter. Consult the setup guide for the previously tested environment; the legacy requirements file is not a complete monitor environment specification.
+Run `setup_gpu.ps1` to prepare the isolated GPU environment. The launchers prefer `%USERPROFILE%\.venvs\intent-gpu\Scripts\python.exe`, fall back to the original DEEPLABCUT environment, and support an `INTENT_PYTHON` override. Recording-only needs no model checkpoint. See [Recording and GPU setup](RECORDING_AND_GPU.md) for the new recording mode, session metadata, frame settings, and training preparation.
 
 ## Contributing
 
