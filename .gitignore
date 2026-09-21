@@ -29,3 +29,9 @@ venv/
 .pytest_cache/
 .gpu-verification/
 runs/
+
+# Local DeepLabCut projects, derived data, and verification output
+DLC Projects/
+Pose Data/
+Pose Runs/
+.pose-verification/

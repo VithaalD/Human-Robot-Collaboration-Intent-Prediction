@@ -1,0 +1,9 @@
+{
+  "frames": 16,
+  "sample_hz": 10.0,
+  "max_gap": 0.15,
+  "likelihood": 0.6,
+  "min_valid": 0.5,
+  "max_age": 0.5,
+  "workspace_center": null
+}

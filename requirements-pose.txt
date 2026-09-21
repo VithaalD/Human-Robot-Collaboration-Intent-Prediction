@@ -1,0 +1,5 @@
+# Install CUDA PyTorch first using the command in DEEPLABCUT_INTEGRATION.md.
+deeplabcut[gui]==3.0.1
+torch==2.10.0
+torchvision==0.25.0
+pytest>=8,<9

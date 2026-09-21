@@ -1,3 +1,5 @@
+DeepLabCut integration: see [the training, replay, and live workflow](DEEPLABCUT_INTEGRATION.md). Use `Pose Intent.cmd` for movement/fusion models; the existing monitor remains the RGB baseline.
+
 # Human-Robot-Collaboration-Intent-Prediction
 This is a project as a part of UGA's MERIT Lab
 

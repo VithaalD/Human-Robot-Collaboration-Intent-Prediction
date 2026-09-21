@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "group_participants": true,
+  "takes": [
+    {
+      "take_id": "REPLACE_WITH_RECORDING_TAKE_ID",
+      "session_id": "20260921_A",
+      "participant_id": "P01",
+      "camera_setup_id": "CAM02_ANGLE01",
+      "split": "train",
+      "video": "../Camera Recordings/example.avi",
+      "metadata": "../Camera Recordings/example.json",
+      "pose": "../Pose Data/example.csv",
+      "annotations_confirmed": false,
+      "segments": [
+        {"start": 0.0, "end": 2.0, "label": "WAIT"},
+        {"start": 2.0, "end": 6.0, "label": "INTERACTION"},
+        {"start": 6.0, "end": 10.0, "label": "WAIT"}
+      ]
+    }
+  ]
+}
