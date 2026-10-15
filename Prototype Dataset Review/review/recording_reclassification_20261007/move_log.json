@@ -1,0 +1,51 @@
+{
+  "moves": [
+    {
+      "take": 18,
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0018_jason_camera_1_PASSTHRU_2d3e630a.avi",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a.avi",
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0018_jason_camera_1_PASSTHRU_2d3e630a.json",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a.json",
+      "video_sha256": "7dd311a7b7a72be750d8ecda104b4e0e8ce802f74b2e9b4417492601422d94b5",
+      "scenario": "WAIT"
+    },
+    {
+      "take": 44,
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0044_jason_camera_1_PASSTHRU_e82971b0.avi",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0044_jason_camera_1_WAIT_e82971b0.avi",
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0044_jason_camera_1_PASSTHRU_e82971b0.json",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0044_jason_camera_1_WAIT_e82971b0.json",
+      "video_sha256": "adf677f076da0823fb749919b6ba783519acc928d81021a71d66d0c8184aedff",
+      "scenario": "WAIT"
+    },
+    {
+      "take": 47,
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0047_jason_camera_1_PASSTHRU_dff31f3e.avi",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e.avi",
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0047_jason_camera_1_PASSTHRU_dff31f3e.json",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e.json",
+      "video_sha256": "67fb7d17bec89e9d8da696e82f762bd0b624743084dd80a5d5add2901d65cf1d",
+      "scenario": "WAIT"
+    },
+    {
+      "take": 53,
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0053_vithaal_camera_1_PASSTHRU_5cd953b6.avi",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0053_vithaal_camera_1_WAIT_5cd953b6.avi",
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0053_vithaal_camera_1_PASSTHRU_5cd953b6.json",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0053_vithaal_camera_1_WAIT_5cd953b6.json",
+      "video_sha256": "aa57e075ba38d64cc246f48265875c148fe6eee44bc114e20a83c32056dfc3a8",
+      "scenario": "WAIT"
+    }
+  ],
+  "updated_references": [
+    "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype Dataset Review\\review\\inventory.json",
+    "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype 8 Frame Pilot\\frames\\sampling.json",
+    "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prepared 8 FPS\\review.csv"
+  ],
+  "recording_folder_counts": {
+    "INTERACTION": 20,
+    "PASSTHRU": 15,
+    "WAIT": 24
+  },
+  "training_labels_changed": false
+}

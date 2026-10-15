@@ -1,0 +1,1205 @@
+{
+  "status": "verified",
+  "recordings_checked": 97,
+  "session_ids_corrected": 38,
+  "moved_to_wait": 16,
+  "counts": {
+    "INTERACTION": 40,
+    "PASSTHRU": 17,
+    "WAIT": 40
+  },
+  "sessions": {
+    "session_20260929": 59,
+    "session_20261008": 38
+  },
+  "all_video_hashes_unchanged": true,
+  "repaired_metadata_file_references": [
+    55,
+    56,
+    57,
+    58,
+    59
+  ],
+  "retained_for_segment_review": [
+    105,
+    106
+  ],
+  "recordings": [
+    {
+      "take": 2,
+      "created": "2026-09-29T17:18:50.246242-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "8891ecb3d9384b2c9762f20deda1c61d"
+    },
+    {
+      "take": 3,
+      "created": "2026-09-29T17:19:08.096119-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "7f98984d201d405b87f8e379d2c7eb4c"
+    },
+    {
+      "take": 4,
+      "created": "2026-09-29T17:19:26.257201-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "3d653df06b0f4dbd9d7b3a08442e362e"
+    },
+    {
+      "take": 5,
+      "created": "2026-09-29T17:19:51.155462-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "41a2d43d45db4c5cbdefd32ca6b54825"
+    },
+    {
+      "take": 6,
+      "created": "2026-09-29T17:20:09.114460-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "3d9fba6b29f2416e955f97e91d07c01b"
+    },
+    {
+      "take": 8,
+      "created": "2026-09-29T17:22:08.661463-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "4fe0f42762054692b88d9fb2c8fe93a4"
+    },
+    {
+      "take": 9,
+      "created": "2026-09-29T17:22:51.438198-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "2bc89a5f79c64c2686d55a04e49ad5b3"
+    },
+    {
+      "take": 11,
+      "created": "2026-09-29T17:23:50.038424-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "291a80b43714445db64cca80fc1e6fd3"
+    },
+    {
+      "take": 12,
+      "created": "2026-09-29T17:24:08.565609-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "1add653aa7864b1bb815d7465b5b882f"
+    },
+    {
+      "take": 13,
+      "created": "2026-09-29T17:24:29.638539-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "305ee4032c4540adaaf4a595e9c34b51"
+    },
+    {
+      "take": 34,
+      "created": "2026-09-29T17:36:37.161847-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "6521fbb79cfa4f029c679bcb2dea0604"
+    },
+    {
+      "take": 35,
+      "created": "2026-09-29T17:37:00.453399-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "a8b3df78d93b4742abd54e2c6064bff7"
+    },
+    {
+      "take": 36,
+      "created": "2026-09-29T17:37:41.923965-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "952d3e75a3eb43138d50df312e349156"
+    },
+    {
+      "take": 37,
+      "created": "2026-09-29T17:38:02.525852-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "9d503c963fcb4304b17f0a5caedfd0a1"
+    },
+    {
+      "take": 38,
+      "created": "2026-09-29T17:38:21.616010-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "b7ea75252e654efab115b159cbbf4e48"
+    },
+    {
+      "take": 39,
+      "created": "2026-09-29T17:39:05.980534-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "5726c35fbf6e4a3cb4eddea191997efd"
+    },
+    {
+      "take": 40,
+      "created": "2026-09-29T17:39:28.128503-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "cabde23b7d954d9cb49ed3938672f838"
+    },
+    {
+      "take": 41,
+      "created": "2026-09-29T17:40:02.861340-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "ef911e4abc68494c9417569aa6f84814"
+    },
+    {
+      "take": 42,
+      "created": "2026-09-29T17:40:26.217872-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "7833aae7df584d998cce05858dc32272"
+    },
+    {
+      "take": 43,
+      "created": "2026-09-29T17:40:49.209615-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "1b8836ca2565469ca74f2b5aa49b68bd"
+    },
+    {
+      "take": 66,
+      "created": "2026-10-08T18:16:54.167408-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "f053df4bf38b4ea7bb58324c17c1bace"
+    },
+    {
+      "take": 67,
+      "created": "2026-10-08T18:17:33.605092-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "a5095d86a5284049849ae40564d1e665"
+    },
+    {
+      "take": 68,
+      "created": "2026-10-08T18:17:57.504141-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "51f3ad406f4045a5aab7dd7a112c0896"
+    },
+    {
+      "take": 70,
+      "created": "2026-10-08T18:19:20.496053-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "185bce49df1c4457b3acb3364677fa4c"
+    },
+    {
+      "take": 71,
+      "created": "2026-10-08T18:19:37.166689-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "39e68c3018e64b3db7f23a977d5ba1c5"
+    },
+    {
+      "take": 72,
+      "created": "2026-10-08T18:20:11.844939-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "fc988dfa749648af80e4f2b56e26a994"
+    },
+    {
+      "take": 73,
+      "created": "2026-10-08T18:20:35.065000-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "600feaf5390b4784a9f558beb86740a1"
+    },
+    {
+      "take": 74,
+      "created": "2026-10-08T18:20:57.868104-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "94996463e27043f6b07faf70290281b2"
+    },
+    {
+      "take": 75,
+      "created": "2026-10-08T18:21:18.862620-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "d449650d58674dc0bbefe2c82dd36096"
+    },
+    {
+      "take": 76,
+      "created": "2026-10-08T18:21:54.979619-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "ddffafd18e5d444db1b11e9ba5060ca8"
+    },
+    {
+      "take": 78,
+      "created": "2026-10-08T18:23:58.198051-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "832137aa2d1a4ebda1476ce2f4022d6a"
+    },
+    {
+      "take": 79,
+      "created": "2026-10-08T18:24:18.894270-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "d5ca5522de3c442192059931795ee21f"
+    },
+    {
+      "take": 80,
+      "created": "2026-10-08T18:24:46.294549-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "3d72950dc66f4feca322554dcea501e1"
+    },
+    {
+      "take": 81,
+      "created": "2026-10-08T18:25:18.380205-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "33d997d6ef8447ddb0744a9352a82459"
+    },
+    {
+      "take": 82,
+      "created": "2026-10-08T18:26:11.112928-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "bf1dc79cb118459f918fa57579c5aba6"
+    },
+    {
+      "take": 83,
+      "created": "2026-10-08T18:26:42.069973-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "4aac13e23f2444b68ae9328a0c9d0987"
+    },
+    {
+      "take": 84,
+      "created": "2026-10-08T18:27:04.062251-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "553adff1b8844ad6838489e8b5ab7e54"
+    },
+    {
+      "take": 85,
+      "created": "2026-10-08T18:27:23.771422-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "ea9d2ce502db46218b2361d2ceaed550"
+    },
+    {
+      "take": 86,
+      "created": "2026-10-08T18:27:51.935623-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "2c6b7393740c44ffb893ca173fc4e7e6"
+    },
+    {
+      "take": 87,
+      "created": "2026-10-08T18:28:11.022285-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "INTERACTION",
+      "label": "INTERACTION",
+      "source_recording_id": "513975bffb9049df8fca58409fc490cf"
+    },
+    {
+      "take": 14,
+      "created": "2026-09-29T17:25:39.695368-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "8a8d268cd475406f93998aeb598fb020"
+    },
+    {
+      "take": 15,
+      "created": "2026-09-29T17:25:56.697512-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "2bdf9dfdb8cc4bf99afd7401ed658b56"
+    },
+    {
+      "take": 16,
+      "created": "2026-09-29T17:26:38.533226-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "828dc208fdd44ea8a10f456109d65c0b"
+    },
+    {
+      "take": 17,
+      "created": "2026-09-29T17:26:57.207176-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "9293bf10be8f49a7bf2bd04eae72cd17"
+    },
+    {
+      "take": 19,
+      "created": "2026-09-29T17:27:54.808192-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "60182cee52b84e0c868cd0edc9678528"
+    },
+    {
+      "take": 20,
+      "created": "2026-09-29T17:28:15.928489-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "9f38fb1dcd0f42a4aed1d33e0bcab3d0"
+    },
+    {
+      "take": 21,
+      "created": "2026-09-29T17:28:45.560187-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "e3f7db5496b64c60b1ccbdc589c6fead"
+    },
+    {
+      "take": 22,
+      "created": "2026-09-29T17:29:04.409742-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "b0aee6d7289542f58769e297f06be4da"
+    },
+    {
+      "take": 23,
+      "created": "2026-09-29T17:29:22.010916-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "bbb5404ddf2a4edc9ccd7a5728c745e7"
+    },
+    {
+      "take": 45,
+      "created": "2026-09-29T17:41:49.896974-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "2e6b27fd5fef4434b5804eedae9195b4"
+    },
+    {
+      "take": 46,
+      "created": "2026-09-29T17:42:09.493229-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "472213c816f14912abe58938cde02b37"
+    },
+    {
+      "take": 48,
+      "created": "2026-09-29T17:42:52.542126-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "144f50287e6545f791856cfbfe4e6497"
+    },
+    {
+      "take": 49,
+      "created": "2026-09-29T17:44:11.639932-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "b01c1b5ac4a348d796e3c5bbf0d8ff28"
+    },
+    {
+      "take": 50,
+      "created": "2026-09-29T17:44:36.770496-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "55407a3d04034c0b82afaeeff082ff5b"
+    },
+    {
+      "take": 52,
+      "created": "2026-09-29T17:45:35.536912-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "431770ba6c234b69b0118f1fd1d60649"
+    },
+    {
+      "take": 89,
+      "created": "2026-10-08T18:31:16.670951-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "a9bfcb68929c446f84862593c755cc59"
+    },
+    {
+      "take": 90,
+      "created": "2026-10-08T18:32:00.069076-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "7e24a3bf238f4c9c9d08958a418b01c0"
+    },
+    {
+      "take": 91,
+      "created": "2026-10-08T18:32:22.596349-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "5be876709f92486584fd39722d45b987"
+    },
+    {
+      "take": 92,
+      "created": "2026-10-08T18:32:44.028921-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "7af8529d426e414b95b0a80616b99782"
+    },
+    {
+      "take": 93,
+      "created": "2026-10-08T18:33:10.307560-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "a97c6b9e464f47778a0d596ae54dac80"
+    },
+    {
+      "take": 94,
+      "created": "2026-10-08T18:34:11.834195-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "99eb452ae8c74b069cf4cc6d84f8ba1d"
+    },
+    {
+      "take": 95,
+      "created": "2026-10-08T18:34:47.148909-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "3586972543ba4bc592ae178fc5436016"
+    },
+    {
+      "take": 96,
+      "created": "2026-10-08T18:35:09.239896-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "9b5284bb5e86492cbf193907ecdefbb1"
+    },
+    {
+      "take": 97,
+      "created": "2026-10-08T18:35:33.589861-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "3429587dab2d4e4c9aceacfe60e35b1e"
+    },
+    {
+      "take": 98,
+      "created": "2026-10-08T18:35:53.070182-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "c1f3d758a9b74110a2fc107c084abdad"
+    },
+    {
+      "take": 99,
+      "created": "2026-10-08T18:36:34.649193-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "3e8c47efcff2484c861b3444b02bc977"
+    },
+    {
+      "take": 100,
+      "created": "2026-10-08T18:37:12.970546-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "a14408d52612463fb34659fcf2847455"
+    },
+    {
+      "take": 101,
+      "created": "2026-10-08T18:38:28.693126-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "a9446d1901ba46ad894ddc931a55b69c"
+    },
+    {
+      "take": 102,
+      "created": "2026-10-08T18:38:55.506936-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "c31cc11980ba4a27bb3edf6cd4646f75"
+    },
+    {
+      "take": 103,
+      "created": "2026-10-08T18:39:27.958898-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "44f02188faa946fa8a6707d966692883"
+    },
+    {
+      "take": 104,
+      "created": "2026-10-08T18:40:50.773583-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "WAIT",
+      "source_recording_id": "b254e1a4bc4b48029efe9cb57660d45b"
+    },
+    {
+      "take": 105,
+      "created": "2026-10-08T18:41:55.238815-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "59398fe08ede4a05be3b6bbfde36b54a"
+    },
+    {
+      "take": 106,
+      "created": "2026-10-08T18:42:16.071116-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20261008",
+      "old_label": "PASSTHRU",
+      "label": "PASSTHRU",
+      "source_recording_id": "0cfbc0a972c74a77b6d68f3307c31ff1"
+    },
+    {
+      "take": 18,
+      "created": "2026-09-29T17:27:17.442157-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "2d3e630a605643c3878fb3d93335dabf"
+    },
+    {
+      "take": 24,
+      "created": "2026-09-29T17:30:09.950555-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "64e6d9e1cc9b4873a0f5dd981df57f01"
+    },
+    {
+      "take": 25,
+      "created": "2026-09-29T17:30:41.627012-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "d1af570f5f2a45caa0092dec5383b224"
+    },
+    {
+      "take": 26,
+      "created": "2026-09-29T17:31:02.142771-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "2163e8b7613d40598cf60951611a833f"
+    },
+    {
+      "take": 27,
+      "created": "2026-09-29T17:31:29.300982-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "d147c196568d48ea93644ce71617d5c9"
+    },
+    {
+      "take": 28,
+      "created": "2026-09-29T17:31:49.472665-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "9e10669d999d4ffb8375468389e07dfc"
+    },
+    {
+      "take": 29,
+      "created": "2026-09-29T17:32:24.157882-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "e265e3de1d594677a5e2bacc343d7bdd"
+    },
+    {
+      "take": 30,
+      "created": "2026-09-29T17:32:40.834574-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "fd686855e8904c7b83fb0e1aa9e6e80b"
+    },
+    {
+      "take": 31,
+      "created": "2026-09-29T17:33:00.058754-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "ba01729aa9244c3ead5054c0c32bbbf9"
+    },
+    {
+      "take": 32,
+      "created": "2026-09-29T17:33:24.772093-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "a97a7e116607463c9c96ae7106fe8542"
+    },
+    {
+      "take": 33,
+      "created": "2026-09-29T17:33:42.425590-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "96b4cb84f46045a997d5eec101df649f"
+    },
+    {
+      "take": 44,
+      "created": "2026-09-29T17:41:31.423696-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "e82971b09816408c8d2ba3c1ee7836b2"
+    },
+    {
+      "take": 47,
+      "created": "2026-09-29T17:42:28.924305-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "dff31f3ecb484a7b944d87d05ab6af49"
+    },
+    {
+      "take": 53,
+      "created": "2026-09-29T17:45:55.045814-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "5cd953b6d8cd4c8db755862e97db3b8e"
+    },
+    {
+      "take": 55,
+      "created": "2026-09-29T17:48:32.632061-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "77507f3287f3413488b9d7ee2b471921"
+    },
+    {
+      "take": 56,
+      "created": "2026-09-29T17:49:11.197177-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "601b43fcbaf14f42976545e0943648e0"
+    },
+    {
+      "take": 57,
+      "created": "2026-09-29T17:49:30.913754-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "05b6af7581a94833b893bb5b036f1b9a"
+    },
+    {
+      "take": 58,
+      "created": "2026-09-29T17:49:51.289829-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "4afe7949e8a844e9bf077831948e1e23"
+    },
+    {
+      "take": 59,
+      "created": "2026-09-29T17:50:11.033098-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "136af65553de496490e7ac88ec8659af"
+    },
+    {
+      "take": 61,
+      "created": "2026-09-29T17:53:32.663598-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "d940a393de5d4765aaf5a56f6f5fd64f"
+    },
+    {
+      "take": 62,
+      "created": "2026-09-29T17:53:54.628149-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "81c704c49b5c43f098bb75d42d4e2951"
+    },
+    {
+      "take": 63,
+      "created": "2026-09-29T17:54:20.409890-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "0a7057f19bb24a5d9732cacfc8603515"
+    },
+    {
+      "take": 64,
+      "created": "2026-09-29T17:54:41.774540-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "a81b9927d52a4d4f8217ffdc2c288030"
+    },
+    {
+      "take": 65,
+      "created": "2026-09-29T17:55:01.065277-04:00",
+      "old_session_id": "session_20260929",
+      "session_id": "session_20260929",
+      "old_label": "WAIT",
+      "label": "WAIT",
+      "source_recording_id": "78f5f46ad3804d42b0453ebd0bad5437"
+    }
+  ],
+  "changes": [
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0066_jason_camera_1_INTERACTION_f053df4b.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0066_jason_camera_1_INTERACTION_f053df4b.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0066_jason_camera_1_INTERACTION_f053df4b.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0066_jason_camera_1_INTERACTION_f053df4b.avi",
+      "sha256": "72653b2aa805f0c6374f6f2a7447569973a48d0a74a17150f0f22adf716412e0"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0067_jason_camera_1_INTERACTION_a5095d86.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0067_jason_camera_1_INTERACTION_a5095d86.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0067_jason_camera_1_INTERACTION_a5095d86.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0067_jason_camera_1_INTERACTION_a5095d86.avi",
+      "sha256": "3346f642c33a6a258f407dd86af95532b874a5776ce991852881b5a04150196a"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0068_jason_camera_1_INTERACTION_51f3ad40.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0068_jason_camera_1_INTERACTION_51f3ad40.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0068_jason_camera_1_INTERACTION_51f3ad40.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0068_jason_camera_1_INTERACTION_51f3ad40.avi",
+      "sha256": "021c3b98368a5b87a76b3fa513534228449802f099ae661406ee593f2a1d0bcf"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0070_jason_camera_1_INTERACTION_185bce49.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0070_jason_camera_1_INTERACTION_185bce49.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0070_jason_camera_1_INTERACTION_185bce49.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0070_jason_camera_1_INTERACTION_185bce49.avi",
+      "sha256": "f8a549399c9aad19ef5279dfd6e78888ce26df74803cb6cabfbcba7494e2e0d8"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0071_jason_camera_1_INTERACTION_39e68c30.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0071_jason_camera_1_INTERACTION_39e68c30.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0071_jason_camera_1_INTERACTION_39e68c30.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0071_jason_camera_1_INTERACTION_39e68c30.avi",
+      "sha256": "e3b1399f92d466942f4dfaa26ff87838e833ef0acbb3c8aca547eb33573f2264"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0072_vithaal_camera_1_INTERACTION_fc988dfa.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0072_vithaal_camera_1_INTERACTION_fc988dfa.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0072_vithaal_camera_1_INTERACTION_fc988dfa.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0072_vithaal_camera_1_INTERACTION_fc988dfa.avi",
+      "sha256": "d5829a8f8bfd96048c9d823ce53b04ffaae41789f6dd403889d93ef7ecf1578d"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0073_vithaal_camera_1_INTERACTION_600feaf5.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0073_vithaal_camera_1_INTERACTION_600feaf5.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0073_vithaal_camera_1_INTERACTION_600feaf5.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0073_vithaal_camera_1_INTERACTION_600feaf5.avi",
+      "sha256": "f31684d0b7e51028d022e11bc0f31ccb44b523ca7e98a0562bff1512d586100c"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0074_vithaal_camera_1_INTERACTION_94996463.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0074_vithaal_camera_1_INTERACTION_94996463.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0074_vithaal_camera_1_INTERACTION_94996463.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0074_vithaal_camera_1_INTERACTION_94996463.avi",
+      "sha256": "ec7b06e0fba252e53a9470f44d287fc4c94313ad98c100f7eec16689c6a5e725"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0075_vithaal_camera_1_INTERACTION_d449650d.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0075_vithaal_camera_1_INTERACTION_d449650d.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0075_vithaal_camera_1_INTERACTION_d449650d.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0075_vithaal_camera_1_INTERACTION_d449650d.avi",
+      "sha256": "3043215e264620249625099bc7516d8a2661d6b5b5aa185979f130fe1579cdeb"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0076_vithaal_camera_1_INTERACTION_ddffafd1.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0076_vithaal_camera_1_INTERACTION_ddffafd1.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0076_vithaal_camera_1_INTERACTION_ddffafd1.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0076_vithaal_camera_1_INTERACTION_ddffafd1.avi",
+      "sha256": "a6cbc567d5cf6ba19efa46b18c836ed77ac2917014b855237433af2733dad708"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0078_jason_camera_1_INTERACTION_832137aa.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0078_jason_camera_1_INTERACTION_832137aa.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0078_jason_camera_1_INTERACTION_832137aa.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0078_jason_camera_1_INTERACTION_832137aa.avi",
+      "sha256": "b85121da9053318684922c5a1eac009b346e799198079f6200db65ec3a7aeef7"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0079_jason_camera_1_INTERACTION_d5ca5522.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0079_jason_camera_1_INTERACTION_d5ca5522.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0079_jason_camera_1_INTERACTION_d5ca5522.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0079_jason_camera_1_INTERACTION_d5ca5522.avi",
+      "sha256": "e58fa812f00825e7186494421b8690b2616f70b2f658aa35b8873ee25a629aec"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0080_jason_camera_1_INTERACTION_3d72950d.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0080_jason_camera_1_INTERACTION_3d72950d.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0080_jason_camera_1_INTERACTION_3d72950d.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0080_jason_camera_1_INTERACTION_3d72950d.avi",
+      "sha256": "d99774b72f1005a2774cb9913b7ff138b3a375c9314a4f59e4b65a15af1a3c61"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0081_jason_camera_1_INTERACTION_33d997d6.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0081_jason_camera_1_INTERACTION_33d997d6.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0081_jason_camera_1_INTERACTION_33d997d6.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0081_jason_camera_1_INTERACTION_33d997d6.avi",
+      "sha256": "a288cd8ab97117d85ef6193d7487ed9bb682bad09e1284e2b489ac0af5a59765"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0082_jason_camera_1_INTERACTION_bf1dc79c.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0082_jason_camera_1_INTERACTION_bf1dc79c.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0082_jason_camera_1_INTERACTION_bf1dc79c.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0082_jason_camera_1_INTERACTION_bf1dc79c.avi",
+      "sha256": "4e699a7df5d72bc8d623a103defb4a759fe5bc95fb01bd55d52b34cce1db5887"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0083_vithaal_camera_1_INTERACTION_4aac13e2.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0083_vithaal_camera_1_INTERACTION_4aac13e2.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2.avi",
+      "sha256": "3b5feb43af284dbe696412e3d480ea6d11e02132d79c52b12bf48f810d07e47c"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0084_vithaal_camera_1_INTERACTION_553adff1.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0084_vithaal_camera_1_INTERACTION_553adff1.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0084_vithaal_camera_1_INTERACTION_553adff1.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0084_vithaal_camera_1_INTERACTION_553adff1.avi",
+      "sha256": "3723cf169a2d99a8e7fbd70ba1e58286a95b122d0aa1c46be2f789be546baafc"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0085_vithaal_camera_1_INTERACTION_ea9d2ce5.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0085_vithaal_camera_1_INTERACTION_ea9d2ce5.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0085_vithaal_camera_1_INTERACTION_ea9d2ce5.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0085_vithaal_camera_1_INTERACTION_ea9d2ce5.avi",
+      "sha256": "577b2cfddbae8034dc5912776f61f539cbbe065c66ea59b2e48a6912203d9fee"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0086_vithaal_camera_1_INTERACTION_2c6b7393.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0086_vithaal_camera_1_INTERACTION_2c6b7393.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0086_vithaal_camera_1_INTERACTION_2c6b7393.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0086_vithaal_camera_1_INTERACTION_2c6b7393.avi",
+      "sha256": "589890dcb7a3de0ed53b7c71bfbb05e82ab09a8bb51740486c734f7b94344feb"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20260929_take_0087_vithaal_camera_1_INTERACTION_513975bf.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0087_vithaal_camera_1_INTERACTION_513975bf.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\metadata\\session_20261008_take_0087_vithaal_camera_1_INTERACTION_513975bf.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20261008_take_0087_vithaal_camera_1_INTERACTION_513975bf.avi",
+      "sha256": "44f6ed18465d782d5ff19c3348e8570f0ef83baa7ddd4439dcbc60db4aa9814a"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0089_jason_camera_1_PASSTHRU_a9bfcb68.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0089_jason_camera_1_PASSTHRU_a9bfcb68.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0089_jason_camera_1_WAIT_a9bfcb68.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0089_jason_camera_1_WAIT_a9bfcb68.avi",
+      "sha256": "49a9f5e6f43bba2a4d1435973671484330225f8f3d07ad3b0626ae4c737bfef5"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0090_jason_camera_1_PASSTHRU_7e24a3bf.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0090_jason_camera_1_PASSTHRU_7e24a3bf.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0090_jason_camera_1_WAIT_7e24a3bf.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0090_jason_camera_1_WAIT_7e24a3bf.avi",
+      "sha256": "01f3bf99a9f9f6c3098f853a005764664ad86dc19f64c884f17515f1d75404fc"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0091_jason_camera_1_PASSTHRU_5be87670.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0091_jason_camera_1_PASSTHRU_5be87670.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0091_jason_camera_1_WAIT_5be87670.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0091_jason_camera_1_WAIT_5be87670.avi",
+      "sha256": "b0bdb6b1e40423b691e68793787de90daff6bb8bc4c2c07fc37c134a236ca636"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0092_jason_camera_1_PASSTHRU_7af8529d.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0092_jason_camera_1_PASSTHRU_7af8529d.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0092_jason_camera_1_WAIT_7af8529d.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0092_jason_camera_1_WAIT_7af8529d.avi",
+      "sha256": "117aa303cac9ed04c259dfde713c06617ce80fd2fb30e213d85b5d9f9a0b6739"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0093_jason_camera_1_PASSTHRU_a97c6b9e.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0093_jason_camera_1_PASSTHRU_a97c6b9e.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0093_jason_camera_1_WAIT_a97c6b9e.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0093_jason_camera_1_WAIT_a97c6b9e.avi",
+      "sha256": "d9ca0a7659b103a5ad51cf80355f5ae10c9dc6ab5e0537cbabe9d11329ae6b26"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0094_vithaal_camera_1_PASSTHRU_99eb452a.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0094_vithaal_camera_1_PASSTHRU_99eb452a.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0094_vithaal_camera_1_WAIT_99eb452a.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0094_vithaal_camera_1_WAIT_99eb452a.avi",
+      "sha256": "e1cd150a40e9fc294bbe306adc01608ea46e5b3a87279fb317cf6d64f0b4182a"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0095_vithaal_camera_1_PASSTHRU_35869725.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0095_vithaal_camera_1_PASSTHRU_35869725.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0095_vithaal_camera_1_WAIT_35869725.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0095_vithaal_camera_1_WAIT_35869725.avi",
+      "sha256": "13cf9882690e3dc7d6bde4c9c940952e933f560068d79411aa9531aa1a8c9912"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0096_vithaal_camera_1_PASSTHRU_9b5284bb.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0096_vithaal_camera_1_PASSTHRU_9b5284bb.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0096_vithaal_camera_1_WAIT_9b5284bb.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0096_vithaal_camera_1_WAIT_9b5284bb.avi",
+      "sha256": "39e06e40c255ab20c05be7f9acda203d8195f458081bb47f6b9b334c750ada45"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0097_vithaal_camera_1_PASSTHRU_3429587d.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0097_vithaal_camera_1_PASSTHRU_3429587d.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0097_vithaal_camera_1_WAIT_3429587d.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0097_vithaal_camera_1_WAIT_3429587d.avi",
+      "sha256": "d55b7f10d82b65d11cde81816693ffad24e9c5601b0ab90fee4acdd8349c8182"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0098_vithaal_camera_1_PASSTHRU_c1f3d758.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0098_vithaal_camera_1_PASSTHRU_c1f3d758.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0098_vithaal_camera_1_WAIT_c1f3d758.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0098_vithaal_camera_1_WAIT_c1f3d758.avi",
+      "sha256": "7cb3b295ec58d955e913b7dc5a18e221bfdda91fba4fa2fcce3bcdb8b38bb417"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0099_jason_camera_1_PASSTHRU_3e8c47ef.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0099_jason_camera_1_PASSTHRU_3e8c47ef.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0099_jason_camera_1_WAIT_3e8c47ef.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0099_jason_camera_1_WAIT_3e8c47ef.avi",
+      "sha256": "bc238b688af3e1cb3df93a0482cd50d64b25b3b1adf8e697aa4bec899fc18177"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0100_jason_camera_1_PASSTHRU_a14408d5.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0100_jason_camera_1_PASSTHRU_a14408d5.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0100_jason_camera_1_WAIT_a14408d5.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0100_jason_camera_1_WAIT_a14408d5.avi",
+      "sha256": "c9ce8d427977e238797dc3df7690dad9058a14b5df3b573bf7862991d6d64616"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0101_jason_camera_1_PASSTHRU_a9446d19.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0101_jason_camera_1_PASSTHRU_a9446d19.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0101_jason_camera_1_WAIT_a9446d19.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0101_jason_camera_1_WAIT_a9446d19.avi",
+      "sha256": "285d050a1ce770637abeab2b263ffbcdae95789ae908f7c5cca3101dd52ebbbe"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0102_jason_camera_1_PASSTHRU_c31cc119.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0102_jason_camera_1_PASSTHRU_c31cc119.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0102_jason_camera_1_WAIT_c31cc119.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0102_jason_camera_1_WAIT_c31cc119.avi",
+      "sha256": "26d128fa2e3978cb9c3fed6eb88e9717c421214133d992acdf8d5745024a2262"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0103_jason_camera_1_PASSTHRU_44f02188.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0103_jason_camera_1_PASSTHRU_44f02188.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0103_jason_camera_1_WAIT_44f02188.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0103_jason_camera_1_WAIT_44f02188.avi",
+      "sha256": "e5fff41c2972a4773b6a7c62e10d104413b8927e7d66fd8222836ba2d80cb106"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0104_vithaal_camera_1_PASSTHRU_b254e1a4.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0104_vithaal_camera_1_PASSTHRU_b254e1a4.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20261008_take_0104_vithaal_camera_1_WAIT_b254e1a4.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20261008_take_0104_vithaal_camera_1_WAIT_b254e1a4.avi",
+      "sha256": "faf3b36e6c2f7a5ae20271f4fe1dc173e254d74c85484f0df6473b2c8692cc56"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0105_vithaal_camera_1_PASSTHRU_59398fe0.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0105_vithaal_camera_1_PASSTHRU_59398fe0.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20261008_take_0105_vithaal_camera_1_PASSTHRU_59398fe0.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20261008_take_0105_vithaal_camera_1_PASSTHRU_59398fe0.avi",
+      "sha256": "b91484e7861d2a175adea8f960a36f942312631c7c4d088bf84ddd65c60a42b6"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20260929_take_0106_vithaal_camera_1_PASSTHRU_0cfbc0a9.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0106_vithaal_camera_1_PASSTHRU_0cfbc0a9.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\metadata\\session_20261008_take_0106_vithaal_camera_1_PASSTHRU_0cfbc0a9.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20261008_take_0106_vithaal_camera_1_PASSTHRU_0cfbc0a9.avi",
+      "sha256": "879eb505b73464396cb77474216bdaddedc347c0f12af72affa54e60b3287fc1"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0055_jason_camera_1_WAIT_77507f32.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0055_jason_camera_1_WAIT_77507f32.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0055_jason_camera_1_WAIT_77507f32.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0055_jason_camera_1_WAIT_77507f32.avi",
+      "sha256": "6f99767da5fa702a53618fff08e94224309b9b5809804398107c829f6a795df6"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0056_jason_camera_1_WAIT_601b43fc.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0056_jason_camera_1_WAIT_601b43fc.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0056_jason_camera_1_WAIT_601b43fc.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0056_jason_camera_1_WAIT_601b43fc.avi",
+      "sha256": "3b8b48c91ec90fa69a0b4df0b4f5384561af50fc4d711aac107fdd0d6fca3249"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0057_jason_camera_1_WAIT_05b6af75.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0057_jason_camera_1_WAIT_05b6af75.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0057_jason_camera_1_WAIT_05b6af75.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0057_jason_camera_1_WAIT_05b6af75.avi",
+      "sha256": "5e2c311f33547788ebf9b0c67fba2340ce90d7afdd61630ca17098bb5fedc370"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0058_jason_camera_1_WAIT_4afe7949.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0058_jason_camera_1_WAIT_4afe7949.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0058_jason_camera_1_WAIT_4afe7949.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0058_jason_camera_1_WAIT_4afe7949.avi",
+      "sha256": "f8aa8100e1b5a03c6a1ee0fe4e0e5948a21748fc8d917ee55bd20d0b628f0b76"
+    },
+    {
+      "old_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0059_jason_camera_1_WAIT_136af655.json",
+      "old_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0059_jason_camera_1_WAIT_136af655.avi",
+      "new_metadata": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\metadata\\session_20260929_take_0059_jason_camera_1_WAIT_136af655.json",
+      "new_video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0059_jason_camera_1_WAIT_136af655.avi",
+      "sha256": "aa4337aee065d633fadb752dcc747a3905fd59b432592b593f105858e3fa993f"
+    }
+  ]
+}

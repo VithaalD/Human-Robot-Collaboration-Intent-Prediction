@@ -1,0 +1,379 @@
+{
+  "method": "427x240 resize then JPEG encode/decode with quantization tables read from corresponding extracted JPEG and 4:2:0 subsampling; fixed model and validation indices",
+  "distinct_extracted_quantization_tables": 10,
+  "summary": {
+    "area_matched_jpeg": {
+      "correct": 8,
+      "agreement_with_extracted": 8,
+      "pixel_mae": 3.0827669626593805
+    },
+    "linear_matched_jpeg": {
+      "correct": 8,
+      "agreement_with_extracted": 9,
+      "pixel_mae": 3.722470057391506
+    },
+    "pil_bilinear_matched_jpeg": {
+      "correct": 8,
+      "agreement_with_extracted": 9,
+      "pixel_mae": 2.735494640327291
+    },
+    "pil_lanczos_matched_jpeg": {
+      "correct": 8,
+      "agreement_with_extracted": 8,
+      "pixel_mae": 3.449748144172666
+    }
+  },
+  "windows": [
+    {
+      "segment": "session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d_review_0009",
+      "true": "WAIT",
+      "extracted_prediction": "WAIT",
+      "predictions": {
+        "area_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.3134092518594116e-06,
+            "PASSTHRU": 0.010357007384300232,
+            "WAIT": 0.9896397590637207
+          }
+        },
+        "linear_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.293831696282723e-06,
+            "PASSTHRU": 0.010310713201761246,
+            "WAIT": 0.9896859526634216
+          }
+        },
+        "pil_bilinear_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.3284204619121738e-06,
+            "PASSTHRU": 0.010387309826910496,
+            "WAIT": 0.9896093606948853
+          }
+        },
+        "pil_lanczos_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.2858361009857617e-06,
+            "PASSTHRU": 0.010289500467479229,
+            "WAIT": 0.9897072315216064
+          }
+        }
+      }
+    },
+    {
+      "segment": "session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d_review_0010",
+      "true": "INTERACTION",
+      "extracted_prediction": "INTERACTION",
+      "predictions": {
+        "area_matched_jpeg": {
+          "label": "INTERACTION",
+          "probabilities": {
+            "INTERACTION": 0.9990203380584717,
+            "PASSTHRU": 0.0008833403117023408,
+            "WAIT": 9.629718988435343e-05
+          }
+        },
+        "linear_matched_jpeg": {
+          "label": "INTERACTION",
+          "probabilities": {
+            "INTERACTION": 0.9990298748016357,
+            "PASSTHRU": 0.0008749820408411324,
+            "WAIT": 9.520215826341882e-05
+          }
+        },
+        "pil_bilinear_matched_jpeg": {
+          "label": "INTERACTION",
+          "probabilities": {
+            "INTERACTION": 0.9990317821502686,
+            "PASSTHRU": 0.0008731932030059397,
+            "WAIT": 9.497872088104486e-05
+          }
+        },
+        "pil_lanczos_matched_jpeg": {
+          "label": "INTERACTION",
+          "probabilities": {
+            "INTERACTION": 0.9990360736846924,
+            "PASSTHRU": 0.0008694949210621417,
+            "WAIT": 9.447881893720478e-05
+          }
+        }
+      }
+    },
+    {
+      "segment": "session_20260929_take_0031_vithaal_camera_1_WAIT_ba01729a_review_0067",
+      "true": "WAIT",
+      "extracted_prediction": "WAIT",
+      "predictions": {
+        "area_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.403822347536334e-06,
+            "PASSTHRU": 0.010503921657800674,
+            "WAIT": 0.989492654800415
+          }
+        },
+        "linear_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.5708026189240627e-06,
+            "PASSTHRU": 0.01074749231338501,
+            "WAIT": 0.9892489910125732
+          }
+        },
+        "pil_bilinear_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.431062168601784e-06,
+            "PASSTHRU": 0.010544571094214916,
+            "WAIT": 0.989452064037323
+          }
+        },
+        "pil_lanczos_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.3888729831232922e-06,
+            "PASSTHRU": 0.010482707992196083,
+            "WAIT": 0.9895138740539551
+          }
+        }
+      }
+    },
+    {
+      "segment": "session_20260929_take_0042_vithaal_camera_1_INTERACTION_7833aae7_review_0090",
+      "true": "WAIT",
+      "extracted_prediction": "PASSTHRU",
+      "predictions": {
+        "area_matched_jpeg": {
+          "label": "INTERACTION",
+          "probabilities": {
+            "INTERACTION": 0.4630713164806366,
+            "PASSTHRU": 0.41530871391296387,
+            "WAIT": 0.12161996960639954
+          }
+        },
+        "linear_matched_jpeg": {
+          "label": "PASSTHRU",
+          "probabilities": {
+            "INTERACTION": 0.339132696390152,
+            "PASSTHRU": 0.512330949306488,
+            "WAIT": 0.1485363245010376
+          }
+        },
+        "pil_bilinear_matched_jpeg": {
+          "label": "PASSTHRU",
+          "probabilities": {
+            "INTERACTION": 0.3657820224761963,
+            "PASSTHRU": 0.49205225706100464,
+            "WAIT": 0.14216572046279907
+          }
+        },
+        "pil_lanczos_matched_jpeg": {
+          "label": "INTERACTION",
+          "probabilities": {
+            "INTERACTION": 0.4404822885990143,
+            "PASSTHRU": 0.43261051177978516,
+            "WAIT": 0.1269071251153946
+          }
+        }
+      }
+    },
+    {
+      "segment": "session_20260929_take_0042_vithaal_camera_1_INTERACTION_7833aae7_review_0091",
+      "true": "INTERACTION",
+      "extracted_prediction": "INTERACTION",
+      "predictions": {
+        "area_matched_jpeg": {
+          "label": "INTERACTION",
+          "probabilities": {
+            "INTERACTION": 0.9990617632865906,
+            "PASSTHRU": 0.0008467580773867667,
+            "WAIT": 9.150845289696008e-05
+          }
+        },
+        "linear_matched_jpeg": {
+          "label": "INTERACTION",
+          "probabilities": {
+            "INTERACTION": 0.9990608096122742,
+            "PASSTHRU": 0.0008476044167764485,
+            "WAIT": 9.161960770143196e-05
+          }
+        },
+        "pil_bilinear_matched_jpeg": {
+          "label": "INTERACTION",
+          "probabilities": {
+            "INTERACTION": 0.9990600943565369,
+            "PASSTHRU": 0.0008481730474159122,
+            "WAIT": 9.168589167529717e-05
+          }
+        },
+        "pil_lanczos_matched_jpeg": {
+          "label": "INTERACTION",
+          "probabilities": {
+            "INTERACTION": 0.999057948589325,
+            "PASSTHRU": 0.0008501399424858391,
+            "WAIT": 9.195408347295597e-05
+          }
+        }
+      }
+    },
+    {
+      "segment": "session_20260929_take_0045_jason_camera_1_PASSTHRU_2e6b27fd_review_0099",
+      "true": "WAIT",
+      "extracted_prediction": "WAIT",
+      "predictions": {
+        "area_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.112911826974596e-06,
+            "PASSTHRU": 0.010071292519569397,
+            "WAIT": 0.9899256229400635
+          }
+        },
+        "linear_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.1114775538299e-06,
+            "PASSTHRU": 0.010070622898638248,
+            "WAIT": 0.9899263381958008
+          }
+        },
+        "pil_bilinear_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.1308975394495064e-06,
+            "PASSTHRU": 0.010079744271934032,
+            "WAIT": 0.9899170994758606
+          }
+        },
+        "pil_lanczos_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.1117008347791852e-06,
+            "PASSTHRU": 0.010059927590191364,
+            "WAIT": 0.9899369478225708
+          }
+        }
+      }
+    },
+    {
+      "segment": "session_20260929_take_0045_jason_camera_1_PASSTHRU_2e6b27fd_review_0100",
+      "true": "PASSTHRU",
+      "extracted_prediction": "PASSTHRU",
+      "predictions": {
+        "area_matched_jpeg": {
+          "label": "PASSTHRU",
+          "probabilities": {
+            "INTERACTION": 0.03626175969839096,
+            "PASSTHRU": 0.7063820958137512,
+            "WAIT": 0.25735610723495483
+          }
+        },
+        "linear_matched_jpeg": {
+          "label": "PASSTHRU",
+          "probabilities": {
+            "INTERACTION": 0.03547769412398338,
+            "PASSTHRU": 0.7060529589653015,
+            "WAIT": 0.2584693729877472
+          }
+        },
+        "pil_bilinear_matched_jpeg": {
+          "label": "PASSTHRU",
+          "probabilities": {
+            "INTERACTION": 0.042675189673900604,
+            "PASSTHRU": 0.7106555700302124,
+            "WAIT": 0.2466692328453064
+          }
+        },
+        "pil_lanczos_matched_jpeg": {
+          "label": "PASSTHRU",
+          "probabilities": {
+            "INTERACTION": 0.03567741811275482,
+            "PASSTHRU": 0.7073059678077698,
+            "WAIT": 0.2570165991783142
+          }
+        }
+      }
+    },
+    {
+      "segment": "session_20260929_take_0063_vithaal_camera_1_WAIT_0a7057f1_review_0128",
+      "true": "WAIT",
+      "extracted_prediction": "WAIT",
+      "predictions": {
+        "area_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.3536769024067326e-06,
+            "PASSTHRU": 0.010441509075462818,
+            "WAIT": 0.9895552396774292
+          }
+        },
+        "linear_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.388692903172341e-06,
+            "PASSTHRU": 0.010483359917998314,
+            "WAIT": 0.9895132184028625
+          }
+        },
+        "pil_bilinear_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.401763706278871e-06,
+            "PASSTHRU": 0.010505370795726776,
+            "WAIT": 0.9894912242889404
+          }
+        },
+        "pil_lanczos_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.3438695936638396e-06,
+            "PASSTHRU": 0.010431886650621891,
+            "WAIT": 0.9895647764205933
+          }
+        }
+      }
+    },
+    {
+      "segment": "session_20260929_take_0065_vithaal_camera_1_WAIT_78f5f46a_review_0130",
+      "true": "WAIT",
+      "extracted_prediction": "WAIT",
+      "predictions": {
+        "area_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.9992364690988325e-06,
+            "PASSTHRU": 0.011277735233306885,
+            "WAIT": 0.9887182712554932
+          }
+        },
+        "linear_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.4371987567283213e-06,
+            "PASSTHRU": 0.01054659578949213,
+            "WAIT": 0.9894499182701111
+          }
+        },
+        "pil_bilinear_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.5200703223381424e-06,
+            "PASSTHRU": 0.010670654475688934,
+            "WAIT": 0.989325761795044
+          }
+        },
+        "pil_lanczos_matched_jpeg": {
+          "label": "WAIT",
+          "probabilities": {
+            "INTERACTION": 3.5083553484582808e-06,
+            "PASSTHRU": 0.010621200315654278,
+            "WAIT": 0.9893752336502075
+          }
+        }
+      }
+    }
+  ]
+}

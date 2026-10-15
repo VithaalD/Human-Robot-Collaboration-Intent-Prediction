@@ -1,0 +1,23 @@
+{
+  "selection": "Lowest validation cross entropy among two learning-rate runs, same split and seed; test not evaluated",
+  "runs": [
+    {
+      "run": "full_dataset_80_10_10_20261015_115023",
+      "learning_rate": 0.001,
+      "epochs": 27,
+      "best_epoch": 12,
+      "validation_loss": 0.5567293465137482,
+      "validation_accuracy": 0.625,
+      "validation_macro_f1": 0.5555555555555555
+    },
+    {
+      "run": "full_dataset_80_10_10_20261015_115149",
+      "learning_rate": 0.0001,
+      "epochs": 37,
+      "best_epoch": 12,
+      "validation_loss": 0.1576627679169178,
+      "validation_accuracy": 0.9375,
+      "validation_macro_f1": 0.9440559440559441
+    }
+  ]
+}

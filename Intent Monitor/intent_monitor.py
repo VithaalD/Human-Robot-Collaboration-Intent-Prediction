@@ -1,5 +1,6 @@
 """Local desktop monitor using the previously verified v3.1 inference engine."""
 import argparse
+import json
 import os
 import queue
 import threading
@@ -48,13 +49,39 @@ def make_inference_engine(cfg, recorder):
 
 def config(weights, video='', camera=0, sample_duration=16):
     from intent_engine_v3_1_windows import EngineConfig
+    import torch
     if sample_duration not in (8, 16):
-        raise ValueError('Choose 16 frames, or legacy 8 for comparison.')
+        raise ValueError('Choose 8 or 16 frames to match the selected model.')
+    checkpoint = torch.load(str(weights), map_location='cpu', weights_only=True)
+    saved = checkpoint.get('input_config', {})
+    if saved and saved.get('sample_duration') != sample_duration:
+        raise ValueError(f"This model requires {saved.get('sample_duration')} inference frames. Change Inference frames to match.")
+    if saved and (saved.get('class_labels') != LABELS or saved.get('color_order') != 'RGB'):
+        raise ValueError('This monitor requires RGB input and class order INTERACTION, PASSTHRU, WAIT.')
+    settings = {key: saved[key] for key in ('sample_size', 'sample_fps', 'norm_value', 'mean', 'std') if key in saved}
     return EngineConfig(resume_path=str(weights), class_labels=LABELS,
-                        n_classes=3, sample_size=150, sample_duration=sample_duration,
+                        n_classes=3, sample_duration=sample_duration,
                         smoothing_window=3, confidence_threshold=0.75,
-                        camera_warmup_frames=0, max_infer_hz=10,
-                        video_path=str(video), camera_index=camera, loop_video=True)
+                        camera_warmup_frames=0, max_infer_hz=8,
+                        video_path=str(video), camera_index=camera, loop_video=True,
+                        **settings)
+
+
+def prototype_profile():
+    report = BASE / 'Prototype Training Runs' / 'active_prototype.json'
+    if not report.is_file():
+        report = BASE / 'Prototype Training Runs' / 'latest_step6.json'
+    if not report.is_file():
+        raise ValueError('Train the small prototype before using this launcher.')
+    saved = json.loads(report.read_text())
+    weights = Path(saved['checkpoint'])
+    if not weights.is_file():
+        raise ValueError('The trained prototype checkpoint is missing.')
+    dataset = Path(saved.get('dataset', str(BASE / 'Prototype 8 Frame Pilot')))
+    timing = json.loads((dataset / 'frames' / 'sampling.json').read_text())
+    video = next((x['source_video'] for x in timing['clips'].values()
+                  if Path(x['source_video']).is_file()), '')
+    return weights, video, saved['input_config']['sample_duration']
 
 
 class Monitor:
@@ -143,7 +170,7 @@ class Monitor:
             self.metadata_inputs.append(entry)
         recordings = tk.Frame(controls, bg=BG)
         recordings.grid(row=5, column=1, sticky='w', pady=(10, 0))
-        tk.Label(recordings, text='Record example:', bg=BG, fg=FG).pack(side='left')
+        tk.Label(recordings, text='Planned scenario:', bg=BG, fg=FG).pack(side='left')
         self.record_scenario = ttk.Combobox(recordings, values=LABELS, state='readonly', width=14)
         self.record_scenario.set('WAIT')
         self.record_scenario.pack(side='left', padx=8)
@@ -151,7 +178,7 @@ class Monitor:
         self.record_button.pack(side='left')
         self.take_label = tk.Label(recordings, text='', bg=BG, fg='#a6b2c8')
         self.take_label.pack(side='left', padx=12)
-        self.record_status = tk.Label(controls, text='Records the camera image, not the desktop. Scenario labels need review before training.', bg=BG, fg='#a6b2c8', anchor='w')
+        self.record_status = tk.Label(controls, text='Saved by scenario into videos/ and metadata/. Back up both; review labels before training.', bg=BG, fg='#a6b2c8', anchor='w')
         self.record_status.grid(row=6, column=1, sticky='w', pady=(5, 0))
         body = tk.Frame(root, bg=BG)
         body.pack(fill='both', expand=True, padx=24)
@@ -251,7 +278,7 @@ class Monitor:
             video = self.video.get() if self.mode.get() == 'Video' else ''
             record_only = self.mode.get() == 'Record only'
             if not record_only and not weights.is_file():
-                raise ValueError('Select the epoch-196 weights using Browse.')
+                raise ValueError('Select an existing model checkpoint using Browse.')
             if self.mode.get() == 'Video' and not Path(video).is_file():
                 raise ValueError('Select an existing video using Browse.')
             selected_camera = None
@@ -387,7 +414,7 @@ class Monitor:
             flag = 'NO VIDEO' if stale else state['flag'] if ready else 'WARMING UP'
             color = {'STOP': COLORS[0], 'CAUTION': COLORS[1], 'CLEAR': COLORS[2]}.get(flag, FG)
             self.banner.configure(text=flag, fg=color)
-            self.detail.configure(text=f"{state['label']} • {state['confidence']:.1%}" if ready and not stale else 'Waiting for frames / predictions')
+            self.detail.configure(text=f"{state['label']} • {state['confidence']:.1%} • {self.engine.cfg.sample_fps:g} FPS input" if ready and not stale else 'Waiting for frames / predictions')
             for label, probability, (title, bar, fill) in zip(LABELS, state['probs'], self.bars):
                 title.configure(text=f'{label}   {probability:.1%}' if ready and not stale else label + '   —')
                 bar.coords(fill, 0, 0, bar.winfo_width() * float(probability) if ready and not stale else 0, 17)
@@ -406,11 +433,20 @@ class Monitor:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--record-only', action='store_true')
+    parser.add_argument('--prototype', action='store_true', help='Load the trained eight-frame small prototype.')
     parser.add_argument('--smoke-test', action='store_true', help='Run the legacy video inference smoke test.')
     parser.add_argument('--ui-smoke-test', action='store_true', help='Check UI controls without opening a camera or model.')
     args = parser.parse_args()
     root = tk.Tk()
     app = Monitor(root, scan_cameras=not args.ui_smoke_test)
+    if args.prototype:
+        weights, video, frames = prototype_profile()
+        app.weights.set(str(weights))
+        app.video.set(video)
+        app.sample_frames.set(str(frames))
+        app.mode.set('Record only' if args.record_only else 'Video')
+        app.set_controls(False)
+        root.title('Intent Monitor — Small Prototype')
     if args.ui_smoke_test:
         import sys
         assert 'torch' not in sys.modules

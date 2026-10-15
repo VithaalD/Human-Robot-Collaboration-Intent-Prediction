@@ -1,0 +1,56 @@
+[
+  {
+    "segment": "session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d_review_0009",
+    "true": "WAIT",
+    "extracted_frame_prediction": "WAIT",
+    "original_video_prediction": "WAIT"
+  },
+  {
+    "segment": "session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d_review_0010",
+    "true": "INTERACTION",
+    "extracted_frame_prediction": "INTERACTION",
+    "original_video_prediction": "PASSTHRU"
+  },
+  {
+    "segment": "session_20260929_take_0031_vithaal_camera_1_WAIT_ba01729a_review_0067",
+    "true": "WAIT",
+    "extracted_frame_prediction": "WAIT",
+    "original_video_prediction": "WAIT"
+  },
+  {
+    "segment": "session_20260929_take_0042_vithaal_camera_1_INTERACTION_7833aae7_review_0090",
+    "true": "WAIT",
+    "extracted_frame_prediction": "PASSTHRU",
+    "original_video_prediction": "PASSTHRU"
+  },
+  {
+    "segment": "session_20260929_take_0042_vithaal_camera_1_INTERACTION_7833aae7_review_0091",
+    "true": "INTERACTION",
+    "extracted_frame_prediction": "INTERACTION",
+    "original_video_prediction": "INTERACTION"
+  },
+  {
+    "segment": "session_20260929_take_0045_jason_camera_1_PASSTHRU_2e6b27fd_review_0099",
+    "true": "WAIT",
+    "extracted_frame_prediction": "WAIT",
+    "original_video_prediction": "WAIT"
+  },
+  {
+    "segment": "session_20260929_take_0045_jason_camera_1_PASSTHRU_2e6b27fd_review_0100",
+    "true": "PASSTHRU",
+    "extracted_frame_prediction": "PASSTHRU",
+    "original_video_prediction": "WAIT"
+  },
+  {
+    "segment": "session_20260929_take_0063_vithaal_camera_1_WAIT_0a7057f1_review_0128",
+    "true": "WAIT",
+    "extracted_frame_prediction": "WAIT",
+    "original_video_prediction": "WAIT"
+  },
+  {
+    "segment": "session_20260929_take_0065_vithaal_camera_1_WAIT_78f5f46a_review_0130",
+    "true": "WAIT",
+    "extracted_frame_prediction": "WAIT",
+    "original_video_prediction": "WAIT"
+  }
+]

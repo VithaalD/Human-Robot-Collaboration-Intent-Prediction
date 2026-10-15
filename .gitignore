@@ -29,3 +29,23 @@ venv/
 .pytest_cache/
 .gpu-verification/
 runs/
+
+# Derived 8 FPS frames and reviewed local datasets
+/Prepared 8 FPS/
+/Reviewed 8 FPS/
+
+# Regenerable image exports stay local; keep annotations and sampling metadata.
+/Full Dataset 20261015/**/*.jpg
+/Full Dataset 20261015/**/*.png
+/Full Dataset 20261015/**/n_frames
+/Prototype 8 Frame Pilot/**/*.jpg
+/Prototype 8 Frame Pilot/**/*.png
+/Prototype 8 Frame Pilot/**/n_frames
+/Prototype Dataset Review/**/*.jpg
+/Prototype Dataset Review/**/*.png
+/Prototype Dataset Review/**/n_frames
+/Prototype Original Frame Pilot/**/*.jpg
+/Prototype Original Frame Pilot/**/*.png
+/Prototype Original Frame Pilot/**/n_frames
+verification-temp-*/
+.cleanup-verification-temp/

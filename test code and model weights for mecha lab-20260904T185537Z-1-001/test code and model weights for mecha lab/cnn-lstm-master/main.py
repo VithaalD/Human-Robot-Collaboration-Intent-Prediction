@@ -1,3 +1,11 @@
+
+from pathlib import Path as _SamplingPath
+import sys as _sampling_sys
+_sampling_root = next(p for p in _SamplingPath(__file__).resolve().parents if (p / "frame_sampling.py").is_file())
+if str(_sampling_root) not in _sampling_sys.path:
+    _sampling_sys.path.insert(0, str(_sampling_root))
+from frame_sampling import FrameSampler, recording_timestamps, validate_training_timing
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -32,6 +40,7 @@ def build_input_config(opt, training_data):
 		mean = [0.0, 0.0, 0.0]
 	return {
 		'sample_duration': opt.sample_duration, 'sample_size': opt.sample_size,
+		'sample_fps': getattr(opt, 'sample_fps', None),
 		'norm_value': opt.norm_value, 'mean': mean,
 		'std': get_std(opt.norm_value) if opt.std_norm else [1.0, 1.0, 1.0],
 		'color_order': 'RGB', 'n_classes': opt.n_classes, 'class_labels': labels,
@@ -61,6 +70,7 @@ def resume_model(opt, model, optimizer):
 def get_loaders(opt):
 	""" Make dataloaders for train and validation sets
 	"""
+	validate_training_timing(opt)
 	if opt.sample_duration <= 0:
 		raise ValueError("--sample_duration must be positive.")
 	# train loader

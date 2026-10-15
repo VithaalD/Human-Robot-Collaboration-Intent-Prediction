@@ -1,0 +1,1445 @@
+{
+  "labels": [
+    "INTERACTION",
+    "PASSTHRU",
+    "WAIT"
+  ],
+  "sample_fps": 8.0,
+  "sample_duration": 8,
+  "annotations_confirmed": true,
+  "reviewer": "Supplied clip labels; prior reviewed cores retained where available. Not independently reviewed frame labels for new clips.",
+  "split_protocol": "within_session_trial_pilot",
+  "database": {
+    "session_20260929_take_0003_jason_camera_1_INTERACTION_7f98984d": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "7f98984d201d405b87f8e379d2c7eb4c",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0004_jason_camera_1_INTERACTION_3d653df0": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "3d653df06b0f4dbd9d7b3a08442e362e",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b": {
+      "subset": "validation",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "3d9fba6b29f2416e955f97e91d07c01b",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0034_jason_camera_1_INTERACTION_6521fbb7": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "6521fbb79cfa4f029c679bcb2dea0604",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0035_jason_camera_1_INTERACTION_a8b3df78": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "a8b3df78d93b4742abd54e2c6064bff7",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0038_jason_camera_1_INTERACTION_b7ea7525": {
+      "subset": "testing",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "b7ea75252e654efab115b159cbbf4e48",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0107_jason_camera_1_INTERACTION_ff4dcb35": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "ff4dcb35cefd4269a3d5ac6e3a3bd851",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0066_jason_camera_1_INTERACTION_f053df4b": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "f053df4bf38b4ea7bb58324c17c1bace",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0067_jason_camera_1_INTERACTION_a5095d86": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "a5095d86a5284049849ae40564d1e665",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0068_jason_camera_1_INTERACTION_51f3ad40": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "51f3ad406f4045a5aab7dd7a112c0896",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0070_jason_camera_1_INTERACTION_185bce49": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "185bce49df1c4457b3acb3364677fa4c",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0071_jason_camera_1_INTERACTION_39e68c30": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "39e68c3018e64b3db7f23a977d5ba1c5",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0078_jason_camera_1_INTERACTION_832137aa": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "832137aa2d1a4ebda1476ce2f4022d6a",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0079_jason_camera_1_INTERACTION_d5ca5522": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "d5ca5522de3c442192059931795ee21f",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0080_jason_camera_1_INTERACTION_3d72950d": {
+      "subset": "testing",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "3d72950dc66f4feca322554dcea501e1",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0081_jason_camera_1_INTERACTION_33d997d6": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "33d997d6ef8447ddb0744a9352a82459",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0001_jason_camera_1_INTERACTION_c227ad84": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "c227ad84ee9940d1924d4e56e0a08ae2",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0002_jason_camera_1_INTERACTION_617f774d": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "617f774d947f4206a123aa254975b28e",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0004_jason_camera_1_INTERACTION_e7cce8ea": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "e7cce8ea360f48e4bb90822b63c13d4d",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0010_jason_camera_1_INTERACTION_9fd4ce3d": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "9fd4ce3d5f3440e383125b8abc7a045b",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b": {
+      "subset": "validation",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "b8ae671b129245feb21c50bacaad1f8f",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0012_jason_camera_1_INTERACTION_7b5d918c": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "7b5d918c94824a1c9edea54a9dc8e1e8",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0013_jason_camera_1_INTERACTION_2ecabb02": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "2ecabb02bcf44ed68b62076b140c6a58",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0014_jason_camera_1_INTERACTION_c3c6a0ec": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "c3c6a0ec90bd4c64bad6ff22a32bad5b",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0009_vithaal_camera_1_INTERACTION_2bc89a5f": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "2bc89a5f79c64c2686d55a04e49ad5b3",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4": {
+      "subset": "validation",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "291a80b43714445db64cca80fc1e6fd3",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0012_vithaal_camera_1_INTERACTION_1add653a": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "1add653aa7864b1bb815d7465b5b882f",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0013_vithaal_camera_1_INTERACTION_305ee403": {
+      "subset": "testing",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "305ee4032c4540adaaf4a595e9c34b51",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0040_vithaal_camera_1_INTERACTION_cabde23b": {
+      "subset": "testing",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "cabde23b7d954d9cb49ed3938672f838",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0041_vithaal_camera_1_INTERACTION_ef911e4a": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "ef911e4abc68494c9417569aa6f84814",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0043_vithaal_camera_1_INTERACTION_1b8836ca": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "1b8836ca2565469ca74f2b5aa49b68bd",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20261008_take_0072_vithaal_camera_1_INTERACTION_fc988dfa": {
+      "subset": "testing",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "fc988dfa749648af80e4f2b56e26a994",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0073_vithaal_camera_1_INTERACTION_600feaf5": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "600feaf5390b4784a9f558beb86740a1",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0074_vithaal_camera_1_INTERACTION_94996463": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "94996463e27043f6b07faf70290281b2",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0075_vithaal_camera_1_INTERACTION_d449650d": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "d449650d58674dc0bbefe2c82dd36096",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0076_vithaal_camera_1_INTERACTION_ddffafd1": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "ddffafd18e5d444db1b11e9ba5060ca8",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2": {
+      "subset": "validation",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "4aac13e23f2444b68ae9328a0c9d0987",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0084_vithaal_camera_1_INTERACTION_553adff1": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "553adff1b8844ad6838489e8b5ab7e54",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0085_vithaal_camera_1_INTERACTION_ea9d2ce5": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "ea9d2ce502db46218b2361d2ceaed550",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0087_vithaal_camera_1_INTERACTION_513975bf": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "513975bffb9049df8fca58409fc490cf",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543": {
+      "subset": "validation",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "e97b8543c29f464e9785c01686bb4a4e",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0006_vithaal_camera_1_INTERACTION_c36d814e": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "c36d814e40c849a0aedf90f574565879",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0007_vithaal_camera_1_INTERACTION_37c553c2": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "37c553c25f254058828e5c73c6aee625",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0008_vithaal_camera_1_INTERACTION_f85735ce": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "f85735ce379540b8b0e5d9b9085f8a12",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0017_vithaal_camera_1_INTERACTION_97b5fbb6": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "97b5fbb6e6994460b7f990854a05fbdc",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0018_vithaal_camera_1_INTERACTION_fbb9c6ac": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "fbb9c6acec994f47aa2b44b57a8158f2",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0019_vithaal_camera_1_INTERACTION_70462874": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "704628743321409c95768494f12560c8",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0014_jason_camera_1_PASSTHRU_8a8d268c": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "8a8d268cd475406f93998aeb598fb020",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0015_jason_camera_1_PASSTHRU_2bdf9dfd": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "2bdf9dfdb8cc4bf99afd7401ed658b56",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0016_jason_camera_1_PASSTHRU_828dc208": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "828dc208fdd44ea8a10f456109d65c0b",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0017_jason_camera_1_PASSTHRU_9293bf10": {
+      "subset": "testing",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "9293bf10be8f49a7bf2bd04eae72cd17",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a": {
+      "subset": "validation",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "2d3e630a605643c3878fb3d93335dabf",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0044_jason_camera_1_WAIT_e82971b0": {
+      "subset": "testing",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "e82971b09816408c8d2ba3c1ee7836b2",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0045_jason_camera_1_PASSTHRU_2e6b27fd": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "2e6b27fd5fef4434b5804eedae9195b4",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0046_jason_camera_1_PASSTHRU_472213c8": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "472213c816f14912abe58938cde02b37",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e": {
+      "subset": "validation",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "dff31f3ecb484a7b944d87d05ab6af49",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20261013_take_0020_jason_camera_1_PASSTHRU_e1a6ae0e": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "e1a6ae0ea2324429a95dd50184f20676",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0024_jason_camera_1_PASSTHRU_251ad09a": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "251ad09aec4b4ff1b4c4c881cfe88d52",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0025_jason_camera_1_PASSTHRU_87bbfa7d": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "87bbfa7d09de4a5f97d2167a894906f2",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0027_jason_camera_1_PASSTHRU_f8aa43cf": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "f8aa43cf038743debdde4a8db98b04fa",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0033_jason_camera_1_PASSTHRU_c8f8732e": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "c8f8732eb4ff4ce59c1bf2803c8be1b2",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0034_jason_camera_1_PASSTHRU_72bbffe0": {
+      "subset": "testing",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "72bbffe0a8db470eb839839bbc16057f",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0036_jason_camera_1_PASSTHRU_e2a0081e": {
+      "subset": "testing",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "e2a0081ef5a04f33843a3c872d2a7d46",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0045_jason_camera_1_PASSTHRU_9eeeb2e5": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "9eeeb2e5ab5e43ce9fd4f14ef0943c7f",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45": {
+      "subset": "validation",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "df0c6c45be8a47ac9482948421006aae",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4": {
+      "subset": "validation",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "396609a462e44135bde3c51d5ae321e3",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0019_vithaal_camera_1_PASSTHRU_60182cee": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "60182cee52b84e0c868cd0edc9678528",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0020_vithaal_camera_1_PASSTHRU_9f38fb1d": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "9f38fb1dcd0f42a4aed1d33e0bcab3d0",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0021_vithaal_camera_1_PASSTHRU_e3f7db54": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "e3f7db5496b64c60b1ccbdc589c6fead",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0022_vithaal_camera_1_PASSTHRU_b0aee6d7": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "b0aee6d7289542f58769e297f06be4da",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0049_vithaal_camera_1_PASSTHRU_b01c1b5a": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "b01c1b5ac4a348d796e3c5bbf0d8ff28",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0050_vithaal_camera_1_PASSTHRU_55407a3d": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "55407a3d04034c0b82afaeeff082ff5b",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0052_vithaal_camera_1_PASSTHRU_431770ba": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "431770ba6c234b69b0118f1fd1d60649",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0053_vithaal_camera_1_WAIT_5cd953b6": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "5cd953b6d8cd4c8db755862e97db3b8e",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20261008_take_0105_vithaal_camera_1_PASSTHRU_59398fe0": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "59398fe08ede4a05be3b6bbfde36b54a",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0028_vithaal_camera_1_PASSTHRU_291e160f": {
+      "subset": "testing",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "291e160fbac14f6c8610bc01995e7c00",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c": {
+      "subset": "validation",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "b08e425cfcd341a28cfbc5c392268b1f",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0031_vithaal_camera_1_PASSTHRU_e90bce6d": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "e90bce6d3f8a495197ea820bcbfede36",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0038_vithaal_camera_1_PASSTHRU_55c4201f": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "55c4201f81a6434a9e6cb0f717e927a5",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0040_vithaal_camera_1_PASSTHRU_9c751dcb": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "9c751dcb03014629b240b2060f5cd45e",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0041_vithaal_camera_1_PASSTHRU_4593efa8": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "4593efa8bc8e4bdba8200b171ab89b02",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0042_vithaal_camera_1_PASSTHRU_4895a9fe": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "4895a9fe07454b63853f72607300ee00",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0043_vithaal_camera_1_PASSTHRU_27e2773b": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "27e2773b6e14418d98318b25ae320679",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0048_vithaal_camera_1_PASSTHRU_184dc6ba": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "184dc6ba96c046a19043b9d043bd2fbf",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0049_vithaal_camera_1_PASSTHRU_500b393f": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "500b393f308444eb801a229413f23e78",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0050_vithaal_camera_1_PASSTHRU_43865cd1": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "43865cd1778b4713a92bb3a7fe46fb9d",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0051_vithaal_camera_1_PASSTHRU_fc4c4338": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "fc4c4338d8f34546a1baac0d0f25fcda",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0052_vithaal_camera_1_PASSTHRU_d57f68b4": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "d57f68b414bc4d2da24af1ce60038522",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab": {
+      "subset": "validation",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "c43355ab4dee4f008d49ba12332c591e",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0054_vithaal_camera_1_PASSTHRU_bb2cea6a": {
+      "subset": "testing",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "bb2cea6a825f422f8185a3ca845e2bc9",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0055_vithaal_camera_1_PASSTHRU_beb392e0": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "beb392e0b9f54f8bb3beb702a41ac133",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0056_vithaal_camera_1_PASSTHRU_cc90f5da": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "cc90f5da6c6f40e4a9aab85cbc8e2c75",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0057_vithaal_camera_1_PASSTHRU_07ecad49": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "07ecad49f4ea4432ae29621286ead410",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0058_vithaal_camera_1_PASSTHRU_6d4d7bb0": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "6d4d7bb0ffbf454bafa2ea75d7fccd8d",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0059_vithaal_camera_1_PASSTHRU_0f9173ba": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "0f9173bad4c5452590144a6f18480a90",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca": {
+      "subset": "validation",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "ca3593caeee7488fa7dfe8fe47755f6a",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0063_vithaal_camera_1_PASSTHRU_8781e2d9": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "8781e2d9661a4292b57bf1eab47e9453",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0064_vithaal_camera_1_PASSTHRU_a3211f9d": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "a3211f9daef049b4afa8d35b71f90542",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0065_vithaal_camera_1_PASSTHRU_721f854c": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "721f854c55004cb59dfa236fba161343",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0024_jason_camera_1_WAIT_64e6d9e1": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "64e6d9e1cc9b4873a0f5dd981df57f01",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0025_jason_camera_1_WAIT_d1af570f": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "d1af570f5f2a45caa0092dec5383b224",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0026_jason_camera_1_WAIT_2163e8b7": {
+      "subset": "testing",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "2163e8b7613d40598cf60951611a833f",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0027_jason_camera_1_WAIT_d147c196": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "d147c196568d48ea93644ce71617d5c9",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0028_jason_camera_1_WAIT_9e10669d": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "9e10669d999d4ffb8375468389e07dfc",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0055_jason_camera_1_WAIT_77507f32": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "77507f3287f3413488b9d7ee2b471921",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0056_jason_camera_1_WAIT_601b43fc": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "601b43fcbaf14f42976545e0943648e0",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75": {
+      "subset": "validation",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "05b6af7581a94833b893bb5b036f1b9a",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20261008_take_0090_jason_camera_1_WAIT_7e24a3bf": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "7e24a3bf238f4c9c9d08958a418b01c0",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0091_jason_camera_1_WAIT_5be87670": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "5be876709f92486584fd39722d45b987",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0092_jason_camera_1_WAIT_7af8529d": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "7af8529d426e414b95b0a80616b99782",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0093_jason_camera_1_WAIT_a97c6b9e": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "a97c6b9e464f47778a0d596ae54dac80",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0100_jason_camera_1_WAIT_a14408d5": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "a14408d52612463fb34659fcf2847455",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0101_jason_camera_1_WAIT_a9446d19": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "a9446d1901ba46ad894ddc931a55b69c",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0102_jason_camera_1_WAIT_c31cc119": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "c31cc11980ba4a27bb3edf6cd4646f75",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0030_vithaal_camera_1_WAIT_fd686855": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "fd686855e8904c7b83fb0e1aa9e6e80b",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0031_vithaal_camera_1_WAIT_ba01729a": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "ba01729aa9244c3ead5054c0c32bbbf9",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84": {
+      "subset": "validation",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "96b4cb84f46045a997d5eec101df649f",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0061_vithaal_camera_1_WAIT_d940a393": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "d940a393de5d4765aaf5a56f6f5fd64f",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0062_vithaal_camera_1_WAIT_81c704c4": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "81c704c49b5c43f098bb75d42d4e2951",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0064_vithaal_camera_1_WAIT_a81b9927": {
+      "subset": "testing",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "a81b9927d52a4d4f8217ffdc2c288030",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20261008_take_0094_vithaal_camera_1_WAIT_99eb452a": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "99eb452ae8c74b069cf4cc6d84f8ba1d",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0096_vithaal_camera_1_WAIT_9b5284bb": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "9b5284bb5e86492cbf193907ecdefbb1",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0097_vithaal_camera_1_WAIT_3429587d": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "3429587dab2d4e4c9aceacfe60e35b1e",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0098_vithaal_camera_1_WAIT_c1f3d758": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "c1f3d758a9b74110a2fc107c084abdad",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0104_vithaal_camera_1_WAIT_b254e1a4": {
+      "subset": "testing",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "b254e1a4bc4b48029efe9cb57660d45b",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0036_jason_camera_1_INTERACTION_952d3e75": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "952d3e75a3eb43138d50df312e349156",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0037_jason_camera_1_INTERACTION_9d503c96": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "9d503c963fcb4304b17f0a5caedfd0a1",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185": {
+      "subset": "validation",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "602e2185d80e4ecd9480f15715f931e4",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0008_vithaal_camera_1_INTERACTION_4fe0f427": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "4fe0f42762054692b88d9fb2c8fe93a4",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0039_vithaal_camera_1_INTERACTION_5726c35f": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "5726c35fbf6e4a3cb4eddea191997efd",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20261013_take_0009_vithaal_camera_1_INTERACTION_3fcdad80": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "3fcdad8091444ccda6cf7e4e807aa99b",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0023_jason_camera_1_PASSTHRU_b883c668": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "b883c6683bb4486092f6903cd0a95693",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01": {
+      "subset": "validation",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "fc41ff01fb2244b3bf49065f4b0ee610",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0106_vithaal_camera_1_PASSTHRU_0cfbc0a9": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "0cfbc0a972c74a77b6d68f3307c31ff1",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0032_vithaal_camera_1_PASSTHRU_f6618c29": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "f6618c29a28c41f89605be5ac2054c21",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0060_vithaal_camera_1_PASSTHRU_ce8bc08a": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "ce8bc08ac03f46a599e2f9fcc78b2953",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0062_vithaal_camera_1_PASSTHRU_5c3f464f": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "5c3f464ff05643eebb1dde38d2736b10",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0058_jason_camera_1_WAIT_4afe7949": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "4afe7949e8a844e9bf077831948e1e23",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0059_jason_camera_1_WAIT_136af655": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "136af65553de496490e7ac88ec8659af",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0063_vithaal_camera_1_WAIT_0a7057f1": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "0a7057f19bb24a5d9732cacfc8603515",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20261008_take_0095_vithaal_camera_1_WAIT_35869725": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "3586972543ba4bc592ae178fc5436016",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0002_jason_camera_1_INTERACTION_8891ecb3": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "8891ecb3d9384b2c9762f20deda1c61d",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "41a2d43d45db4c5cbdefd32ca6b54825",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20261008_take_0082_jason_camera_1_INTERACTION_bf1dc79c": {
+      "subset": "testing",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "bf1dc79cb118459f918fa57579c5aba6",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0042_vithaal_camera_1_INTERACTION_7833aae7": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "7833aae7df584d998cce05858dc32272",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20261008_take_0086_vithaal_camera_1_INTERACTION_2c6b7393": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "2c6b7393740c44ffb893ca173fc4e7e6",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0016_vithaal_camera_1_INTERACTION_a7cca5d3": {
+      "subset": "training",
+      "annotations": {
+        "label": "INTERACTION"
+      },
+      "source_recording_id": "a7cca5d34f9141b2b4bb9b58a314b701",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0048_jason_camera_1_PASSTHRU_144f5028": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "144f50287e6545f791856cfbfe4e6497",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20261013_take_0035_jason_camera_1_PASSTHRU_4ed2331d": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "4ed2331d9edd4e5091f3eb0104714629",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0044_jason_camera_1_PASSTHRU_ba76636f": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "ba76636fe8d94181a78d25aa89fa2f2d",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0023_vithaal_camera_1_PASSTHRU_bbb5404d": {
+      "subset": "testing",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "bbb5404ddf2a4edc9ccd7a5728c745e7",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20261013_take_0030_vithaal_camera_1_PASSTHRU_dec51871": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "dec5187182704846a9829477c2763e86",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261013_take_0039_vithaal_camera_1_PASSTHRU_78442966": {
+      "subset": "training",
+      "annotations": {
+        "label": "PASSTHRU"
+      },
+      "source_recording_id": "784429666213471085a4816f7ce83616",
+      "split_group_id": "session_20261013",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0089_jason_camera_1_WAIT_a9bfcb68": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "a9bfcb68929c446f84862593c755cc59",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0099_jason_camera_1_WAIT_3e8c47ef": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "3e8c47efcff2484c861b3444b02bc977",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20261008_take_0103_jason_camera_1_WAIT_44f02188": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "44f02188faa946fa8a6707d966692883",
+      "split_group_id": "session_20261008",
+      "label_source": "supplied_clip_label_not_new_frame_review"
+    },
+    "session_20260929_take_0029_vithaal_camera_1_WAIT_e265e3de": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "e265e3de1d594677a5e2bacc343d7bdd",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0032_vithaal_camera_1_WAIT_a97a7e11": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "a97a7e116607463c9c96ae7106fe8542",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    },
+    "session_20260929_take_0065_vithaal_camera_1_WAIT_78f5f46a": {
+      "subset": "training",
+      "annotations": {
+        "label": "WAIT"
+      },
+      "source_recording_id": "78f5f46ad3804d42b0453ebd0bad5437",
+      "split_group_id": "session_20260929",
+      "label_source": "previously_reviewed_same_class_core"
+    }
+  }
+}

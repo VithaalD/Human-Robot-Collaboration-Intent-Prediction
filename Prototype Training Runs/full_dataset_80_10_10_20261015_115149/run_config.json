@@ -1,0 +1,43 @@
+{
+  "seed": 20261015,
+  "max_epochs": 100,
+  "early_stopping_patience": 25,
+  "minimum_improvement": 0.0001,
+  "batch_size": 8,
+  "head_lr": 0.0001,
+  "weight_decay": 0.001,
+  "class_balancing": "inverse-frequency replacement sampling, training segments only",
+  "backbone": "frozen ImageNet ResNet101, including batch normalization statistics",
+  "trainable": "resnet.fc projection, 3-layer LSTM, fc1, fc2",
+  "checkpoint_selection": "lowest unweighted validation cross entropy",
+  "input_config": {
+    "sample_duration": 8,
+    "sample_fps": 8.0,
+    "sample_size": 150,
+    "norm_value": 255,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "color_order": "RGB",
+    "n_classes": 3,
+    "class_labels": [
+      "INTERACTION",
+      "PASSTHRU",
+      "WAIT"
+    ],
+    "validation_window": "center 8 consecutive sampled frames",
+    "training_window": "random 8 consecutive sampled frames",
+    "resize": "bilinear 150x150",
+    "preprocessing_version": "original_rgb_bilinear_v1"
+  },
+  "torch_version": "2.10.0+cu128",
+  "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "label_policy": "archive clip labels; previous reviewed cores retained for 59 older recordings; 100 supplied clips not independently frame-reviewed"
+}

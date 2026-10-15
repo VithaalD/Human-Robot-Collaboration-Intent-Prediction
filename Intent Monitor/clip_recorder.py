@@ -33,8 +33,15 @@ class ClipRecorder:
                 raise ValueError('Recording duration must be positive.')
             identifiers = self.sessions.reserve_take(metadata or {})
             recording_id = uuid4().hex
-            stem = identifiers['take_id'] + '_' + scenario + '_' + recording_id[:8]
-            self.path = self.folder / (stem + '.avi')
+            stem = '_'.join((identifiers['take_id'], identifiers['participant_id'],
+                             identifiers['camera_setup_id'], scenario, recording_id[:8]))
+            scenario_folder = self.folder / scenario
+            video_folder = scenario_folder / 'videos'
+            metadata_folder = scenario_folder / 'metadata'
+            video_folder.mkdir(parents=True, exist_ok=True)
+            metadata_folder.mkdir(parents=True, exist_ok=True)
+            self.path = video_folder / (stem + '.avi')
+            self.metadata_path = metadata_folder / (stem + '.json')
             self.fps = float(fps)
             self.duration = float(duration)
             self.requested = time.perf_counter()
@@ -45,11 +52,16 @@ class ClipRecorder:
             self.meta = dict(identifiers, schema_version=2, source_recording_id=recording_id,
                              scenario=scenario, camera=camera, created=datetime.now().astimezone().isoformat(),
                              status='recording', video_file=self.path.name,
+                             metadata_file=self.metadata_path.name, storage_layout_version=1,
+                             video_relative_path=self.path.relative_to(self.folder).as_posix(),
+                             metadata_relative_path=self.metadata_path.relative_to(self.folder).as_posix(),
+                             video_path_from_metadata='../videos/' + self.path.name,
+                             label_source='planned_scenario',
                              annotations_confirmed=False, frame_timestamps_seconds=self.timestamps,
                              nominal_video_fps=self.fps, requested_duration_seconds=self.duration,
                              camera_settings=copy.deepcopy(camera_settings or {}),
-                             note='Scenario is a take-level intention, not per-frame ground truth. Use capture timestamps for timing; AVI playback uses nominal FPS. Keep all derivatives of this take in one dataset split.')
-            atomic_json(self.path.with_suffix('.json'), self.meta)
+                             note='Scenario is a take-level intention, not per-frame ground truth. Use capture timestamps for timing; AVI playback uses nominal FPS. Keep all derivatives of this take in one dataset split. Back up both videos and metadata folders together; group splits by session and participant, not scenario folder.')
+            atomic_json(self.metadata_path, self.meta)
             self.writer = None
             self.active = True
             self.message = 'Waiting for the first camera frame…'
@@ -130,9 +142,9 @@ class ClipRecorder:
         self.meta.update(frames=len(self.timestamps), stop_reason=reason,
                          status='complete' if complete else 'incomplete', timing=timing, quality_warnings=warnings)
         try:
-            atomic_json(self.path.with_suffix('.json'), self.meta)
+            atomic_json(self.metadata_path, self.meta)
             prefix = 'Saved ' if complete else 'Incomplete take: '
-            self.message = prefix + self.path.name
+            self.message = prefix + self.path.relative_to(self.folder).as_posix()
             if actual_fps is not None:
                 self.message += f' • {actual_fps:.1f} captured FPS'
             if warnings:

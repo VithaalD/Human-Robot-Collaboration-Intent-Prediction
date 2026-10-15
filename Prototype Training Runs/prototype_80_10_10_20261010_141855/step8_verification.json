@@ -1,0 +1,89 @@
+{
+  "status": "software_ready_live_lab_validation_pending",
+  "checkpoint": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype Training Runs\\prototype_80_10_10_20261010_141855\\best_checkpoint.pth",
+  "input_config_loaded": true,
+  "wrong_frame_count_rejected": true,
+  "validation_prediction_parity": [
+    {
+      "segment": "session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d_review_0009",
+      "expected": "WAIT",
+      "actual": "WAIT",
+      "flag": "CLEAR"
+    },
+    {
+      "segment": "session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d_review_0010",
+      "expected": "INTERACTION",
+      "actual": "INTERACTION",
+      "flag": "STOP"
+    },
+    {
+      "segment": "session_20260929_take_0031_vithaal_camera_1_WAIT_ba01729a_review_0067",
+      "expected": "WAIT",
+      "actual": "WAIT",
+      "flag": "CLEAR"
+    },
+    {
+      "segment": "session_20260929_take_0042_vithaal_camera_1_INTERACTION_7833aae7_review_0090",
+      "expected": "PASSTHRU",
+      "actual": "PASSTHRU",
+      "flag": "CAUTION"
+    },
+    {
+      "segment": "session_20260929_take_0042_vithaal_camera_1_INTERACTION_7833aae7_review_0091",
+      "expected": "INTERACTION",
+      "actual": "INTERACTION",
+      "flag": "STOP"
+    },
+    {
+      "segment": "session_20260929_take_0045_jason_camera_1_PASSTHRU_2e6b27fd_review_0099",
+      "expected": "WAIT",
+      "actual": "WAIT",
+      "flag": "CLEAR"
+    },
+    {
+      "segment": "session_20260929_take_0045_jason_camera_1_PASSTHRU_2e6b27fd_review_0100",
+      "expected": "PASSTHRU",
+      "actual": "PASSTHRU",
+      "flag": "CAUTION"
+    },
+    {
+      "segment": "session_20260929_take_0063_vithaal_camera_1_WAIT_0a7057f1_review_0128",
+      "expected": "WAIT",
+      "actual": "WAIT",
+      "flag": "CLEAR"
+    },
+    {
+      "segment": "session_20260929_take_0065_vithaal_camera_1_WAIT_78f5f46a_review_0130",
+      "expected": "WAIT",
+      "actual": "WAIT",
+      "flag": "CLEAR"
+    }
+  ],
+  "inference_ms": {
+    "first": 441.5601000073366,
+    "median_excluding_first": 61.05960000422783,
+    "max": 441.5601000073366
+  },
+  "recorded_video_replay": {
+    "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0002_jason_camera_1_INTERACTION_8891ecb3.avi",
+    "seconds": 10,
+    "first_prediction_seconds": 1.2020309999934398,
+    "observed_labels": [
+      "WAIT"
+    ],
+    "preview_frames_received": true,
+    "shutdown_threads_joined": true
+  },
+  "cameras_detected": [
+    "ASUS FHD webcam",
+    "OBS Virtual Camera"
+  ],
+  "lab_realsense_available": false,
+  "live_workspace_accuracy_tested": false,
+  "note": "Replay and per-window timing are engineering checks, not new accuracy scores. RealSense lab scene not connected.",
+  "ui_smoke_passed": true,
+  "desktop_video_start_stop_passed": true,
+  "regression_tests_passed": 70,
+  "original_video_validation_correct": 6,
+  "original_video_validation_total": 9
+}

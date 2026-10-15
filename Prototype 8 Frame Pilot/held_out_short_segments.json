@@ -1,0 +1,306 @@
+[
+  {
+    "take": 2,
+    "start": 56,
+    "end": 60,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 3,
+    "start": 63,
+    "end": 67,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 4,
+    "start": 58,
+    "end": 62,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 5,
+    "start": 62,
+    "end": 66,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 6,
+    "start": 59,
+    "end": 63,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 8,
+    "start": 62,
+    "end": 66,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 9,
+    "start": 61,
+    "end": 65,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 11,
+    "start": 64,
+    "end": 68,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 12,
+    "start": 50,
+    "end": 54,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 13,
+    "start": 64,
+    "end": 68,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 14,
+    "start": 52,
+    "end": 56,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 15,
+    "start": 59,
+    "end": 63,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 16,
+    "start": 59,
+    "end": 63,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 17,
+    "start": 59,
+    "end": 63,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 18,
+    "start": 31,
+    "end": 37,
+    "label": "INTERACTION",
+    "sampled_frames": 7,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 18,
+    "start": 53,
+    "end": 57,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 19,
+    "start": 46,
+    "end": 50,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 20,
+    "start": 48,
+    "end": 52,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 21,
+    "start": 41,
+    "end": 45,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 22,
+    "start": 46,
+    "end": 50,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 23,
+    "start": 49,
+    "end": 53,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 34,
+    "start": 64,
+    "end": 68,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 36,
+    "start": 59,
+    "end": 63,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 37,
+    "start": 63,
+    "end": 67,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 38,
+    "start": 57,
+    "end": 61,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 39,
+    "start": 62,
+    "end": 66,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 40,
+    "start": 63,
+    "end": 67,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 42,
+    "start": 66,
+    "end": 70,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 43,
+    "start": 61,
+    "end": 65,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 44,
+    "start": 20,
+    "end": 25,
+    "label": "PASSTHRU",
+    "sampled_frames": 6,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 44,
+    "start": 61,
+    "end": 65,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 45,
+    "start": 61,
+    "end": 65,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 47,
+    "start": 18,
+    "end": 24,
+    "label": "PASSTHRU",
+    "sampled_frames": 7,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 48,
+    "start": 58,
+    "end": 62,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 50,
+    "start": 49,
+    "end": 53,
+    "label": "WAIT",
+    "sampled_frames": 4,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 52,
+    "start": 55,
+    "end": 59,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 53,
+    "start": 25,
+    "end": 31,
+    "label": "PASSTHRU",
+    "sampled_frames": 7,
+    "reason": "fewer than 8 real sampled frames"
+  },
+  {
+    "take": 53,
+    "start": 54,
+    "end": 58,
+    "label": "WAIT",
+    "sampled_frames": 5,
+    "reason": "fewer than 8 real sampled frames"
+  }
+]

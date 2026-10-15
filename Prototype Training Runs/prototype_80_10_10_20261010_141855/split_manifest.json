@@ -1,0 +1,93 @@
+{
+  "seed": 20261010,
+  "ratio_requested": [
+    80,
+    10,
+    10
+  ],
+  "source_recordings": {
+    "testing": 6,
+    "validation": 6,
+    "training": 47
+  },
+  "segments": {
+    "training": {
+      "WAIT": 46,
+      "INTERACTION": 16,
+      "PASSTHRU": 12
+    },
+    "validation": {
+      "WAIT": 6,
+      "INTERACTION": 2,
+      "PASSTHRU": 1
+    },
+    "testing": {
+      "WAIT": 6,
+      "INTERACTION": 2,
+      "PASSTHRU": 2
+    }
+  },
+  "source_assignments": {
+    "2bc89a5f79c64c2686d55a04e49ad5b3": "training",
+    "81c704c49b5c43f098bb75d42d4e2951": "training",
+    "431770ba6c234b69b0118f1fd1d60649": "training",
+    "96b4cb84f46045a997d5eec101df649f": "training",
+    "d1af570f5f2a45caa0092dec5383b224": "training",
+    "1add653aa7864b1bb815d7465b5b882f": "training",
+    "9e10669d999d4ffb8375468389e07dfc": "training",
+    "bbb5404ddf2a4edc9ccd7a5728c745e7": "training",
+    "fd686855e8904c7b83fb0e1aa9e6e80b": "training",
+    "472213c816f14912abe58938cde02b37": "training",
+    "828dc208fdd44ea8a10f456109d65c0b": "training",
+    "60182cee52b84e0c868cd0edc9678528": "training",
+    "e82971b09816408c8d2ba3c1ee7836b2": "training",
+    "a81b9927d52a4d4f8217ffdc2c288030": "training",
+    "a97a7e116607463c9c96ae7106fe8542": "training",
+    "4fe0f42762054692b88d9fb2c8fe93a4": "training",
+    "a8b3df78d93b4742abd54e2c6064bff7": "training",
+    "e265e3de1d594677a5e2bacc343d7bdd": "training",
+    "3d653df06b0f4dbd9d7b3a08442e362e": "training",
+    "1b8836ca2565469ca74f2b5aa49b68bd": "training",
+    "136af65553de496490e7ac88ec8659af": "training",
+    "144f50287e6545f791856cfbfe4e6497": "training",
+    "8891ecb3d9384b2c9762f20deda1c61d": "training",
+    "2bdf9dfdb8cc4bf99afd7401ed658b56": "training",
+    "b01c1b5ac4a348d796e3c5bbf0d8ff28": "training",
+    "2d3e630a605643c3878fb3d93335dabf": "training",
+    "2163e8b7613d40598cf60951611a833f": "training",
+    "05b6af7581a94833b893bb5b036f1b9a": "training",
+    "952d3e75a3eb43138d50df312e349156": "training",
+    "7f98984d201d405b87f8e379d2c7eb4c": "training",
+    "601b43fcbaf14f42976545e0943648e0": "training",
+    "cabde23b7d954d9cb49ed3938672f838": "training",
+    "b7ea75252e654efab115b159cbbf4e48": "training",
+    "6521fbb79cfa4f029c679bcb2dea0604": "training",
+    "5cd953b6d8cd4c8db755862e97db3b8e": "training",
+    "d147c196568d48ea93644ce71617d5c9": "training",
+    "5726c35fbf6e4a3cb4eddea191997efd": "training",
+    "b0aee6d7289542f58769e297f06be4da": "training",
+    "dff31f3ecb484a7b944d87d05ab6af49": "training",
+    "ef911e4abc68494c9417569aa6f84814": "training",
+    "d940a393de5d4765aaf5a56f6f5fd64f": "training",
+    "64e6d9e1cc9b4873a0f5dd981df57f01": "training",
+    "e3f7db5496b64c60b1ccbdc589c6fead": "training",
+    "55407a3d04034c0b82afaeeff082ff5b": "training",
+    "305ee4032c4540adaaf4a595e9c34b51": "training",
+    "9d503c963fcb4304b17f0a5caedfd0a1": "training",
+    "8a8d268cd475406f93998aeb598fb020": "training",
+    "41a2d43d45db4c5cbdefd32ca6b54825": "validation",
+    "7833aae7df584d998cce05858dc32272": "validation",
+    "2e6b27fd5fef4434b5804eedae9195b4": "validation",
+    "ba01729aa9244c3ead5054c0c32bbbf9": "validation",
+    "0a7057f19bb24a5d9732cacfc8603515": "validation",
+    "78f5f46ad3804d42b0453ebd0bad5437": "validation",
+    "4afe7949e8a844e9bf077831948e1e23": "testing",
+    "9f38fb1dcd0f42a4aed1d33e0bcab3d0": "testing",
+    "291a80b43714445db64cca80fc1e6fd3": "testing",
+    "3d9fba6b29f2416e955f97e91d07c01b": "testing",
+    "9293bf10be8f49a7bf2bd04eae72cd17": "testing",
+    "77507f3287f3413488b9d7ee2b471921": "testing"
+  },
+  "source_annotation_sha256": "b484607b909c15a4e92a8feac633eeefb76576434f883ef5a5a2b764b0ce1a6c",
+  "test_evaluated": false
+}

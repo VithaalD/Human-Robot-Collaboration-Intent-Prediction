@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "validation_windows": 9,
+  "correct": 8,
+  "all_prepared_and_original_tensors_identical": true,
+  "all_monitor_predictions_match_training_validation": true,
+  "max_probability_error": 0.0,
+  "windows": [
+    {
+      "segment": "session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d_review_0009",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d_review_0010",
+      "true": "INTERACTION",
+      "predicted": "INTERACTION",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0031_vithaal_camera_1_WAIT_ba01729a_review_0067",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0042_vithaal_camera_1_INTERACTION_7833aae7_review_0090",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0042_vithaal_camera_1_INTERACTION_7833aae7_review_0091",
+      "true": "INTERACTION",
+      "predicted": "INTERACTION",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0045_jason_camera_1_PASSTHRU_2e6b27fd_review_0099",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0045_jason_camera_1_PASSTHRU_2e6b27fd_review_0100",
+      "true": "PASSTHRU",
+      "predicted": "WAIT",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0063_vithaal_camera_1_WAIT_0a7057f1_review_0128",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0065_vithaal_camera_1_WAIT_78f5f46a_review_0130",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    }
+  ],
+  "checkpoint_sha256": "5102f31033f3eec659f2baa9660988a87bf0284c4402e6c4cdb6fff4fbb7065c",
+  "test_predictions_computed": false,
+  "continuous_replay": {
+    "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0002_jason_camera_1_INTERACTION_8891ecb3.avi",
+    "seconds": 10,
+    "first_prediction_seconds": 1.208312799979467,
+    "labels_seen": [
+      "INTERACTION",
+      "WAIT"
+    ],
+    "note": "Engineering check, not a continuous labeled accuracy evaluation."
+  },
+  "live_lab_validation_completed": false
+}

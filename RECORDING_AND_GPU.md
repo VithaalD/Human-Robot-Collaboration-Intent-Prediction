@@ -9,7 +9,48 @@
 5. Select the scenario `INTERACTION`, `PASSTHRU`, or `WAIT`, then record the take. Take numbers are allocated automatically. The settings and numbering are persisted locally.
 6. Inspect several pilot takes before collecting the full dataset. Keep the screwdriver in the scene for all classes, including waiting and pass-through. Save clean camera footage, not desktop screenshots.
 
-Outputs are an original-resolution MJPEG AVI and matching JSON metadata under **Camera Recordings** in this project. This folder is ignored by Git. Preserve each AVI/JSON pair and back them up separately. Metadata includes collection identifiers, scenario, camera information, actual dimensions, requested/reported FPS, frame timestamps, and capture-timing summary. A scenario is a planned take label, not a verified per-frame annotation.
+Outputs are an original-resolution MJPEG AVI and matching JSON metadata under **Camera Recordings** in this project. This folder is ignored by Git. Preserve each AVI/JSON pair and back up both subfolders together, separately from GitHub. Metadata includes collection identifiers, scenario, camera information, actual dimensions, requested/reported FPS, frame timestamps, and capture-timing summary. A scenario is a planned take label, not a verified per-frame annotation.
+
+### Recording folder layout
+
+New takes are organized automatically by the selected **planned scenario**:
+
+```text
+Camera Recordings/
+  recording_session.json
+  WAIT/
+    videos/
+    metadata/
+  PASSTHRU/
+    videos/
+    metadata/
+  INTERACTION/
+    videos/
+    metadata/
+```
+
+A scenario's folders are created when its first take starts. Videos are MJPEG
+AVI files and metadata are JSON files with identical stems. Filenames include
+session, take number, participant, camera setup, scenario and a unique suffix.
+Use short, recognizable IDs to keep filenames manageable. The root
+`recording_session.json` is shared session settings/numbering, not a clip's
+metadata. Take numbering continues across all three scenario groups.
+
+Each clip JSON retains `video_file` and adds `metadata_file`,
+`video_relative_path` and `metadata_relative_path` (relative to Camera Recordings),
+and `video_path_from_metadata` (relative to that JSON's folder). These links stay
+valid when the complete recording folder is moved. Copy/back up both subfolders;
+do not rename or move one half of a pair independently.
+
+Folder placement is not a verified frame label: an INTERACTION take can contain
+waiting before and after the action. `annotations_confirmed` remains false and
+`label_source` is `planned_scenario`. Review action boundaries before training.
+Keep whole takes in one split, group by session, and group by participant when
+measuring generalization to new people. Class folders are not train/test splits.
+
+Existing flat video/JSON pairs are retained in their original locations. The
+recorder applies this layout to new takes; it does not relabel or migrate old
+footage. When opening a saved video in the monitor, browse into the scenario's `videos` subfolder.
 
 AVI playback is encoded at nominal FPS; actual capture timing may vary. Use JSON timestamps for event annotations and later resample consistently when preparing training data. Timing-gap estimates are diagnostics, not proof of a hardware frame-drop count. The same recorder also works during webcam inference, but record-only avoids inference load and the checkpoint requirement.
 
@@ -25,10 +66,10 @@ The existing epoch-196 checkpoint does not identify its historical training dura
 
 ## GPU environment
 
-Run **setup_gpu.ps1** once to create `%USERPROFILE%\.venvs\intent-gpu`. It installs PyTorch 2.10.0 and TorchVision 0.25.0 with CUDA 12.8, plus Ultralytics and the project training dependencies. This matches the original PyTorch/TorchVision version pair while enabling this laptop's RTX 5070. The existing DEEPLABCUT environment stays separate. The virtual environment uses the existing Python installation as its base, so retain that base installation.
+For a new installation, run **setup_gpu.ps1 -BasePython <Python executable>** with Python 3.10 or 3.11 to create `%USERPROFILE%\.venvs\intent-gpu`. It installs PyTorch 2.10.0 and TorchVision 0.25.0 with CUDA 12.8, plus Ultralytics and the project training dependencies. This matches the original PyTorch/TorchVision version pair while enabling this laptop's RTX 5070. The virtual environment uses the existing Python installation as its base, so retain that base installation.
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\setup_gpu.ps1
+powershell -ExecutionPolicy Bypass -File .\setup_gpu.ps1 -BasePython "C:\Path\To\Python311\python.exe"
 ```
 
 The monitor launcher and terminal runner prefer the GPU environment when present. Set `INTENT_PYTHON` to override the Python executable. **Open GPU Terminal.cmd** opens a terminal with this environment active in the project folder.

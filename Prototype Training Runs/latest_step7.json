@@ -1,0 +1,308 @@
+{
+  "status": "completed",
+  "evaluation_date": "2026-10-10",
+  "checkpoint": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype Training Runs\\prototype_80_10_10_20261010_141855\\best_checkpoint.pth",
+  "checkpoint_sha256": "ddc82dff0fc4390f67b58b1b80bd0c701c85183b02fde348941d0cb0927ebe38",
+  "checkpoint_epoch": 28,
+  "test_recordings": 6,
+  "test_segments": 10,
+  "correct_segments": 10,
+  "accuracy": 1.0,
+  "loss": 0.07966598061611876,
+  "macro_f1": 1.0,
+  "balanced_accuracy": 1.0,
+  "per_class": {
+    "INTERACTION": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2,
+      "correct": 2
+    },
+    "PASSTHRU": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2,
+      "correct": 2
+    },
+    "WAIT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 6,
+      "correct": 6
+    }
+  },
+  "confusion_matrix": [
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      6
+    ]
+  ],
+  "matrix_order": [
+    "INTERACTION",
+    "PASSTHRU",
+    "WAIT"
+  ],
+  "majority_wait_baseline_accuracy": 0.6,
+  "predictions": [
+    {
+      "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b_review_0012",
+      "source_recording_id": "3d9fba6b29f2416e955f97e91d07c01b",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "probabilities": {
+        "INTERACTION": 3.2254606594506186e-06,
+        "PASSTHRU": 0.010175487957894802,
+        "WAIT": 0.9898213148117065
+      },
+      "export_frame_indices_1based": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b_review_0013",
+      "source_recording_id": "3d9fba6b29f2416e955f97e91d07c01b",
+      "true": "INTERACTION",
+      "predicted": "INTERACTION",
+      "probabilities": {
+        "INTERACTION": 0.9990116357803345,
+        "PASSTHRU": 0.000890890893060714,
+        "WAIT": 9.739003144204617e-05
+      },
+      "export_frame_indices_1based": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4_review_0021",
+      "source_recording_id": "291a80b43714445db64cca80fc1e6fd3",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "probabilities": {
+        "INTERACTION": 3.3425039873691276e-06,
+        "PASSTHRU": 0.010385887697339058,
+        "WAIT": 0.9896107912063599
+      },
+      "export_frame_indices_1based": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4_review_0022",
+      "source_recording_id": "291a80b43714445db64cca80fc1e6fd3",
+      "true": "INTERACTION",
+      "predicted": "INTERACTION",
+      "probabilities": {
+        "INTERACTION": 0.9990634322166443,
+        "PASSTHRU": 0.0008451899630017579,
+        "WAIT": 9.131898696068674e-05
+      },
+      "export_frame_indices_1based": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "segment": "session_20260929_take_0017_jason_camera_1_PASSTHRU_9293bf10_review_0039",
+      "source_recording_id": "9293bf10be8f49a7bf2bd04eae72cd17",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "probabilities": {
+        "INTERACTION": 3.098382421740098e-06,
+        "PASSTHRU": 0.010065391659736633,
+        "WAIT": 0.989931583404541
+      },
+      "export_frame_indices_1based": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "segment": "session_20260929_take_0017_jason_camera_1_PASSTHRU_9293bf10_review_0040",
+      "source_recording_id": "9293bf10be8f49a7bf2bd04eae72cd17",
+      "true": "PASSTHRU",
+      "predicted": "PASSTHRU",
+      "probabilities": {
+        "INTERACTION": 0.028237977996468544,
+        "PASSTHRU": 0.6942984461784363,
+        "WAIT": 0.27746355533599854
+      },
+      "export_frame_indices_1based": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "segment": "session_20260929_take_0020_vithaal_camera_1_PASSTHRU_9f38fb1d_review_0048",
+      "source_recording_id": "9f38fb1dcd0f42a4aed1d33e0bcab3d0",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "probabilities": {
+        "INTERACTION": 3.16203522743308e-06,
+        "PASSTHRU": 0.010138314217329025,
+        "WAIT": 0.9898584485054016
+      },
+      "export_frame_indices_1based": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "segment": "session_20260929_take_0020_vithaal_camera_1_PASSTHRU_9f38fb1d_review_0049",
+      "source_recording_id": "9f38fb1dcd0f42a4aed1d33e0bcab3d0",
+      "true": "PASSTHRU",
+      "predicted": "PASSTHRU",
+      "probabilities": {
+        "INTERACTION": 0.026761624962091446,
+        "PASSTHRU": 0.6921391487121582,
+        "WAIT": 0.28109923005104065
+      },
+      "export_frame_indices_1based": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "segment": "session_20260929_take_0055_jason_camera_1_WAIT_77507f32_review_0121",
+      "source_recording_id": "77507f3287f3413488b9d7ee2b471921",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "probabilities": {
+        "INTERACTION": 3.395183739485219e-06,
+        "PASSTHRU": 0.010509207844734192,
+        "WAIT": 0.9894874095916748
+      },
+      "export_frame_indices_1based": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "segment": "session_20260929_take_0058_jason_camera_1_WAIT_4afe7949_review_0124",
+      "source_recording_id": "4afe7949e8a844e9bf077831948e1e23",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "probabilities": {
+        "INTERACTION": 3.2523146273888415e-06,
+        "PASSTHRU": 0.01030011661350727,
+        "WAIT": 0.9896966218948364
+      },
+      "export_frame_indices_1based": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    }
+  ],
+  "source_recordings_all_segments_correct": 6,
+  "input_config": {
+    "sample_duration": 8,
+    "sample_fps": 8.0,
+    "sample_size": 150,
+    "norm_value": 255,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "color_order": "RGB",
+    "n_classes": 3,
+    "class_labels": [
+      "INTERACTION",
+      "PASSTHRU",
+      "WAIT"
+    ],
+    "validation_window": "center 8 consecutive sampled frames",
+    "training_window": "random 8 consecutive sampled frames",
+    "resize": "bilinear 150x150"
+  },
+  "selection": "Fixed best validation checkpoint and one center eight-frame window per reserved segment; no test-based tuning",
+  "checkpoint_unchanged": true,
+  "limitations": [
+    "Only 10 segments from 6 source recordings; segments within a recording are correlated",
+    "All test footage is from the same September 29 session and known participants",
+    "Only two test segments each for INTERACTION and PASSTHRU",
+    "AI-reviewed labels, not independently confirmed human ground truth",
+    "Not a live latency, robot safety, new-person or new-session test"
+  ]
+}

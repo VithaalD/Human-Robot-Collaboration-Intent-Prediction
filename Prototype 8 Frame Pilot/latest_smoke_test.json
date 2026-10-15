@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "purpose": "infrastructure smoke test, not an accuracy evaluation",
+  "device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "model": "ImageNet-pretrained ResNet101 + newly initialized LSTM/classifier",
+  "sample_duration": 8,
+  "sample_fps": 8,
+  "training_segments": 6,
+  "validation_segments": 3,
+  "epochs": 2,
+  "optimizer_steps": 12,
+  "reserved_test_evaluated": false,
+  "losses": [
+    {
+      "epoch": 1,
+      "training_loss": 1.1187842686971028,
+      "validation_loss": 1.099014123280843
+    },
+    {
+      "epoch": 2,
+      "training_loss": 1.164687196413676,
+      "validation_loss": 1.1004116932551067
+    }
+  ],
+  "classifier_max_weight_change": 0.011927910149097443,
+  "checks": {
+    "forwards": 19,
+    "gradient_checks": 3960
+  },
+  "checkpoint": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype Training Runs\\smoke_20261007_162551\\smoke_checkpoint.pth",
+  "reload_max_prediction_difference": 0.0,
+  "resume_next_epoch": 3,
+  "16_frame_mismatch_rejected": true,
+  "elapsed_seconds": 42.21899999999732,
+  "peak_gpu_allocated_mb": 1223.7216796875,
+  "training_trials": [
+    "session_20260929_take_0004_jason_camera_1_INTERACTION_3d653df0_review_0007",
+    "session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d_review_0010",
+    "session_20260929_take_0014_jason_camera_1_PASSTHRU_8a8d268c_review_0031",
+    "session_20260929_take_0016_jason_camera_1_PASSTHRU_828dc208_review_0037",
+    "session_20260929_take_0004_jason_camera_1_INTERACTION_3d653df0_review_0006",
+    "session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d_review_0009"
+  ],
+  "validation_trials": [
+    "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b_review_0013",
+    "session_20260929_take_0015_jason_camera_1_PASSTHRU_2bdf9dfd_review_0034",
+    "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b_review_0012"
+  ]
+}

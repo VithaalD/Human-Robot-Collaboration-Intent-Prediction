@@ -44,7 +44,7 @@ powershell -ExecutionPolicy Bypass -File .\run_intent_v3_1.ps1 -VideoPath "C:\pa
 - `CLEAR` means wait/no action was predicted, or interaction confidence was below the stop threshold.
 - This program reports an intent flag; it does not send a physical stop command to a robot.
 
-The runner prefers the isolated `intent-gpu` environment created by `setup_gpu.ps1`, and otherwise falls back to the original DEEPLABCUT environment. `INTENT_PYTHON` overrides the executable. The RTX 5070 GPU environment and repeatable checks are documented in [RECORDING_AND_GPU.md](../RECORDING_AND_GPU.md).
+The runner prefers the isolated `intent-gpu` environment created by `setup_gpu.ps1`, and reports a setup error if that environment is missing. `INTENT_PYTHON` overrides the executable. The RTX 5070 GPU environment and repeatable checks are documented in [RECORDING_AND_GPU.md](../RECORDING_AND_GPU.md).
 
 ## External data and collaborator setup
 

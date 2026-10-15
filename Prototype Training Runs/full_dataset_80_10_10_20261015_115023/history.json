@@ -1,0 +1,3512 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 1.1022969155799685,
+    "sampled_train_accuracy": 0.3858267716535433,
+    "validation": {
+      "loss": 1.080725610256195,
+      "accuracy": 0.375,
+      "macro_f1": 0.1904761904761905,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.4,
+          "recall": 1.0,
+          "f1": 0.5714285714285715,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.0586489040081895,
+    "sampled_train_accuracy": 0.48031496062992124,
+    "validation": {
+      "loss": 1.1707918047904968,
+      "accuracy": 0.375,
+      "macro_f1": 0.1818181818181818,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.375,
+          "recall": 1.0,
+          "f1": 0.5454545454545454,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          4,
+          0
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.1833568041718852,
+    "sampled_train_accuracy": 0.30708661417322836,
+    "validation": {
+      "loss": 1.0868623852729797,
+      "accuracy": 0.625,
+      "macro_f1": 0.5555555555555555,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 4,
+    "train_loss": 1.0779621056684359,
+    "sampled_train_accuracy": 0.5196850393700787,
+    "validation": {
+      "loss": 0.9602043628692627,
+      "accuracy": 0.5,
+      "macro_f1": 0.4222222222222222,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.42857142857142855,
+          "recall": 1.0,
+          "f1": 0.6,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.9521489974081986,
+    "sampled_train_accuracy": 0.5275590551181102,
+    "validation": {
+      "loss": 0.7880461812019348,
+      "accuracy": 0.625,
+      "macro_f1": 0.5555555555555555,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.7474961947268388,
+    "sampled_train_accuracy": 0.5748031496062992,
+    "validation": {
+      "loss": 0.6352409273386002,
+      "accuracy": 0.625,
+      "macro_f1": 0.5555555555555555,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.7767214324530654,
+    "sampled_train_accuracy": 0.5590551181102362,
+    "validation": {
+      "loss": 0.6325737833976746,
+      "accuracy": 0.625,
+      "macro_f1": 0.5555555555555555,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.6636459543479709,
+    "sampled_train_accuracy": 0.6141732283464567,
+    "validation": {
+      "loss": 0.6148012429475784,
+      "accuracy": 0.625,
+      "macro_f1": 0.5555555555555555,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.8205742333817669,
+    "sampled_train_accuracy": 0.5590551181102362,
+    "validation": {
+      "loss": 0.6475803256034851,
+      "accuracy": 0.625,
+      "macro_f1": 0.5555555555555555,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.7165754521925618,
+    "sampled_train_accuracy": 0.5748031496062992,
+    "validation": {
+      "loss": 0.9493042528629303,
+      "accuracy": 0.5,
+      "macro_f1": 0.4222222222222222,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.42857142857142855,
+          "recall": 1.0,
+          "f1": 0.6,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 11,
+    "train_loss": 0.6944826728715672,
+    "sampled_train_accuracy": 0.5905511811023622,
+    "validation": {
+      "loss": 0.5753338634967804,
+      "accuracy": 0.625,
+      "macro_f1": 0.5555555555555555,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 12,
+    "train_loss": 0.6610377731285696,
+    "sampled_train_accuracy": 0.5905511811023622,
+    "validation": {
+      "loss": 0.5567293465137482,
+      "accuracy": 0.625,
+      "macro_f1": 0.5555555555555555,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 13,
+    "train_loss": 0.6360698365789699,
+    "sampled_train_accuracy": 0.5984251968503937,
+    "validation": {
+      "loss": 1.0254011154174805,
+      "accuracy": 0.5,
+      "macro_f1": 0.4444444444444444,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 14,
+    "train_loss": 0.5703399974530138,
+    "sampled_train_accuracy": 0.7007874015748031,
+    "validation": {
+      "loss": 1.0782102644443512,
+      "accuracy": 0.5,
+      "macro_f1": 0.4222222222222222,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.42857142857142855,
+          "recall": 1.0,
+          "f1": 0.6,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 15,
+    "train_loss": 0.6908653528671566,
+    "sampled_train_accuracy": 0.5984251968503937,
+    "validation": {
+      "loss": 1.0528667271137238,
+      "accuracy": 0.5,
+      "macro_f1": 0.4222222222222222,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.42857142857142855,
+          "recall": 1.0,
+          "f1": 0.6,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 16,
+    "train_loss": 0.6158062313485333,
+    "sampled_train_accuracy": 0.6535433070866141,
+    "validation": {
+      "loss": 1.0521498918533325,
+      "accuracy": 0.5,
+      "macro_f1": 0.4222222222222222,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.42857142857142855,
+          "recall": 1.0,
+          "f1": 0.6,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 17,
+    "train_loss": 0.5438012328204207,
+    "sampled_train_accuracy": 0.6456692913385826,
+    "validation": {
+      "loss": 1.0645498633384705,
+      "accuracy": 0.5,
+      "macro_f1": 0.4222222222222222,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.42857142857142855,
+          "recall": 1.0,
+          "f1": 0.6,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.001
+  },
+  {
+    "epoch": 18,
+    "train_loss": 0.7237384417864281,
+    "sampled_train_accuracy": 0.5669291338582677,
+    "validation": {
+      "loss": 0.606759250164032,
+      "accuracy": 0.625,
+      "macro_f1": 0.5555555555555555,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.0005
+  },
+  {
+    "epoch": 19,
+    "train_loss": 0.5750211413920395,
+    "sampled_train_accuracy": 0.6692913385826772,
+    "validation": {
+      "loss": 0.8608883619308472,
+      "accuracy": 0.5,
+      "macro_f1": 0.4222222222222222,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.42857142857142855,
+          "recall": 1.0,
+          "f1": 0.6,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.0005
+  },
+  {
+    "epoch": 20,
+    "train_loss": 0.6401951336485194,
+    "sampled_train_accuracy": 0.6456692913385826,
+    "validation": {
+      "loss": 1.148186445236206,
+      "accuracy": 0.5,
+      "macro_f1": 0.4222222222222222,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.42857142857142855,
+          "recall": 1.0,
+          "f1": 0.6,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.0005
+  },
+  {
+    "epoch": 21,
+    "train_loss": 0.4983293752032002,
+    "sampled_train_accuracy": 0.6771653543307087,
+    "validation": {
+      "loss": 0.9295095205307007,
+      "accuracy": 0.5,
+      "macro_f1": 0.4444444444444444,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.0005
+  },
+  {
+    "epoch": 22,
+    "train_loss": 0.530701538709205,
+    "sampled_train_accuracy": 0.6535433070866141,
+    "validation": {
+      "loss": 0.9625600576400757,
+      "accuracy": 0.5,
+      "macro_f1": 0.4222222222222222,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.42857142857142855,
+          "recall": 1.0,
+          "f1": 0.6,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.0005
+  },
+  {
+    "epoch": 23,
+    "train_loss": 0.6392548194551092,
+    "sampled_train_accuracy": 0.6456692913385826,
+    "validation": {
+      "loss": 0.8207692205905914,
+      "accuracy": 0.5,
+      "macro_f1": 0.4444444444444444,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.0005
+  },
+  {
+    "epoch": 24,
+    "train_loss": 0.5171568299841693,
+    "sampled_train_accuracy": 0.6062992125984252,
+    "validation": {
+      "loss": 0.5885394215583801,
+      "accuracy": 0.8125,
+      "macro_f1": 0.8321678321678321,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.7142857142857143,
+          "recall": 0.8333333333333334,
+          "f1": 0.7692307692307692,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.8,
+          "recall": 0.6666666666666666,
+          "f1": 0.7272727272727272,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          5,
+          1,
+          0
+        ],
+        [
+          2,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.00025
+  },
+  {
+    "epoch": 25,
+    "train_loss": 0.5984104590153131,
+    "sampled_train_accuracy": 0.6850393700787402,
+    "validation": {
+      "loss": 1.1339877247810364,
+      "accuracy": 0.5,
+      "macro_f1": 0.4222222222222222,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.42857142857142855,
+          "recall": 1.0,
+          "f1": 0.6,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.00025
+  },
+  {
+    "epoch": 26,
+    "train_loss": 0.6281693108438506,
+    "sampled_train_accuracy": 0.6062992125984252,
+    "validation": {
+      "loss": 0.8597939014434814,
+      "accuracy": 0.625,
+      "macro_f1": 0.626984126984127,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          5,
+          1,
+          0
+        ],
+        [
+          3,
+          3,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "PASSTHRU"
+        }
+      ]
+    },
+    "lr": 0.00025
+  },
+  {
+    "epoch": 27,
+    "train_loss": 0.5170063124162945,
+    "sampled_train_accuracy": 0.7244094488188977,
+    "validation": {
+      "loss": 0.9205482006072998,
+      "accuracy": 0.5,
+      "macro_f1": 0.4444444444444444,
+      "per_class": {
+        "INTERACTION": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 6
+        },
+        "PASSTHRU": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "WAIT": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          2
+        ]
+      ],
+      "predictions": [
+        {
+          "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+          "true": "WAIT",
+          "predicted": "PASSTHRU"
+        },
+        {
+          "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+          "true": "WAIT",
+          "predicted": "WAIT"
+        },
+        {
+          "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+          "true": "INTERACTION",
+          "predicted": "INTERACTION"
+        },
+        {
+          "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+          "true": "PASSTHRU",
+          "predicted": "INTERACTION"
+        }
+      ]
+    },
+    "lr": 0.00025
+  }
+]

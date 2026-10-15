@@ -1,0 +1,363 @@
+{
+    "labels": [
+        "INTERACTION",
+        "PASSTHRU",
+        "WAIT"
+    ],
+    "database": {
+        "session_20260929_take_0004_jason_camera_1_INTERACTION_3d653df0": {
+            "subset": "training",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d": {
+            "subset": "training",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0034_jason_camera_1_INTERACTION_6521fbb7": {
+            "subset": "training",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0035_jason_camera_1_INTERACTION_a8b3df78": {
+            "subset": "training",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0036_jason_camera_1_INTERACTION_952d3e75": {
+            "subset": "training",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0037_jason_camera_1_INTERACTION_9d503c96": {
+            "subset": "training",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0009_vithaal_camera_1_INTERACTION_2bc89a5f": {
+            "subset": "training",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4": {
+            "subset": "training",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0012_vithaal_camera_1_INTERACTION_1add653a": {
+            "subset": "training",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0013_vithaal_camera_1_INTERACTION_305ee403": {
+            "subset": "training",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0039_vithaal_camera_1_INTERACTION_5726c35f": {
+            "subset": "training",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0042_vithaal_camera_1_INTERACTION_7833aae7": {
+            "subset": "training",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0014_jason_camera_1_PASSTHRU_8a8d268c": {
+            "subset": "training",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0016_jason_camera_1_PASSTHRU_828dc208": {
+            "subset": "training",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0018_jason_camera_1_PASSTHRU_2d3e630a": {
+            "subset": "training",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0044_jason_camera_1_PASSTHRU_e82971b0": {
+            "subset": "training",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0046_jason_camera_1_PASSTHRU_472213c8": {
+            "subset": "training",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0048_jason_camera_1_PASSTHRU_144f5028": {
+            "subset": "training",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0019_vithaal_camera_1_PASSTHRU_60182cee": {
+            "subset": "training",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0020_vithaal_camera_1_PASSTHRU_9f38fb1d": {
+            "subset": "training",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0022_vithaal_camera_1_PASSTHRU_b0aee6d7": {
+            "subset": "training",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0023_vithaal_camera_1_PASSTHRU_bbb5404d": {
+            "subset": "training",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0052_vithaal_camera_1_PASSTHRU_431770ba": {
+            "subset": "training",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0053_vithaal_camera_1_PASSTHRU_5cd953b6": {
+            "subset": "training",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0024_jason_camera_1_WAIT_64e6d9e1": {
+            "subset": "training",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0026_jason_camera_1_WAIT_2163e8b7": {
+            "subset": "training",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0027_jason_camera_1_WAIT_d147c196": {
+            "subset": "training",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0028_jason_camera_1_WAIT_9e10669d": {
+            "subset": "training",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75": {
+            "subset": "training",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0058_jason_camera_1_WAIT_4afe7949": {
+            "subset": "training",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0031_vithaal_camera_1_WAIT_ba01729a": {
+            "subset": "training",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0032_vithaal_camera_1_WAIT_a97a7e11": {
+            "subset": "training",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84": {
+            "subset": "training",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0061_vithaal_camera_1_WAIT_d940a393": {
+            "subset": "training",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0063_vithaal_camera_1_WAIT_0a7057f1": {
+            "subset": "training",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0065_vithaal_camera_1_WAIT_78f5f46a": {
+            "subset": "training",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b": {
+            "subset": "validation",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0038_jason_camera_1_INTERACTION_b7ea7525": {
+            "subset": "validation",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0008_vithaal_camera_1_INTERACTION_4fe0f427": {
+            "subset": "validation",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0041_vithaal_camera_1_INTERACTION_ef911e4a": {
+            "subset": "validation",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0015_jason_camera_1_PASSTHRU_2bdf9dfd": {
+            "subset": "validation",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0045_jason_camera_1_PASSTHRU_2e6b27fd": {
+            "subset": "validation",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0021_vithaal_camera_1_PASSTHRU_e3f7db54": {
+            "subset": "validation",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0055_jason_camera_1_WAIT_77507f32": {
+            "subset": "validation",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0059_jason_camera_1_WAIT_136af655": {
+            "subset": "validation",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0029_vithaal_camera_1_WAIT_e265e3de": {
+            "subset": "validation",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0062_vithaal_camera_1_WAIT_81c704c4": {
+            "subset": "validation",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0002_jason_camera_1_INTERACTION_8891ecb3": {
+            "subset": "testing",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0003_jason_camera_1_INTERACTION_7f98984d": {
+            "subset": "testing",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0040_vithaal_camera_1_INTERACTION_cabde23b": {
+            "subset": "testing",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0043_vithaal_camera_1_INTERACTION_1b8836ca": {
+            "subset": "testing",
+            "annotations": {
+                "label": "INTERACTION"
+            }
+        },
+        "session_20260929_take_0017_jason_camera_1_PASSTHRU_9293bf10": {
+            "subset": "testing",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0047_jason_camera_1_PASSTHRU_dff31f3e": {
+            "subset": "testing",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0049_vithaal_camera_1_PASSTHRU_b01c1b5a": {
+            "subset": "testing",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0050_vithaal_camera_1_PASSTHRU_55407a3d": {
+            "subset": "testing",
+            "annotations": {
+                "label": "PASSTHRU"
+            }
+        },
+        "session_20260929_take_0025_jason_camera_1_WAIT_d1af570f": {
+            "subset": "testing",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0056_jason_camera_1_WAIT_601b43fc": {
+            "subset": "testing",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0030_vithaal_camera_1_WAIT_fd686855": {
+            "subset": "testing",
+            "annotations": {
+                "label": "WAIT"
+            }
+        },
+        "session_20260929_take_0064_vithaal_camera_1_WAIT_a81b9927": {
+            "subset": "testing",
+            "annotations": {
+                "label": "WAIT"
+            }
+        }
+    }
+}

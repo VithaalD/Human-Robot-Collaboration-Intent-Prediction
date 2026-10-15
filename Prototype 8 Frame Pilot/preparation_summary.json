@@ -1,0 +1,33 @@
+{
+  "source_trials": 59,
+  "exported_source_trials": 59,
+  "exported_segments": 93,
+  "exported_frames": 2413,
+  "held_short_segments": 38,
+  "unassigned_frames": 994,
+  "segments_by_split_and_class": {
+    "training": {
+      "WAIT": 36,
+      "INTERACTION": 12,
+      "PASSTHRU": 9
+    },
+    "validation": {
+      "WAIT": 10,
+      "INTERACTION": 4,
+      "PASSTHRU": 3
+    },
+    "testing": {
+      "WAIT": 12,
+      "INTERACTION": 4,
+      "PASSTHRU": 3
+    }
+  },
+  "sample_fps": 8,
+  "sample_duration": 8,
+  "sessions": [
+    "session_20260929"
+  ],
+  "frame_correspondence_max_mae": 5.825904241478012,
+  "review_sha256": "43bb9dd6b6a022752aeaeb70eb91beebaec8502f65cb1e9a9662b478427b49ce",
+  "annotation_sha256": "b484607b909c15a4e92a8feac633eeefb76576434f883ef5a5a2b764b0ce1a6c"
+}

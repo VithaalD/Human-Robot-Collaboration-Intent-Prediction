@@ -1,13 +1,15 @@
 param(
-    [string]$BasePython = (Join-Path $env:USERPROFILE 'anaconda3\envs\DEEPLABCUT\python.exe'),
+    [string]$BasePython = $env:INTENT_BASE_PYTHON,
     [string]$EnvironmentPath = (Join-Path $env:USERPROFILE '.venvs\intent-gpu')
 )
 $ErrorActionPreference = 'Stop'
-if (-not (Test-Path -LiteralPath $BasePython -PathType Leaf)) {
-    throw 'Supply -BasePython with the path to a Python 3.10 or 3.11 installation.'
-}
 $intentPython = Join-Path $EnvironmentPath 'Scripts\python.exe'
 if (-not (Test-Path -LiteralPath $intentPython -PathType Leaf)) {
+    if (-not $BasePython -or -not (Test-Path -LiteralPath $BasePython -PathType Leaf)) {
+        throw 'Supply -BasePython with a Python 3.10 or 3.11 executable, or set INTENT_BASE_PYTHON.'
+    }
+    & $BasePython -c "import sys; assert sys.version_info[:2] in [(3,10),(3,11)], 'Python 3.10 or 3.11 is required'"
+    if ($LASTEXITCODE -ne 0) { throw 'Unsupported base Python version.' }
     & $BasePython -m venv $EnvironmentPath
     if ($LASTEXITCODE -ne 0) { throw 'Could not create the isolated environment.' }
 }

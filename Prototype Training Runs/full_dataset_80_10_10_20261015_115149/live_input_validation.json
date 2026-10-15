@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "validation_windows": 16,
+  "correct": 15,
+  "all_prepared_and_original_tensors_identical": true,
+  "all_monitor_predictions_match_training_validation": true,
+  "max_probability_error": 0.0,
+  "windows": [
+    {
+      "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+      "true": "INTERACTION",
+      "predicted": "INTERACTION",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+      "true": "INTERACTION",
+      "predicted": "INTERACTION",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+      "true": "INTERACTION",
+      "predicted": "INTERACTION",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+      "true": "INTERACTION",
+      "predicted": "INTERACTION",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+      "true": "INTERACTION",
+      "predicted": "INTERACTION",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+      "true": "PASSTHRU",
+      "predicted": "PASSTHRU",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+      "true": "PASSTHRU",
+      "predicted": "PASSTHRU",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+      "true": "PASSTHRU",
+      "predicted": "PASSTHRU",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+      "true": "PASSTHRU",
+      "predicted": "INTERACTION",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+      "true": "PASSTHRU",
+      "predicted": "PASSTHRU",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+      "true": "WAIT",
+      "predicted": "WAIT",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+      "true": "INTERACTION",
+      "predicted": "INTERACTION",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    },
+    {
+      "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+      "true": "PASSTHRU",
+      "predicted": "PASSTHRU",
+      "tensor_max_error": 0.0,
+      "probability_max_error": 0.0
+    }
+  ],
+  "checkpoint_sha256": "76e5ad56ae6ecfbc858ca04a16794e8e52284e6bda3e7a6c2c27872938339fa6",
+  "test_predictions_computed": false,
+  "continuous_replay": {
+    "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0003_jason_camera_1_INTERACTION_7f98984d.avi",
+    "seconds": 10,
+    "first_prediction_seconds": 1.4170062000048347,
+    "labels_seen": [
+      "INTERACTION",
+      "PASSTHRU"
+    ],
+    "note": "Engineering check, not a continuous labeled accuracy evaluation."
+  },
+  "live_lab_validation_completed": false
+}

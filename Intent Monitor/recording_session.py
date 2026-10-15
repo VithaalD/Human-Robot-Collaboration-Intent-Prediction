@@ -91,6 +91,10 @@ class CameraPreview:
                 self.recorder.feed(frame, self.last_frame_time)
         return ok, frame
 
+    @property
+    def sample_timestamp(self):
+        return getattr(self.camera, "sample_timestamp", None)
+
     def release(self):
         self.camera.release()
 

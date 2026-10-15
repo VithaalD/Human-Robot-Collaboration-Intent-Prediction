@@ -3,6 +3,9 @@ import argparse
 
 def parse_opts():
 	parser = argparse.ArgumentParser()
+	parser.add_argument('--allow_within_session_pilot', action='store_true', help='Explicit within-session pilot; source trials must remain in one split')
+	parser.add_argument('--sample_fps', type=float, default=8.0, help='Prepared frame sampling rate; must match inference')
+	parser.add_argument('--legacy_timing', dest='sample_fps', action='store_const', const=None, help='Explicitly allow legacy datasets with unknown frame timing')
 	parser.add_argument('--dataset', type=str,
 						default='ucf101', help='dataset type')
 	parser.add_argument(

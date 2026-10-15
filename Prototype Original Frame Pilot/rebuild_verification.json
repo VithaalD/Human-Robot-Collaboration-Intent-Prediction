@@ -1,0 +1,431 @@
+{
+  "status": "passed",
+  "dataset": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype Original Frame Pilot",
+  "source_run": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype Training Runs\\prototype_80_10_10_20261010_141855",
+  "source_recordings": 59,
+  "segments": 93,
+  "exported_frames": 2413,
+  "pixel_tensor_parity_checked_frames": 2413,
+  "max_tensor_absolute_difference": 0.0,
+  "annotations_and_split_unchanged": true,
+  "preprocessing_version": "original_rgb_bilinear_v1",
+  "prepared_files_sha256": "fdc64acb3f534f7f3d0b0af27c62c33938c33290d0d2f16a05b912192f7008db",
+  "source_video_hashes": [
+    {
+      "source_recording_id": "8891ecb3d9384b2c9762f20deda1c61d",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0002_jason_camera_1_INTERACTION_8891ecb3.avi",
+      "sha256": "92526220654d96617560fe41a5871996c0278366163828b1f4bab782efca3404",
+      "frames_decoded": 60,
+      "frames_exported": 27
+    },
+    {
+      "source_recording_id": "7f98984d201d405b87f8e379d2c7eb4c",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0003_jason_camera_1_INTERACTION_7f98984d.avi",
+      "sha256": "4fb3cd2595b818d27fe7c66f57dfb1edacb877ee830cd161fe3c14e5f5d72a70",
+      "frames_decoded": 67,
+      "frames_exported": 30
+    },
+    {
+      "source_recording_id": "3d653df06b0f4dbd9d7b3a08442e362e",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0004_jason_camera_1_INTERACTION_3d653df0.avi",
+      "sha256": "bc06e78377d56b40fc793160b138cef0b5b51bbd0ae03cb4c478b66a2e7a1be0",
+      "frames_decoded": 62,
+      "frames_exported": 27
+    },
+    {
+      "source_recording_id": "41a2d43d45db4c5cbdefd32ca6b54825",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0005_jason_camera_1_INTERACTION_41a2d43d.avi",
+      "sha256": "b972703847d6f37301a5cd11aee7d91632013bc33eb60d742d94ee86421b9891",
+      "frames_decoded": 66,
+      "frames_exported": 23
+    },
+    {
+      "source_recording_id": "3d9fba6b29f2416e955f97e91d07c01b",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b.avi",
+      "sha256": "2fa31f93640660bc49e16030d7824b546a02fbfe169ded80e75f1313b053e622",
+      "frames_decoded": 63,
+      "frames_exported": 37
+    },
+    {
+      "source_recording_id": "4fe0f42762054692b88d9fb2c8fe93a4",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0008_vithaal_camera_1_INTERACTION_4fe0f427.avi",
+      "sha256": "9ba2c7a19d4d29bb2645d846c60ddb939af0c12fa9bc194b9388354a76b8008e",
+      "frames_decoded": 66,
+      "frames_exported": 28
+    },
+    {
+      "source_recording_id": "2bc89a5f79c64c2686d55a04e49ad5b3",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0009_vithaal_camera_1_INTERACTION_2bc89a5f.avi",
+      "sha256": "1430748391ca9ca920f286534789b986509b3cd9ebb625030c5212dfc2b894f1",
+      "frames_decoded": 65,
+      "frames_exported": 22
+    },
+    {
+      "source_recording_id": "291a80b43714445db64cca80fc1e6fd3",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4.avi",
+      "sha256": "173e8e61cb974c9ed1ec1e77d0c815a69915f5119e5898b9fae74631a0862e88",
+      "frames_decoded": 68,
+      "frames_exported": 28
+    },
+    {
+      "source_recording_id": "1add653aa7864b1bb815d7465b5b882f",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0012_vithaal_camera_1_INTERACTION_1add653a.avi",
+      "sha256": "dc7239d43d07738e07d213772c745ace42a9669e3ba1061bb9edc63c76d9f6ba",
+      "frames_decoded": 54,
+      "frames_exported": 21
+    },
+    {
+      "source_recording_id": "305ee4032c4540adaaf4a595e9c34b51",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0013_vithaal_camera_1_INTERACTION_305ee403.avi",
+      "sha256": "f95a729770af58f464742f735f9fd4c1ff036f91ab9f39bcc9f85aace8799a59",
+      "frames_decoded": 68,
+      "frames_exported": 29
+    },
+    {
+      "source_recording_id": "8a8d268cd475406f93998aeb598fb020",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0014_jason_camera_1_PASSTHRU_8a8d268c.avi",
+      "sha256": "e1503c2cc40ab3bda481af560bfc39dd71ecb9e9daddb40f632b99e3d1383579",
+      "frames_decoded": 56,
+      "frames_exported": 39
+    },
+    {
+      "source_recording_id": "2bdf9dfdb8cc4bf99afd7401ed658b56",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0015_jason_camera_1_PASSTHRU_2bdf9dfd.avi",
+      "sha256": "a433e7c30af8d65b901d3015ab60e956f6e7986efadc3ad17712ce6989fe3140",
+      "frames_decoded": 63,
+      "frames_exported": 41
+    },
+    {
+      "source_recording_id": "828dc208fdd44ea8a10f456109d65c0b",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0016_jason_camera_1_PASSTHRU_828dc208.avi",
+      "sha256": "adc4502ec12660fe336446a2c62c70adc5149ea4c0b862b8a50da2b351f2e9f9",
+      "frames_decoded": 63,
+      "frames_exported": 44
+    },
+    {
+      "source_recording_id": "9293bf10be8f49a7bf2bd04eae72cd17",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0017_jason_camera_1_PASSTHRU_9293bf10.avi",
+      "sha256": "a13f71c8dad6a718facd4f407f1821ab5cae977d566c66b574287f3ce9fe8054",
+      "frames_decoded": 63,
+      "frames_exported": 39
+    },
+    {
+      "source_recording_id": "2d3e630a605643c3878fb3d93335dabf",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a.avi",
+      "sha256": "7dd311a7b7a72be750d8ecda104b4e0e8ce802f74b2e9b4417492601422d94b5",
+      "frames_decoded": 57,
+      "frames_exported": 10
+    },
+    {
+      "source_recording_id": "60182cee52b84e0c868cd0edc9678528",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0019_vithaal_camera_1_PASSTHRU_60182cee.avi",
+      "sha256": "c40d5d13d752b2081ed95deaf3eb8e318d78f27bf0e3a51674a48219b40d4f96",
+      "frames_decoded": 50,
+      "frames_exported": 24
+    },
+    {
+      "source_recording_id": "9f38fb1dcd0f42a4aed1d33e0bcab3d0",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0020_vithaal_camera_1_PASSTHRU_9f38fb1d.avi",
+      "sha256": "2d6e653674c1ec0b99b32f2e416ca912de893213595a2979e81567fc01768853",
+      "frames_decoded": 52,
+      "frames_exported": 27
+    },
+    {
+      "source_recording_id": "e3f7db5496b64c60b1ccbdc589c6fead",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0021_vithaal_camera_1_PASSTHRU_e3f7db54.avi",
+      "sha256": "4850f4849630a4f07249f059b37f87832d711fd4fb6af1e89a967dfcf052326a",
+      "frames_decoded": 45,
+      "frames_exported": 20
+    },
+    {
+      "source_recording_id": "b0aee6d7289542f58769e297f06be4da",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0022_vithaal_camera_1_PASSTHRU_b0aee6d7.avi",
+      "sha256": "fed565bc44911393a19a5bdad29dfcc0aca57eb6d4a2283ba5981654dc8f43a0",
+      "frames_decoded": 50,
+      "frames_exported": 25
+    },
+    {
+      "source_recording_id": "bbb5404ddf2a4edc9ccd7a5728c745e7",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0023_vithaal_camera_1_PASSTHRU_bbb5404d.avi",
+      "sha256": "1b29fa9abc56487e4824e384578d5e764f4c02210f83cee786cfac7607b5f6e2",
+      "frames_decoded": 53,
+      "frames_exported": 20
+    },
+    {
+      "source_recording_id": "64e6d9e1cc9b4873a0f5dd981df57f01",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0024_jason_camera_1_WAIT_64e6d9e1.avi",
+      "sha256": "cb80c1cb77b1ce05310aa297aad54b3e87dc62c6883812ead5738fb6ad0489b9",
+      "frames_decoded": 61,
+      "frames_exported": 61
+    },
+    {
+      "source_recording_id": "d1af570f5f2a45caa0092dec5383b224",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0025_jason_camera_1_WAIT_d1af570f.avi",
+      "sha256": "0a88370c3bff214a604331fce64348a0a7a542eccf22edc61c7923689b9ce401",
+      "frames_decoded": 63,
+      "frames_exported": 63
+    },
+    {
+      "source_recording_id": "2163e8b7613d40598cf60951611a833f",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0026_jason_camera_1_WAIT_2163e8b7.avi",
+      "sha256": "461f3a511fdb01bff4e781ef82495b6fe8a5901291e005bd80811d0b776ba1c8",
+      "frames_decoded": 62,
+      "frames_exported": 62
+    },
+    {
+      "source_recording_id": "d147c196568d48ea93644ce71617d5c9",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0027_jason_camera_1_WAIT_d147c196.avi",
+      "sha256": "0bc3af8e5fe21570961b4d826f33d50ef8d02bdefe0833c7b4f399575d159c77",
+      "frames_decoded": 62,
+      "frames_exported": 62
+    },
+    {
+      "source_recording_id": "9e10669d999d4ffb8375468389e07dfc",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0028_jason_camera_1_WAIT_9e10669d.avi",
+      "sha256": "e5a185836668b0c87f43e3cf0ec11609a7830a2479bbd1f1dba9a514cc4c2365",
+      "frames_decoded": 64,
+      "frames_exported": 64
+    },
+    {
+      "source_recording_id": "e265e3de1d594677a5e2bacc343d7bdd",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0029_vithaal_camera_1_WAIT_e265e3de.avi",
+      "sha256": "045ad9bf1cbb938cbadeef9317ed8748dd16efa5a8a75ef6662868726beac522",
+      "frames_decoded": 55,
+      "frames_exported": 55
+    },
+    {
+      "source_recording_id": "fd686855e8904c7b83fb0e1aa9e6e80b",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0030_vithaal_camera_1_WAIT_fd686855.avi",
+      "sha256": "21f3aabd580ecd99cb66c61138ab03773d747c357f682fbcde453e324ca5ca73",
+      "frames_decoded": 53,
+      "frames_exported": 53
+    },
+    {
+      "source_recording_id": "ba01729aa9244c3ead5054c0c32bbbf9",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0031_vithaal_camera_1_WAIT_ba01729a.avi",
+      "sha256": "09acc259a0fdf7308633da69ef72dd1da9550e970f0d18def47be86814268b29",
+      "frames_decoded": 51,
+      "frames_exported": 51
+    },
+    {
+      "source_recording_id": "a97a7e116607463c9c96ae7106fe8542",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0032_vithaal_camera_1_WAIT_a97a7e11.avi",
+      "sha256": "210445fb789e1f7e276e9f22ae1f35ba291cb1c90806750afc6d153c2998519e",
+      "frames_decoded": 51,
+      "frames_exported": 51
+    },
+    {
+      "source_recording_id": "96b4cb84f46045a997d5eec101df649f",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84.avi",
+      "sha256": "8786c58047d115d993e0c18a6c3252e8dcbb297ff50137ec4a6492ce7283eba8",
+      "frames_decoded": 51,
+      "frames_exported": 51
+    },
+    {
+      "source_recording_id": "6521fbb79cfa4f029c679bcb2dea0604",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0034_jason_camera_1_INTERACTION_6521fbb7.avi",
+      "sha256": "9e6e23293d252335276e9b0d5f1e3c15363931b31d453707f066a2092fa039f5",
+      "frames_decoded": 68,
+      "frames_exported": 42
+    },
+    {
+      "source_recording_id": "a8b3df78d93b4742abd54e2c6064bff7",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0035_jason_camera_1_INTERACTION_a8b3df78.avi",
+      "sha256": "ab8c7d36205c48890f5912059d1195da3df29013e730c69a4b70f46031b6d31c",
+      "frames_decoded": 68,
+      "frames_exported": 68
+    },
+    {
+      "source_recording_id": "952d3e75a3eb43138d50df312e349156",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0036_jason_camera_1_INTERACTION_952d3e75.avi",
+      "sha256": "eab722e696a37516a79496fdfd718353045f58ecc1f66f3e7542f8fc82e1d1c2",
+      "frames_decoded": 63,
+      "frames_exported": 46
+    },
+    {
+      "source_recording_id": "9d503c963fcb4304b17f0a5caedfd0a1",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0037_jason_camera_1_INTERACTION_9d503c96.avi",
+      "sha256": "baa6b5c1c8253c75bb25e89c6d864c2f3af5717287c4228bffce5423a961773a",
+      "frames_decoded": 67,
+      "frames_exported": 48
+    },
+    {
+      "source_recording_id": "b7ea75252e654efab115b159cbbf4e48",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0038_jason_camera_1_INTERACTION_b7ea7525.avi",
+      "sha256": "fb12dd7c68088b73bd31cb6d585ad2775c8113577890404267df2294429a3057",
+      "frames_decoded": 61,
+      "frames_exported": 33
+    },
+    {
+      "source_recording_id": "5726c35fbf6e4a3cb4eddea191997efd",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0039_vithaal_camera_1_INTERACTION_5726c35f.avi",
+      "sha256": "c1d01087d5e83d2501f226e14bf42b7eb61dcb4a5855cbffbef27ee3cc42125e",
+      "frames_decoded": 66,
+      "frames_exported": 20
+    },
+    {
+      "source_recording_id": "cabde23b7d954d9cb49ed3938672f838",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0040_vithaal_camera_1_INTERACTION_cabde23b.avi",
+      "sha256": "4e44f5ca9a90519c9be472aa303691a08b31a668f17f4618883ad551ec806635",
+      "frames_decoded": 67,
+      "frames_exported": 36
+    },
+    {
+      "source_recording_id": "ef911e4abc68494c9417569aa6f84814",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0041_vithaal_camera_1_INTERACTION_ef911e4a.avi",
+      "sha256": "32865bf5caf844e83d75c97e42336921879349360c73e70c26d2650366248324",
+      "frames_decoded": 70,
+      "frames_exported": 23
+    },
+    {
+      "source_recording_id": "7833aae7df584d998cce05858dc32272",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0042_vithaal_camera_1_INTERACTION_7833aae7.avi",
+      "sha256": "fc43450779127c6c67a1cd3ac7499768802a7117d933f118ec454ebad89ab6f2",
+      "frames_decoded": 70,
+      "frames_exported": 44
+    },
+    {
+      "source_recording_id": "1b8836ca2565469ca74f2b5aa49b68bd",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\INTERACTION\\videos\\session_20260929_take_0043_vithaal_camera_1_INTERACTION_1b8836ca.avi",
+      "sha256": "25efc970e0029f5d9a0caf10807eacf8b784ce6c232600179073d01ba196a00d",
+      "frames_decoded": 65,
+      "frames_exported": 41
+    },
+    {
+      "source_recording_id": "e82971b09816408c8d2ba3c1ee7836b2",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0044_jason_camera_1_WAIT_e82971b0.avi",
+      "sha256": "adf677f076da0823fb749919b6ba783519acc928d81021a71d66d0c8184aedff",
+      "frames_decoded": 65,
+      "frames_exported": 10
+    },
+    {
+      "source_recording_id": "2e6b27fd5fef4434b5804eedae9195b4",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0045_jason_camera_1_PASSTHRU_2e6b27fd.avi",
+      "sha256": "81638231c979310ed42077fc927bec2a7f1f029591068a6ca2148284bf3fa957",
+      "frames_decoded": 65,
+      "frames_exported": 28
+    },
+    {
+      "source_recording_id": "472213c816f14912abe58938cde02b37",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0046_jason_camera_1_PASSTHRU_472213c8.avi",
+      "sha256": "bc4696858fa0ca3f4a8eb6208de0a4cf7680a7a2b5444fa557e802d88c382b93",
+      "frames_decoded": 64,
+      "frames_exported": 43
+    },
+    {
+      "source_recording_id": "dff31f3ecb484a7b944d87d05ab6af49",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e.avi",
+      "sha256": "67fb7d17bec89e9d8da696e82f762bd0b624743084dd80a5d5add2901d65cf1d",
+      "frames_decoded": 64,
+      "frames_exported": 40
+    },
+    {
+      "source_recording_id": "144f50287e6545f791856cfbfe4e6497",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0048_jason_camera_1_PASSTHRU_144f5028.avi",
+      "sha256": "f420fcb4e8e79e1cd1960bf2cc5b91aba7d7fa2ec3f2d104202d10b996426565",
+      "frames_decoded": 62,
+      "frames_exported": 31
+    },
+    {
+      "source_recording_id": "b01c1b5ac4a348d796e3c5bbf0d8ff28",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0049_vithaal_camera_1_PASSTHRU_b01c1b5a.avi",
+      "sha256": "7c1fa939d531152ec7471b52f06c8fc90f68b7eea68049648a160793d7a546e5",
+      "frames_decoded": 53,
+      "frames_exported": 26
+    },
+    {
+      "source_recording_id": "55407a3d04034c0b82afaeeff082ff5b",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0050_vithaal_camera_1_PASSTHRU_55407a3d.avi",
+      "sha256": "a03cd431ed292de5872e26907b21eabae094130545a84e0e4aa9fd9e2af0210d",
+      "frames_decoded": 53,
+      "frames_exported": 20
+    },
+    {
+      "source_recording_id": "431770ba6c234b69b0118f1fd1d60649",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\PASSTHRU\\videos\\session_20260929_take_0052_vithaal_camera_1_PASSTHRU_431770ba.avi",
+      "sha256": "2ec780f944c31cc0e13ee42aeabd1e23cfd72e7937751a819f0bf9d691812197",
+      "frames_decoded": 59,
+      "frames_exported": 35
+    },
+    {
+      "source_recording_id": "5cd953b6d8cd4c8db755862e97db3b8e",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0053_vithaal_camera_1_WAIT_5cd953b6.avi",
+      "sha256": "aa57e075ba38d64cc246f48265875c148fe6eee44bc114e20a83c32056dfc3a8",
+      "frames_decoded": 58,
+      "frames_exported": 10
+    },
+    {
+      "source_recording_id": "77507f3287f3413488b9d7ee2b471921",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0055_jason_camera_1_WAIT_77507f32.avi",
+      "sha256": "6f99767da5fa702a53618fff08e94224309b9b5809804398107c829f6a795df6",
+      "frames_decoded": 61,
+      "frames_exported": 61
+    },
+    {
+      "source_recording_id": "601b43fcbaf14f42976545e0943648e0",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0056_jason_camera_1_WAIT_601b43fc.avi",
+      "sha256": "3b8b48c91ec90fa69a0b4df0b4f5384561af50fc4d711aac107fdd0d6fca3249",
+      "frames_decoded": 61,
+      "frames_exported": 61
+    },
+    {
+      "source_recording_id": "05b6af7581a94833b893bb5b036f1b9a",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0057_jason_camera_1_WAIT_05b6af75.avi",
+      "sha256": "5e2c311f33547788ebf9b0c67fba2340ce90d7afdd61630ca17098bb5fedc370",
+      "frames_decoded": 68,
+      "frames_exported": 68
+    },
+    {
+      "source_recording_id": "4afe7949e8a844e9bf077831948e1e23",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0058_jason_camera_1_WAIT_4afe7949.avi",
+      "sha256": "f8aa8100e1b5a03c6a1ee0fe4e0e5948a21748fc8d917ee55bd20d0b628f0b76",
+      "frames_decoded": 64,
+      "frames_exported": 64
+    },
+    {
+      "source_recording_id": "136af65553de496490e7ac88ec8659af",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0059_jason_camera_1_WAIT_136af655.avi",
+      "sha256": "aa4337aee065d633fadb752dcc747a3905fd59b432592b593f105858e3fa993f",
+      "frames_decoded": 66,
+      "frames_exported": 66
+    },
+    {
+      "source_recording_id": "d940a393de5d4765aaf5a56f6f5fd64f",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0061_vithaal_camera_1_WAIT_d940a393.avi",
+      "sha256": "2cb89004f332702c4d54038d190ea03db15ec6f794a8a26c5c516d918989735f",
+      "frames_decoded": 63,
+      "frames_exported": 63
+    },
+    {
+      "source_recording_id": "81c704c49b5c43f098bb75d42d4e2951",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0062_vithaal_camera_1_WAIT_81c704c4.avi",
+      "sha256": "e94d3188740f03e7afd9b9068c3cac0341566312eb988245a99065e58a43f0ae",
+      "frames_decoded": 70,
+      "frames_exported": 70
+    },
+    {
+      "source_recording_id": "0a7057f19bb24a5d9732cacfc8603515",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0063_vithaal_camera_1_WAIT_0a7057f1.avi",
+      "sha256": "c8d114a7bbe3d44acb2c5df4349c1b0bb926cbcb097119f8e0a83edf0b91819a",
+      "frames_decoded": 64,
+      "frames_exported": 64
+    },
+    {
+      "source_recording_id": "a81b9927d52a4d4f8217ffdc2c288030",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0064_vithaal_camera_1_WAIT_a81b9927.avi",
+      "sha256": "8b99737e342e10fd9c635565960a4ddd056046e51e7241e496e31f84be0e59ed",
+      "frames_decoded": 62,
+      "frames_exported": 62
+    },
+    {
+      "source_recording_id": "78f5f46ad3804d42b0453ebd0bad5437",
+      "video": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Camera Recordings\\WAIT\\videos\\session_20260929_take_0065_vithaal_camera_1_WAIT_78f5f46a.avi",
+      "sha256": "a5d4d0ac923fa01f02dbc5011a01afb4c7100e3e6f93046f93114b0c96912d58",
+      "frames_decoded": 56,
+      "frames_exported": 56
+    }
+  ],
+  "elapsed_seconds": 81.75,
+  "test_frames_rebuilt_for_preprocessing_check_only": true,
+  "test_predictions_computed": false
+}

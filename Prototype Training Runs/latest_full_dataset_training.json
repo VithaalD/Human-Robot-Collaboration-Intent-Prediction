@@ -1,0 +1,489 @@
+{
+  "status": "completed",
+  "run_directory": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype Training Runs\\full_dataset_80_10_10_20261015_115149",
+  "checkpoint": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype Training Runs\\full_dataset_80_10_10_20261015_115149\\best_checkpoint.pth",
+  "epochs_completed": 37,
+  "best_epoch": 12,
+  "baseline_validation": {
+    "loss": 1.10324227809906,
+    "accuracy": 0.25,
+    "macro_f1": 0.13333333333333333,
+    "per_class": {
+      "INTERACTION": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 6
+      },
+      "PASSTHRU": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 6
+      },
+      "WAIT": {
+        "precision": 0.25,
+        "recall": 1.0,
+        "f1": 0.4,
+        "support": 4
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "predictions": [
+      {
+        "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+        "true": "INTERACTION",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+        "true": "INTERACTION",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+        "true": "INTERACTION",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+        "true": "INTERACTION",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+        "true": "INTERACTION",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+        "true": "WAIT",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+        "true": "WAIT",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+        "true": "PASSTHRU",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+        "true": "PASSTHRU",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+        "true": "PASSTHRU",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+        "true": "PASSTHRU",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+        "true": "PASSTHRU",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+        "true": "WAIT",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+        "true": "WAIT",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+        "true": "INTERACTION",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+        "true": "PASSTHRU",
+        "predicted": "WAIT"
+      }
+    ]
+  },
+  "best_validation": {
+    "loss": 0.1576627679169178,
+    "accuracy": 0.9375,
+    "macro_f1": 0.9440559440559441,
+    "per_class": {
+      "INTERACTION": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.923076923076923,
+        "support": 6
+      },
+      "PASSTHRU": {
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "support": 6
+      },
+      "WAIT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      }
+    },
+    "confusion_matrix": [
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        1,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "predictions": [
+      {
+        "segment": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION"
+      },
+      {
+        "segment": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION"
+      },
+      {
+        "segment": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION"
+      },
+      {
+        "segment": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION"
+      },
+      {
+        "segment": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION"
+      },
+      {
+        "segment": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+        "true": "WAIT",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+        "true": "WAIT",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU"
+      },
+      {
+        "segment": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU"
+      },
+      {
+        "segment": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU"
+      },
+      {
+        "segment": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+        "true": "PASSTHRU",
+        "predicted": "INTERACTION"
+      },
+      {
+        "segment": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU"
+      },
+      {
+        "segment": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+        "true": "WAIT",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+        "true": "WAIT",
+        "predicted": "WAIT"
+      },
+      {
+        "segment": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION"
+      },
+      {
+        "segment": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU"
+      }
+    ]
+  },
+  "split": {
+    "seed": 20261015,
+    "ratio_requested": [
+      80,
+      10,
+      10
+    ],
+    "source_recordings": {
+      "training": 127,
+      "testing": 16,
+      "validation": 16
+    },
+    "segments": {
+      "training": {
+        "INTERACTION": 47,
+        "PASSTHRU": 48,
+        "WAIT": 32
+      },
+      "validation": {
+        "INTERACTION": 6,
+        "WAIT": 4,
+        "PASSTHRU": 6
+      },
+      "testing": {
+        "INTERACTION": 6,
+        "PASSTHRU": 6,
+        "WAIT": 4
+      }
+    },
+    "source_assignments": {
+      "7f98984d201d405b87f8e379d2c7eb4c": "training",
+      "3d653df06b0f4dbd9d7b3a08442e362e": "training",
+      "3d9fba6b29f2416e955f97e91d07c01b": "validation",
+      "6521fbb79cfa4f029c679bcb2dea0604": "training",
+      "a8b3df78d93b4742abd54e2c6064bff7": "training",
+      "b7ea75252e654efab115b159cbbf4e48": "testing",
+      "ff4dcb35cefd4269a3d5ac6e3a3bd851": "training",
+      "f053df4bf38b4ea7bb58324c17c1bace": "training",
+      "a5095d86a5284049849ae40564d1e665": "training",
+      "51f3ad406f4045a5aab7dd7a112c0896": "training",
+      "185bce49df1c4457b3acb3364677fa4c": "training",
+      "39e68c3018e64b3db7f23a977d5ba1c5": "training",
+      "832137aa2d1a4ebda1476ce2f4022d6a": "training",
+      "d5ca5522de3c442192059931795ee21f": "training",
+      "3d72950dc66f4feca322554dcea501e1": "testing",
+      "33d997d6ef8447ddb0744a9352a82459": "training",
+      "c227ad84ee9940d1924d4e56e0a08ae2": "training",
+      "617f774d947f4206a123aa254975b28e": "training",
+      "e7cce8ea360f48e4bb90822b63c13d4d": "training",
+      "9fd4ce3d5f3440e383125b8abc7a045b": "training",
+      "b8ae671b129245feb21c50bacaad1f8f": "validation",
+      "7b5d918c94824a1c9edea54a9dc8e1e8": "training",
+      "2ecabb02bcf44ed68b62076b140c6a58": "training",
+      "c3c6a0ec90bd4c64bad6ff22a32bad5b": "training",
+      "2bc89a5f79c64c2686d55a04e49ad5b3": "training",
+      "291a80b43714445db64cca80fc1e6fd3": "validation",
+      "1add653aa7864b1bb815d7465b5b882f": "training",
+      "305ee4032c4540adaaf4a595e9c34b51": "testing",
+      "cabde23b7d954d9cb49ed3938672f838": "testing",
+      "ef911e4abc68494c9417569aa6f84814": "training",
+      "1b8836ca2565469ca74f2b5aa49b68bd": "training",
+      "fc988dfa749648af80e4f2b56e26a994": "testing",
+      "600feaf5390b4784a9f558beb86740a1": "training",
+      "94996463e27043f6b07faf70290281b2": "training",
+      "d449650d58674dc0bbefe2c82dd36096": "training",
+      "ddffafd18e5d444db1b11e9ba5060ca8": "training",
+      "4aac13e23f2444b68ae9328a0c9d0987": "validation",
+      "553adff1b8844ad6838489e8b5ab7e54": "training",
+      "ea9d2ce502db46218b2361d2ceaed550": "training",
+      "513975bffb9049df8fca58409fc490cf": "training",
+      "e97b8543c29f464e9785c01686bb4a4e": "validation",
+      "c36d814e40c849a0aedf90f574565879": "training",
+      "37c553c25f254058828e5c73c6aee625": "training",
+      "f85735ce379540b8b0e5d9b9085f8a12": "training",
+      "97b5fbb6e6994460b7f990854a05fbdc": "training",
+      "fbb9c6acec994f47aa2b44b57a8158f2": "training",
+      "704628743321409c95768494f12560c8": "training",
+      "8a8d268cd475406f93998aeb598fb020": "training",
+      "2bdf9dfdb8cc4bf99afd7401ed658b56": "training",
+      "828dc208fdd44ea8a10f456109d65c0b": "training",
+      "9293bf10be8f49a7bf2bd04eae72cd17": "testing",
+      "2d3e630a605643c3878fb3d93335dabf": "validation",
+      "e82971b09816408c8d2ba3c1ee7836b2": "testing",
+      "2e6b27fd5fef4434b5804eedae9195b4": "training",
+      "472213c816f14912abe58938cde02b37": "training",
+      "dff31f3ecb484a7b944d87d05ab6af49": "validation",
+      "e1a6ae0ea2324429a95dd50184f20676": "training",
+      "251ad09aec4b4ff1b4c4c881cfe88d52": "training",
+      "87bbfa7d09de4a5f97d2167a894906f2": "training",
+      "f8aa43cf038743debdde4a8db98b04fa": "training",
+      "c8f8732eb4ff4ce59c1bf2803c8be1b2": "training",
+      "72bbffe0a8db470eb839839bbc16057f": "testing",
+      "e2a0081ef5a04f33843a3c872d2a7d46": "testing",
+      "9eeeb2e5ab5e43ce9fd4f14ef0943c7f": "training",
+      "df0c6c45be8a47ac9482948421006aae": "validation",
+      "396609a462e44135bde3c51d5ae321e3": "validation",
+      "60182cee52b84e0c868cd0edc9678528": "training",
+      "9f38fb1dcd0f42a4aed1d33e0bcab3d0": "training",
+      "e3f7db5496b64c60b1ccbdc589c6fead": "training",
+      "b0aee6d7289542f58769e297f06be4da": "training",
+      "b01c1b5ac4a348d796e3c5bbf0d8ff28": "training",
+      "55407a3d04034c0b82afaeeff082ff5b": "training",
+      "431770ba6c234b69b0118f1fd1d60649": "training",
+      "5cd953b6d8cd4c8db755862e97db3b8e": "training",
+      "59398fe08ede4a05be3b6bbfde36b54a": "training",
+      "291e160fbac14f6c8610bc01995e7c00": "testing",
+      "b08e425cfcd341a28cfbc5c392268b1f": "validation",
+      "e90bce6d3f8a495197ea820bcbfede36": "training",
+      "55c4201f81a6434a9e6cb0f717e927a5": "training",
+      "9c751dcb03014629b240b2060f5cd45e": "training",
+      "4593efa8bc8e4bdba8200b171ab89b02": "training",
+      "4895a9fe07454b63853f72607300ee00": "training",
+      "27e2773b6e14418d98318b25ae320679": "training",
+      "184dc6ba96c046a19043b9d043bd2fbf": "training",
+      "500b393f308444eb801a229413f23e78": "training",
+      "43865cd1778b4713a92bb3a7fe46fb9d": "training",
+      "fc4c4338d8f34546a1baac0d0f25fcda": "training",
+      "d57f68b414bc4d2da24af1ce60038522": "training",
+      "c43355ab4dee4f008d49ba12332c591e": "validation",
+      "bb2cea6a825f422f8185a3ca845e2bc9": "testing",
+      "beb392e0b9f54f8bb3beb702a41ac133": "training",
+      "cc90f5da6c6f40e4a9aab85cbc8e2c75": "training",
+      "07ecad49f4ea4432ae29621286ead410": "training",
+      "6d4d7bb0ffbf454bafa2ea75d7fccd8d": "training",
+      "0f9173bad4c5452590144a6f18480a90": "training",
+      "ca3593caeee7488fa7dfe8fe47755f6a": "validation",
+      "8781e2d9661a4292b57bf1eab47e9453": "training",
+      "a3211f9daef049b4afa8d35b71f90542": "training",
+      "721f854c55004cb59dfa236fba161343": "training",
+      "64e6d9e1cc9b4873a0f5dd981df57f01": "training",
+      "d1af570f5f2a45caa0092dec5383b224": "training",
+      "2163e8b7613d40598cf60951611a833f": "testing",
+      "d147c196568d48ea93644ce71617d5c9": "training",
+      "9e10669d999d4ffb8375468389e07dfc": "training",
+      "77507f3287f3413488b9d7ee2b471921": "training",
+      "601b43fcbaf14f42976545e0943648e0": "training",
+      "05b6af7581a94833b893bb5b036f1b9a": "validation",
+      "7e24a3bf238f4c9c9d08958a418b01c0": "training",
+      "5be876709f92486584fd39722d45b987": "training",
+      "7af8529d426e414b95b0a80616b99782": "training",
+      "a97c6b9e464f47778a0d596ae54dac80": "training",
+      "a14408d52612463fb34659fcf2847455": "training",
+      "a9446d1901ba46ad894ddc931a55b69c": "training",
+      "c31cc11980ba4a27bb3edf6cd4646f75": "training",
+      "fd686855e8904c7b83fb0e1aa9e6e80b": "training",
+      "ba01729aa9244c3ead5054c0c32bbbf9": "training",
+      "96b4cb84f46045a997d5eec101df649f": "validation",
+      "d940a393de5d4765aaf5a56f6f5fd64f": "training",
+      "81c704c49b5c43f098bb75d42d4e2951": "training",
+      "a81b9927d52a4d4f8217ffdc2c288030": "testing",
+      "99eb452ae8c74b069cf4cc6d84f8ba1d": "training",
+      "9b5284bb5e86492cbf193907ecdefbb1": "training",
+      "3429587dab2d4e4c9aceacfe60e35b1e": "training",
+      "c1f3d758a9b74110a2fc107c084abdad": "training",
+      "b254e1a4bc4b48029efe9cb57660d45b": "testing",
+      "952d3e75a3eb43138d50df312e349156": "training",
+      "9d503c963fcb4304b17f0a5caedfd0a1": "training",
+      "602e2185d80e4ecd9480f15715f931e4": "validation",
+      "4fe0f42762054692b88d9fb2c8fe93a4": "training",
+      "5726c35fbf6e4a3cb4eddea191997efd": "training",
+      "3fcdad8091444ccda6cf7e4e807aa99b": "training",
+      "b883c6683bb4486092f6903cd0a95693": "training",
+      "fc41ff01fb2244b3bf49065f4b0ee610": "validation",
+      "0cfbc0a972c74a77b6d68f3307c31ff1": "training",
+      "f6618c29a28c41f89605be5ac2054c21": "training",
+      "ce8bc08ac03f46a599e2f9fcc78b2953": "training",
+      "5c3f464ff05643eebb1dde38d2736b10": "training",
+      "4afe7949e8a844e9bf077831948e1e23": "training",
+      "136af65553de496490e7ac88ec8659af": "training",
+      "0a7057f19bb24a5d9732cacfc8603515": "training",
+      "3586972543ba4bc592ae178fc5436016": "training",
+      "8891ecb3d9384b2c9762f20deda1c61d": "training",
+      "41a2d43d45db4c5cbdefd32ca6b54825": "training",
+      "bf1dc79cb118459f918fa57579c5aba6": "testing",
+      "7833aae7df584d998cce05858dc32272": "training",
+      "2c6b7393740c44ffb893ca173fc4e7e6": "training",
+      "a7cca5d34f9141b2b4bb9b58a314b701": "training",
+      "144f50287e6545f791856cfbfe4e6497": "training",
+      "4ed2331d9edd4e5091f3eb0104714629": "training",
+      "ba76636fe8d94181a78d25aa89fa2f2d": "training",
+      "bbb5404ddf2a4edc9ccd7a5728c745e7": "testing",
+      "dec5187182704846a9829477c2763e86": "training",
+      "784429666213471085a4816f7ce83616": "training",
+      "a9bfcb68929c446f84862593c755cc59": "training",
+      "3e8c47efcff2484c861b3444b02bc977": "training",
+      "44f02188faa946fa8a6707d966692883": "training",
+      "e265e3de1d594677a5e2bacc343d7bdd": "training",
+      "a97a7e116607463c9c96ae7106fe8542": "training",
+      "78f5f46ad3804d42b0453ebd0bad5437": "training"
+    },
+    "source_annotation_sha256": "f22d0283787cf798086b19c6f37276a6ecc82455e01f949808377f5a26be8deb",
+    "test_evaluated": false
+  },
+  "input_config": {
+    "sample_duration": 8,
+    "sample_fps": 8.0,
+    "sample_size": 150,
+    "norm_value": 255,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "color_order": "RGB",
+    "n_classes": 3,
+    "class_labels": [
+      "INTERACTION",
+      "PASSTHRU",
+      "WAIT"
+    ],
+    "validation_window": "center 8 consecutive sampled frames",
+    "training_window": "random 8 consecutive sampled frames",
+    "resize": "bilinear 150x150",
+    "preprocessing_version": "original_rgb_bilinear_v1"
+  },
+  "dataset": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Full Dataset 20261015\\prepared_original_frames",
+  "full_model_vs_cached_max_error": 9.441375732421875e-05,
+  "train_validation_frames_sha256": "14650f8b30f6370b0edd77b0d48f017b8b704fc79236bf4502c9c9fe4f0ffe5c",
+  "test_evaluated": false,
+  "elapsed_seconds": 34.39100000000326,
+  "limitations": [
+    "159 unique recordings from supplied archive; one fewer INTERACTION than requested",
+    "Both participants and recording sessions occur across subsets",
+    "New clip labels supplied by partner, not independently frame-reviewed",
+    "Four exact conflicting PASSTHRU copies excluded; corrected WAIT copies kept",
+    "Some source recordings were used in previous prototype experiments",
+    "Validation used for checkpoint selection; test not scored in this run",
+    "Shared original-frame preprocessing replaces compressed extracted JPEGs; use checkpoint input_config"
+  ]
+}

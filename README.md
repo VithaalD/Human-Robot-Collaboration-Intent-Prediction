@@ -12,7 +12,7 @@ cd Human-Robot-Collaboration-Intent-Prediction
 git lfs pull
 ```
 
-The repository includes source code, desktop monitors, documentation, and three `.pth` checkpoint files stored through Git LFS. Raw videos, webcam recordings, caches, and training logs are excluded. Install Git LFS before cloning to retrieve the checkpoint contents.
+The repository includes source code, desktop monitors, documentation, and `.pth` checkpoint files stored through Git LFS. Raw videos, webcam recordings, caches, and training logs are excluded. Install Git LFS before cloning to retrieve the checkpoint contents.
 
 ## Project layout
 
@@ -27,9 +27,17 @@ Obtain the raw videos separately from the project owner. They are intentionally 
 
 The runners look for `raw videos for mecha lab-20260904T185555Z-1-001/raw videos for mecha lab` inside the project or next to it. For a different layout, set `INTENT_DATA_DIR` to the inner data folder and `INTENT_WEIGHTS_PATH` to the full checkpoint path. The GUI also has Browse buttons; the PowerShell runner accepts `-DataDirectory`, `-WeightsPath`, and `-VideoPath`. Webcam inference needs the checkpoint but does not need prerecorded videos.
 
-Run `setup_gpu.ps1` to prepare the isolated GPU environment. The launchers prefer `%USERPROFILE%\.venvs\intent-gpu\Scripts\python.exe`, fall back to the original DEEPLABCUT environment, and support an `INTENT_PYTHON` override. Recording-only needs no model checkpoint. See [Recording and GPU setup](RECORDING_AND_GPU.md) for the new recording mode, session metadata, frame settings, and training preparation.
+Run `setup_gpu.ps1` to prepare the isolated GPU environment. The launchers prefer `%USERPROFILE%\.venvs\intent-gpu\Scripts\python.exe` and support an `INTENT_PYTHON` override. Recording-only needs no model checkpoint. See [Recording and GPU setup](RECORDING_AND_GPU.md) for the new recording mode, session metadata, frame settings, and training preparation.
 
 ## Contributing
 
 Create a branch for your changes and open a pull request. Keep raw videos out of commits. New `.pth` files use Git LFS automatically through `.gitattributes`; commit that file when changing LFS tracking rules.
 
+
+## October 15 full-dataset prototype
+
+See [the current roadmap](PROTOTYPE_ROADMAP.md) and [prototype quickstart](SMALL_PROTOTYPE_QUICKSTART.md). This branch includes the eight-frame/eight-fps pipeline, annotations and split manifests, training reports, and trained checkpoints through Git LFS. The active full-dataset model uses 127/16/16 recordings for training/validation/reserved testing; its model-selection validation score is 15/16, and its test set is unscored.
+
+Raw recordings, extracted frame images, caches, and temporary test output remain local. Obtain the source data separately to reproduce training. Partner preprocessing scripts and source-verification metadata are retained. Review HTML pages require their separately obtained local images.
+
+Generated reports and the active prototype selection currently contain this workstation's absolute paths. On another computer, update those paths or retrain locally before using Start Small Prototype.cmd. For manual inference, browse to the downloaded checkpoint in the monitor and use its eight-frame input configuration. The standard monitor's historical default checkpoint remains external, as described above.

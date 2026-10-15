@@ -1,7 +1,7 @@
 """
 intent_engine.py - Self-Contained CNN-LSTM Intent Prediction Engine
 
-Single file. No local imports. Ship this file + your weights (.pth)
+Ship this file with the project frame_sampling.py module + your weights (.pth)
 + your annotation JSON to the target device and run.
 
 Dependencies/Startup code:
@@ -260,36 +260,58 @@ class _OpenCVCamera:
         return f"opencv_{self._backend.lower().replace(' ', '_')}_{self._index}"
 
 
-class _VideoFileCamera:
-    """Play a video through the same sliding-window path as a live camera."""
 
+from pathlib import Path as _SamplingPath
+import sys as _sampling_sys
+_sampling_root = next(p for p in _SamplingPath(__file__).resolve().parents if (p / "frame_sampling.py").is_file())
+if str(_sampling_root) not in _sampling_sys.path:
+    _sampling_sys.path.insert(0, str(_sampling_root))
+from frame_sampling import FrameSampler, recording_timestamps, validate_training_timing
+
+class _VideoFileCamera:
+    """Replay original capture timing, even when the AVI header says 30 FPS."""
     def __init__(self, path: str, loop: bool = True) -> None:
         if not os.path.isfile(path):
             raise FileNotFoundError(f"Video not found: {path}")
         self._cap = cv2.VideoCapture(path)
         if not self._cap.isOpened():
             raise RuntimeError(f"OpenCV could not open video: {path}")
-        source_fps = float(self._cap.get(cv2.CAP_PROP_FPS))
-        self._frame_interval = 1.0 / source_fps if source_fps > 0 else 1.0 / 30.0
-        self._last_read = 0.0
-        self._path = path
-        self._loop = loop
-        log.info("Camera: video file %s (%.2f fps, loop=%s)",
-                 path, source_fps, loop)
+        try:
+            count = int(self._cap.get(cv2.CAP_PROP_FRAME_COUNT))
+            self._timestamps, self.capture_metadata = recording_timestamps(
+                path, count, float(self._cap.get(cv2.CAP_PROP_FPS)))
+        except Exception:
+            self._cap.release()
+            raise
+        self.capture_metadata = self.capture_metadata or {}
+        self._path, self._loop = path, loop
+        self._index = 0
+        self._last_read = None
+        self.sample_timestamp = None
+        self._cycle = 0
+        span = self._timestamps[-1] if self._timestamps else 0
+        period = span / (len(self._timestamps) - 1) if len(self._timestamps) > 1 else .125
+        self._cycle_span = span + period
+        log.info("Video playback uses %s", "capture timestamps" if self.capture_metadata else "container timing")
 
     def read(self) -> Tuple[bool, Optional[np.ndarray]]:
-        wait = self._frame_interval - (time.monotonic() - self._last_read)
-        if wait > 0:
-            time.sleep(wait)
-
-        ret, frame = self._cap.read()
-        if (not ret or frame is None) and self._loop:
+        if self._index >= len(self._timestamps):
+            if not self._loop or not self._timestamps:
+                return False, None
             self._cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
-            ret, frame = self._cap.read()
-
-        self._last_read = time.monotonic()
-        if not ret or frame is None:
+            self._index, self._last_read = 0, None
+            self._cycle += 1
+        stamp = self._timestamps[self._index]
+        if self._last_read is not None:
+            delay = stamp - self._timestamps[self._index - 1]
+            time.sleep(max(0, delay - (time.monotonic() - self._last_read)))
+        ok, frame = self._cap.read()
+        if not ok or frame is None:
             return False, None
+        self._last_read = time.monotonic()
+        # A gap between replay cycles clears the model's previous clip history.
+        self.sample_timestamp = stamp + self._cycle * (self._cycle_span + 10)
+        self._index += 1
         return True, frame
 
     def release(self) -> None:
@@ -400,6 +422,7 @@ class EngineConfig:
 
     sample_size: int             = 150
     sample_duration: int         = 16
+    sample_fps: Optional[float]  = None  # Auto: checkpoint rate, or 8 for legacy weights
     norm_value: float            = 1.0
     mean: List[float]            = field(default_factory=lambda: [114.7748, 107.7354, 99.4750])
     std: List[float]             = field(default_factory=lambda: [1.0, 1.0, 1.0])
@@ -435,6 +458,15 @@ def _validate_checkpoint_input(checkpoint, cfg, class_labels):
     if cfg.norm_value <= 0 or len(cfg.mean) != 3 or len(cfg.std) != 3 or any(value <= 0 for value in cfg.std):
         raise ValueError("Use positive norm_value, three mean values, and three positive std values.")
     saved = checkpoint.get("input_config") if isinstance(checkpoint, dict) else None
+    if saved is not None and not isinstance(saved, dict):
+        raise ValueError("Checkpoint input_config must be a dictionary.")
+    saved_rate = saved.get("sample_fps") if saved else None
+    if cfg.sample_fps is None:
+        cfg.sample_fps = saved_rate if saved_rate is not None else 8.0
+    if not np.isfinite(cfg.sample_fps) or cfg.sample_fps <= 0:
+        raise ValueError("sample_fps must be finite and positive.")
+    if saved_rate is None:
+        log.warning("Checkpoint sampling rate is unknown; using %.3g FPS. Validate or retrain for this rate.", cfg.sample_fps)
     if not saved:
         log.warning(
             "Legacy checkpoint has no input metadata: historical frame duration is unknown. "
@@ -445,11 +477,14 @@ def _validate_checkpoint_input(checkpoint, cfg, class_labels):
         raise ValueError("Checkpoint input_config must be a dictionary.")
     actual = {
         "sample_duration": cfg.sample_duration, "sample_size": cfg.sample_size,
+        "sample_fps": cfg.sample_fps,
         "norm_value": cfg.norm_value, "mean": list(cfg.mean), "std": list(cfg.std),
         "color_order": "RGB", "n_classes": cfg.n_classes,
         "class_labels": list(class_labels),
     }
     for key, expected in saved.items():
+        if key == "sample_fps" and expected is None:
+            continue
         if key not in actual:
             continue
         value = actual[key]
@@ -524,6 +559,11 @@ class IntentEngine:
         self._camera            = None
         self.camera_backend: str = "not_opened"
 
+        self._sampler = FrameSampler(cfg.sample_fps)
+        self._frame_lock = threading.Lock()
+        self._sequence_epoch = 0
+        self._frame_generation = 0
+        self._inferred_generation = -1
         self._raw_frames   = collections.deque(maxlen=cfg.sample_duration)
         self._pred_history = collections.deque(maxlen=cfg.smoothing_window)
 
@@ -577,10 +617,20 @@ class IntentEngine:
             self._camera.release()
         log.info("Engine stopped.")
 
-    def push_frame(self, bgr_frame: np.ndarray) -> None:
-        """Manually push a BGR uint8 frame when managing your own camera loop."""
-        if _frame_is_valid(bgr_frame):
-            self._raw_frames.append(bgr_frame)
+    def push_frame(self, bgr_frame: np.ndarray, timestamp=None) -> None:
+        """Sample real frames at the training rate, using source time when supplied."""
+        if not _frame_is_valid(bgr_frame):
+            return
+        stamp = time.monotonic() if timestamp is None else timestamp
+        with self._frame_lock:
+            accepted = self._sampler.accept(stamp)
+            if self._sampler.discontinuity:
+                self._sequence_epoch += 1
+                self._raw_frames.clear()
+                self._pred_history.clear()
+            if accepted:
+                self._raw_frames.append(bgr_frame)
+                self._frame_generation += 1
 
     def get_state(self) -> dict:
         """Non-blocking snapshot. Keys: flag, label, confidence, probs, infer_fps, camera."""
@@ -664,7 +714,7 @@ class IntentEngine:
                     self._warmup_remaining -= 1
                     continue
 
-                self._raw_frames.append(frame)
+                self.push_frame(frame, getattr(self._camera, "sample_timestamp", None))
 
             except Exception:
                 log.error("Camera loop exception:\n%s", traceback.format_exc())
@@ -691,11 +741,12 @@ class IntentEngine:
                 time.sleep(sleep_t)
 
     def _inference_step(self) -> None:
-        if len(self._raw_frames) < self.cfg.sample_duration:
-            time.sleep(0.02)
-            return
-
-        frames = list(self._raw_frames)
+        with self._frame_lock:
+            if len(self._raw_frames) < self.cfg.sample_duration or self._inferred_generation == self._frame_generation:
+                return
+            epoch = self._sequence_epoch
+            frames = list(self._raw_frames)
+            self._inferred_generation = self._frame_generation
 
         t_frames = []
         for f in frames:
@@ -711,13 +762,16 @@ class IntentEngine:
             logits = self._model(clip)
             probs  = F.softmax(logits, dim=1).cpu().numpy()[0]
 
-        pred_idx = int(np.argmax(probs))
-        self._pred_history.append(pred_idx)
+        with self._frame_lock:
+            if epoch != self._sequence_epoch:
+                return  # A gap/replay reset happened while the GPU was working.
+            pred_idx = int(np.argmax(probs))
+            self._pred_history.append(pred_idx)
 
-        weights = np.linspace(0.5, 1.0, len(self._pred_history))
-        votes   = np.zeros(len(self.class_labels))
-        for w, idx in zip(weights, self._pred_history):
-            votes[idx] += w
+            weights = np.linspace(0.5, 1.0, len(self._pred_history))
+            votes   = np.zeros(len(self.class_labels))
+            for w, idx in zip(weights, self._pred_history):
+                votes[idx] += w
 
         smoothed_idx = int(np.argmax(votes))
         label        = self.class_labels[smoothed_idx]
@@ -780,6 +834,7 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--n_classes",             type=int,   default=3)
     p.add_argument("--sample_size",           type=int,   default=150)
     p.add_argument("--sample_duration",       type=int,   default=16)
+    p.add_argument("--sample_fps", type=float, default=None, help="Model input rate; auto uses checkpoint rate or 8 FPS")
     p.add_argument("--norm_value",            type=float, default=1.0)
     p.add_argument("--mean",                  type=float, nargs=3, default=[114.7748, 107.7354, 99.4750])
     p.add_argument("--std",                   type=float, nargs=3, default=[1.0, 1.0, 1.0])
@@ -813,6 +868,7 @@ def main() -> None:
         n_classes            = args.n_classes,
         sample_size          = args.sample_size,
         sample_duration      = args.sample_duration,
+        sample_fps           = args.sample_fps,
         norm_value           = args.norm_value,
         mean                 = args.mean,
         std                  = args.std,

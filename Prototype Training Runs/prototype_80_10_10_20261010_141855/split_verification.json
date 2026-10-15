@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "segments": 93,
+  "recordings": 59,
+  "source_overlap_between_splits": false,
+  "at_least_8_distinct_frames_per_segment": true
+}

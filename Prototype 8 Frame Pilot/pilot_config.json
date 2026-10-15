@@ -1,0 +1,12 @@
+{
+  "sample_duration": 8,
+  "sample_fps": 8,
+  "video_path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype 8 Frame Pilot\\frames",
+  "annotation_path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype 8 Frame Pilot\\annotations.json",
+  "n_classes": 3,
+  "sample_size": 150,
+  "batch_size": 1,
+  "num_workers": 0,
+  "n_val_samples": 1,
+  "allow_within_session_pilot": true
+}

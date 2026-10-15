@@ -17,7 +17,7 @@ if (-not $intentPython) {
     if (Test-Path -LiteralPath $intentGpuPython -PathType Leaf) {
         $intentPython = $intentGpuPython
     } else {
-        $intentPython = Join-Path $env:USERPROFILE "anaconda3\envs\DEEPLABCUT\python.exe"
+        throw "GPU Python was not found. Run setup_gpu.ps1 or set INTENT_PYTHON."
     }
 }
 $intentScript = Join-Path $PSScriptRoot "intent_engine_v3_1_windows.py"

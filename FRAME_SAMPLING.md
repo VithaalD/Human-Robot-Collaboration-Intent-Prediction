@@ -14,7 +14,7 @@ A 16-frame window contains twice as many frames as an 8-frame window and require
 
 From `intentpredictionattempt4-main`, run the PowerShell launcher with `-SampleDuration 16` (the default) or `-SampleDuration 8`. The Python engine uses `--sample_duration 16` or `--sample_duration 8`. In the desktop monitor, choose the corresponding frame count before starting inference.
 
-The terminal launcher uses `INTENT_PYTHON` when set, otherwise the installed `~/.venvs/intent-gpu` environment when available, then the older `DEEPLABCUT` environment as a fallback.
+The terminal launcher uses `INTENT_PYTHON` when set, otherwise the installed `~/.venvs/intent-gpu` environment when available. If neither is available, run `setup_gpu.ps1` with a Python 3.10 or 3.11 `-BasePython` path.
 
 For future training, pass `--sample_duration 16` or your deliberately chosen duration to `main.py`. Training and validation now both honor it. This change does not start training or modify existing weight files.
 
@@ -27,3 +27,7 @@ Older checkpoints without metadata remain usable and produce a warning that hist
 ## Verification
 
 `tests/test_temporal.py` checks both source trees with generated image fixtures: training and validation output exactly 8 or 16 frames, duration reaches both dataset constructors, crops do not mutate indices, the final random-crop window is reachable, metadata rejects conflicting inference settings before model allocation, old checkpoints support either duration, and training resume rejects a recorded duration mismatch. No training run is needed for these checks.
+
+## Timestamp-aware 8 FPS workflow
+
+See [EIGHT_FPS.md](EIGHT_FPS.md). Model sampling now defaults to 8 FPS when a checkpoint does not specify a rate. Original recorder timestamps override AVI playback headers. Both trainers require a verified 8 FPS preparation manifest by default; `--legacy_timing` explicitly opts into unknown-rate legacy frame datasets.

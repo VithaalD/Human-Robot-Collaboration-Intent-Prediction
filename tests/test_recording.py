@@ -32,14 +32,14 @@ class RecordingTests(unittest.TestCase):
                            metadata=identifiers, camera_settings=camera_settings)
             identifiers['participant_id'] = 'changed_after_start'
             camera_settings['requested_frame_size'][0] = 1
-            pending = json.loads(recorder.path.with_suffix('.json').read_text())
+            pending = json.loads(recorder.metadata_path.read_text())
             self.assertEqual(pending['status'], 'recording')
             base = time.perf_counter()
             for index, stamp in enumerate([0, .03, .06, .1, .2, .3, .32]):
                 frame = np.full((48, 64, 3), index * 25, dtype=np.uint8)
                 recorder.feed(frame, base + stamp)
             self.assertFalse(recorder.active)
-            metadata = json.loads(recorder.path.with_suffix('.json').read_text())
+            metadata = json.loads(recorder.metadata_path.read_text())
             self.assertEqual(metadata['status'], 'complete')
             self.assertEqual(metadata['frames'], 6)
             self.assertEqual(metadata['participant_id'], 'p01')
@@ -66,6 +66,44 @@ class RecordingTests(unittest.TestCase):
             self.assertEqual(restored.meta['status'], 'incomplete')
             self.assertEqual(restored.meta['frames'], 0)
 
+    def test_scenario_folders_pairing_and_existing_recordings(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            # Historical flat recordings stay untouched.
+            old_video, old_json = root / 'old.avi', root / 'old.json'
+            old_video.write_bytes(b'old recording')
+            old_json.write_text('{"historical": true}')
+            frame = np.zeros((48, 64, 3), dtype=np.uint8)
+            for number, scenario in enumerate(('WAIT', 'PASSTHRU', 'INTERACTION'), 1):
+                # Reload the recorder to exercise persistent numbering across groups.
+                recorder = ClipRecorder(root)
+                recorder.start(scenario, 'synthetic', fps=30, duration=.1, metadata=IDS)
+                pending = json.loads(recorder.metadata_path.read_text())
+                self.assertEqual(pending['status'], 'recording')
+                self.assertEqual(recorder.path.parent, root / scenario / 'videos')
+                self.assertEqual(recorder.metadata_path.parent, root / scenario / 'metadata')
+                self.assertEqual(recorder.path.stem, recorder.metadata_path.stem)
+                for key in ('session_id', 'participant_id', 'camera_setup_id'):
+                    self.assertIn(IDS[key], recorder.path.stem)
+                base = time.perf_counter()
+                for stamp in (0, .033, .066, .099, .11):
+                    recorder.feed(frame, base + stamp)
+                saved = json.loads(recorder.metadata_path.read_text())
+                self.assertEqual(saved['status'], 'complete')
+                self.assertEqual(saved['take_number'], number)
+                self.assertEqual(saved['label_source'], 'planned_scenario')
+                self.assertFalse(saved['annotations_confirmed'])
+                self.assertEqual(saved['split_group_id'], IDS['session_id'])
+                self.assertEqual(root / saved['video_relative_path'], recorder.path)
+                self.assertEqual(root / saved['metadata_relative_path'], recorder.metadata_path)
+                self.assertEqual((recorder.metadata_path.parent / saved['video_path_from_metadata']).resolve(), recorder.path.resolve())
+                self.assertTrue(recorder.path.is_file())
+                self.assertFalse(recorder.path.with_suffix('.json').exists())
+                self.assertIn(scenario + '/videos/', recorder.message)
+            self.assertEqual(old_video.read_bytes(), b'old recording')
+            self.assertEqual(old_json.read_text(), '{"historical": true}')
+            self.assertTrue((root / 'recording_session.json').is_file())
+
     def test_stall_before_duration_boundary_is_incomplete(self):
         with tempfile.TemporaryDirectory() as folder:
             recorder = ClipRecorder(folder)
@@ -77,7 +115,7 @@ class RecordingTests(unittest.TestCase):
             # Less than the five-second camera timeout, but the final four
             # seconds of the requested footage were never captured.
             recorder.feed(frame, base + 10.1)
-            metadata = json.loads(recorder.path.with_suffix('.json').read_text())
+            metadata = json.loads(recorder.metadata_path.read_text())
             self.assertEqual(metadata['status'], 'incomplete')
             self.assertEqual(metadata['stop_reason'], 'duration reached')
             self.assertEqual(metadata['frames'], 181)
@@ -100,7 +138,7 @@ class RecordingTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'Participant'):
                 recorder.start('WAIT', 'fake', metadata=dict(IDS, participant_id=''))
             self.assertFalse(recorder.active)
-            self.assertFalse(list(Path(folder).glob('*.avi')))
+            self.assertFalse(list(Path(folder).rglob('*.avi')))
             self.assertFalse(list(Path(folder).glob('*.json')))
 
     def test_resolution_change_and_nonmonotonic_time_fail_cleanly(self):

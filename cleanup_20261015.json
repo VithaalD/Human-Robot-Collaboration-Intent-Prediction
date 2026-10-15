@@ -1,0 +1,87 @@
+[
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Start DeepLabCut.cmd",
+    "Files": 1,
+    "Bytes": 279.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype Training Runs\\original_preprocessing_tests_20261012",
+    "Files": 704,
+    "Bytes": 531620.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype Training Runs\\step8_pytest_temp",
+    "Files": 704,
+    "Bytes": 531420.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Prototype Training Runs\\smoke_20261007_162551\\smoke_checkpoint.pth",
+    "Files": 1,
+    "Bytes": 538198837.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\__pycache__",
+    "Files": 2,
+    "Bytes": 6153.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\.pytest_cache",
+    "Files": 5,
+    "Bytes": 7493.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Intent Monitor\\__pycache__",
+    "Files": 9,
+    "Bytes": 146207.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Intent Monitor\\intent-monitor\\__pycache__",
+    "Files": 2,
+    "Bytes": 81871.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\Intent Monitor\\_vendor\\cv2_enumerate_cameras\\__pycache__",
+    "Files": 10,
+    "Bytes": 17661.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\intentpredictionattempt4-main\\__pycache__",
+    "Files": 24,
+    "Bytes": 159243.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\intentpredictionattempt4-main\\datasets\\__pycache__",
+    "Files": 4,
+    "Bytes": 14426.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\intentpredictionattempt4-main\\models\\__pycache__",
+    "Files": 4,
+    "Bytes": 4122.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\test code and model weights for mecha lab-20260904T185537Z-1-001\\test code and model weights for mecha lab\\cnn-lstm-master\\__pycache__",
+    "Files": 32,
+    "Bytes": 118358.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\test code and model weights for mecha lab-20260904T185537Z-1-001\\test code and model weights for mecha lab\\cnn-lstm-master\\datasets\\__pycache__",
+    "Files": 6,
+    "Bytes": 23666.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\test code and model weights for mecha lab-20260904T185537Z-1-001\\test code and model weights for mecha lab\\cnn-lstm-master\\models\\__pycache__",
+    "Files": 6,
+    "Bytes": 7325.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\tests\\__pycache__",
+    "Files": 9,
+    "Bytes": 136769.0
+  },
+  {
+    "Path": "C:\\Users\\vitha\\Downloads\\Human-Robot-Collaboration-Intent-Prediction\\tools\\__pycache__",
+    "Files": 1,
+    "Bytes": 5743.0
+  }
+]
