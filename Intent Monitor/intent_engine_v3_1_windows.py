@@ -745,19 +745,7 @@ class IntentEngine:
             frames = list(self._raw_frames)
             self._inferred_generation = self._frame_generation
 
-        t_frames = []
-        for f in frames:
-            rgb = cv2.cvtColor(f, cv2.COLOR_BGR2RGB)
-            t_frames.append(self._transform(Image.fromarray(rgb)))
-
-        clip = torch.stack(t_frames).unsqueeze(0).to(self.device)
-
-        # FIX 2: torch.inference_mode() covers the entire forward pass
-        # including the per-timestep resnet calls inside model.forward(),
-        # preventing gradient tracking on the CNN backbone on Jetson CPU.
-        with torch.inference_mode():
-            logits = self._model(clip)
-            probs  = F.softmax(logits, dim=1).cpu().numpy()[0]
+        probs = self._predict_window(frames)
 
         with self._frame_lock:
             if epoch != self._sequence_epoch:
@@ -785,6 +773,22 @@ class IntentEngine:
         self._last_infer_t = now
 
         self._set_flag(flag, confidence, label, probs=probs, fps=fps)
+
+    def _predict_window(self, frames):
+        t_frames = []
+        for f in frames:
+            rgb = cv2.cvtColor(f, cv2.COLOR_BGR2RGB)
+            t_frames.append(self._transform(Image.fromarray(rgb)))
+
+        clip = torch.stack(t_frames).unsqueeze(0).to(self.device)
+
+        # FIX 2: torch.inference_mode() covers the entire forward pass
+        # including the per-timestep resnet calls inside model.forward(),
+        # preventing gradient tracking on the CNN backbone on Jetson CPU.
+        with torch.inference_mode():
+            logits = self._model(clip)
+            probs  = F.softmax(logits, dim=1).cpu().numpy()[0]
+        return probs
 
     def _set_flag(
         self,

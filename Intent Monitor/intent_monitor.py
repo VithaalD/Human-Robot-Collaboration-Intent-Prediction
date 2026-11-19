@@ -32,7 +32,11 @@ BG, PANEL, FG = '#0d0f14', '#171c27', '#eef2fa'
 COLORS = ['#ff625b', '#f5cc52', '#51d89a']
 
 
-def make_inference_engine(cfg, recorder):
+FUSION_DIR = Path(__file__).resolve().parents[1] / 'FusionViewer'
+FUSION_HEAD = FUSION_DIR / 'models' / 'intent_yolo_fusion.pth'
+
+
+def make_inference_engine(cfg, recorder, fusion_dir=None):
     # Recording and its preview never import torch or allocate model memory.
     from intent_engine_v3_1_windows import IntentEngine
 
@@ -44,7 +48,51 @@ def make_inference_engine(cfg, recorder):
             self._camera = self.preview
             super()._camera_loop()
 
-    return PreviewEngine(cfg)
+    if fusion_dir is None:
+        return PreviewEngine(cfg)
+
+    import sys
+    import numpy as np
+    import torch
+    from ultralytics import YOLO
+    if str(fusion_dir) not in sys.path:
+        sys.path.append(str(fusion_dir))
+    from fusion_model import load_fused_checkpoint
+    from fusion_runtime import file_hash
+    from paired_features import PairedFeatureExtractor
+
+    class FusionEngine(PreviewEngine):
+        def __init__(self, cfg):
+            super().__init__(cfg)
+            models = fusion_dir / 'models'
+            detector = models / 'custom_yolo11.pt'
+            self.head, checkpoint = load_fused_checkpoint(models / 'intent_yolo_fusion.pth', self.device)
+            contract = checkpoint['cache_contract']
+            if (not checkpoint.get('trained') or file_hash(cfg.resume_path) != contract['intent_sha256']
+                    or file_hash(detector) != contract['yolo_sha256']):
+                raise ValueError('Fusion requires its matching baseline, detector and trained head.')
+            settings = contract['input']['detector']
+            self.extractor = PairedFeatureExtractor(self, YOLO(str(detector)),
+                                                    settings['confidence'], settings['imgsz'])
+            if self.extractor.metadata() != contract['input']:
+                raise ValueError('Fusion feature settings differ from training.')
+            self.head.eval()
+            self.cached_rows = {}
+
+        def _predict_window(self, frames):
+            # Keep the source arrays alive so identities remain unique between windows.
+            missing = [frame for frame in frames if id(frame) not in self.cached_rows]
+            if missing:
+                cnn, objects = self.extractor.extract_batch(missing)
+                for frame, row in zip(missing, np.concatenate((cnn, objects), axis=1)):
+                    self.cached_rows[id(frame)] = (frame, row)
+            self.cached_rows = {id(frame): self.cached_rows[id(frame)] for frame in frames}
+            features = np.stack([self.cached_rows[id(frame)][1] for frame in frames])
+            tensor = torch.from_numpy(features).unsqueeze(0).to(self.device)
+            with torch.inference_mode(), torch.backends.cudnn.flags(allow_tf32=False):
+                return self.head(tensor).softmax(1)[0].cpu().numpy()
+
+    return FusionEngine(cfg)
 
 
 def config(weights, video='', camera=0, sample_duration=16):
@@ -109,8 +157,8 @@ class Monitor:
                  bg=BG, fg='#a6b2c8').pack(anchor='w', padx=24)
         controls = tk.Frame(root, bg=BG)
         controls.pack(fill='x', padx=24, pady=14)
-        self.video = tk.StringVar(value=str(DATA / 'INTERACTION' / 'int1.mov'))
-        self.weights = tk.StringVar(value=str(WEIGHTS))
+        self.video = tk.StringVar(value=str((FUSION_DIR / 'demo' / 'lab.avi') if (FUSION_DIR / 'demo' / 'lab.avi').is_file() else DATA / 'INTERACTION' / 'int1.mov'))
+        self.weights = tk.StringVar(value=str(FUSION_HEAD if FUSION_HEAD.is_file() else WEIGHTS))
         self.mode = tk.StringVar(value='Record only')
         self.inputs = []
         for row, (label, variable, callback) in enumerate([
@@ -149,7 +197,7 @@ class Monitor:
         tk.Label(capture, text='Requested 30 FPS', bg=BG, fg='#a6b2c8').pack(side='left', padx=8)
         tk.Label(capture, text='Inference frames:', bg=BG, fg=FG).pack(side='left')
         self.sample_frames = ttk.Combobox(capture, values=['16', '8'], state='readonly', width=5)
-        self.sample_frames.set('16')
+        self.sample_frames.set('8' if FUSION_HEAD.is_file() else '16')
         self.sample_frames.pack(side='left', padx=8)
         tk.Label(capture, text='8 = legacy comparison', bg=BG, fg='#a6b2c8').pack(side='left')
         metadata = tk.Frame(controls, bg=BG)
@@ -305,8 +353,12 @@ class Monitor:
                     engine = RecordingSession(camera, self.recorder)
                     engine.start()
                 else:
-                    cfg = config(weights, video, sample_duration=frames)
-                    engine = make_inference_engine(cfg, self.recorder)
+                    fusion_dir = FUSION_DIR if weights.resolve() == FUSION_HEAD.resolve() else None
+                    if fusion_dir and frames != 8:
+                        raise ValueError('Select 8 inference frames for YOLO fusion.')
+                    backbone = fusion_dir / 'models' / 'intent_baseline.pth' if fusion_dir else weights
+                    cfg = config(backbone, video, sample_duration=frames)
+                    engine = make_inference_engine(cfg, self.recorder, fusion_dir)
                     camera = NamedCamera(selected_camera, width, height, 30) if selected_camera is not None else None
                     engine.start(camera=camera)
                 self.messages.put(('started', engine))

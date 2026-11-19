@@ -1,0 +1,660 @@
+{
+  "status": "complete",
+  "run_directory": "C:\\Users\\vitha\\AppData\\Local\\Temp\\hrc-yolo11-integration\\project\\.runtime\\fusion-training\\20261117_124253",
+  "checkpoint": "C:\\Users\\vitha\\AppData\\Local\\Temp\\hrc-yolo11-integration\\project\\models\\intent_yolo_fusion.pth",
+  "checkpoint_sha256": "f9a3906f12e751ad83fd5ef03f0f0d32c8203b2c437c72c4c1df23b593fb733f",
+  "epochs_completed": 21,
+  "best_epoch": 1,
+  "elapsed_seconds": 7.467999999993481,
+  "baseline_validation": {
+    "loss": 0.15748465061187744,
+    "accuracy": 0.9375,
+    "correct": 15,
+    "total": 16,
+    "macro_f1": 0.9440559440559441,
+    "confusion_matrix": [
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        1,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "per_class": {
+      "INTERACTION": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.923076923076923,
+        "support": 6
+      },
+      "PASSTHRU": {
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "support": 6
+      },
+      "WAIT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      }
+    },
+    "predictions": [
+      {
+        "recording": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9342536330223083,
+          0.059033751487731934,
+          0.006712556350976229
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9392656683921814,
+          0.054282985627651215,
+          0.006451311521232128
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9438084363937378,
+          0.049259308725595474,
+          0.006932207383215427
+        ]
+      },
+      {
+        "recording": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9345678091049194,
+          0.05609435215592384,
+          0.009337721392512321
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9369474649429321,
+          0.05645494535565376,
+          0.006597619503736496
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+        "true": "WAIT",
+        "predicted": "WAIT",
+        "probabilities": [
+          0.05845373496413231,
+          0.12670356035232544,
+          0.8148426413536072
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+        "true": "WAIT",
+        "predicted": "WAIT",
+        "probabilities": [
+          0.0687132179737091,
+          0.16139613091945648,
+          0.7698906660079956
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.05614824965596199,
+          0.9372707605361938,
+          0.006580936722457409
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.0529622957110405,
+          0.9405059814453125,
+          0.006531727500259876
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.04738474637269974,
+          0.9456800818443298,
+          0.006935132201761007
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+        "true": "PASSTHRU",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.5329627394676208,
+          0.45786669850349426,
+          0.00917050614953041
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.2629520893096924,
+          0.7278090715408325,
+          0.009238905273377895
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+        "true": "WAIT",
+        "predicted": "WAIT",
+        "probabilities": [
+          0.03973361477255821,
+          0.04758942872285843,
+          0.9126769304275513
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+        "true": "WAIT",
+        "predicted": "WAIT",
+        "probabilities": [
+          0.040057387202978134,
+          0.04851497337222099,
+          0.9114276766777039
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.8662124276161194,
+          0.12714000046253204,
+          0.0066475640051066875
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.10885484516620636,
+          0.8837459683418274,
+          0.007399235386401415
+        ]
+      }
+    ]
+  },
+  "selected_validation": {
+    "loss": 0.19750922918319702,
+    "accuracy": 0.9375,
+    "correct": 15,
+    "total": 16,
+    "macro_f1": 0.9267399267399267,
+    "confusion_matrix": [
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    "per_class": {
+      "INTERACTION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "PASSTHRU": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.923076923076923,
+        "support": 6
+      },
+      "WAIT": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      }
+    },
+    "predictions": [
+      {
+        "recording": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9302939176559448,
+          0.0631997212767601,
+          0.006506344769150019
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9365265369415283,
+          0.05717239901423454,
+          0.006301023531705141
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9428550601005554,
+          0.05043290928006172,
+          0.006712045986205339
+        ]
+      },
+      {
+        "recording": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.934238076210022,
+          0.05692734196782112,
+          0.008834552951157093
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.933844268321991,
+          0.059703074395656586,
+          0.006452755071222782
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+        "true": "WAIT",
+        "predicted": "WAIT",
+        "probabilities": [
+          0.09313049167394638,
+          0.3310737609863281,
+          0.5757957100868225
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+        "true": "WAIT",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.11227868497371674,
+          0.4526684284210205,
+          0.43505287170410156
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.05446130782365799,
+          0.9392909407615662,
+          0.006247846409678459
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.05161617696285248,
+          0.94216388463974,
+          0.006219977512955666
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.046434056013822556,
+          0.9470189809799194,
+          0.006546942982822657
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.413025438785553,
+          0.5780216455459595,
+          0.008952864445745945
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.19554078578948975,
+          0.7960575819015503,
+          0.008401642553508282
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+        "true": "WAIT",
+        "predicted": "WAIT",
+        "probabilities": [
+          0.041289739310741425,
+          0.04937880113720894,
+          0.9093314409255981
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+        "true": "WAIT",
+        "predicted": "WAIT",
+        "probabilities": [
+          0.04182467982172966,
+          0.050805479288101196,
+          0.90736985206604
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.8231598734855652,
+          0.1699301153421402,
+          0.006910038646310568
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.09106694906949997,
+          0.9021379947662354,
+          0.006794987712055445
+        ]
+      }
+    ]
+  },
+  "zero_object_ablation": {
+    "loss": 0.1962544023990631,
+    "accuracy": 0.9375,
+    "correct": 15,
+    "total": 16,
+    "macro_f1": 0.9267399267399267,
+    "confusion_matrix": [
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    "per_class": {
+      "INTERACTION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "PASSTHRU": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.923076923076923,
+        "support": 6
+      },
+      "WAIT": {
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "support": 4
+      }
+    },
+    "predictions": [
+      {
+        "recording": "session_20260929_take_0006_jason_camera_1_INTERACTION_3d9fba6b",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9303410649299622,
+          0.06315121799707413,
+          0.006507698446512222
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0011_jason_camera_1_INTERACTION_b8ae671b",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9365326166152954,
+          0.05716618895530701,
+          0.0063011301681399345
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0011_vithaal_camera_1_INTERACTION_291a80b4",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9428569674491882,
+          0.05043035373091698,
+          0.00671272212639451
+        ]
+      },
+      {
+        "recording": "session_20261008_take_0083_vithaal_camera_1_INTERACTION_4aac13e2",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9342297911643982,
+          0.05693161487579346,
+          0.00883853156119585
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0005_vithaal_camera_1_INTERACTION_e97b8543",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.9338690638542175,
+          0.05967780947685242,
+          0.006453144829720259
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0018_jason_camera_1_WAIT_2d3e630a",
+        "true": "WAIT",
+        "predicted": "WAIT",
+        "probabilities": [
+          0.09260503202676773,
+          0.32628461718559265,
+          0.5811103582382202
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0047_jason_camera_1_WAIT_dff31f3e",
+        "true": "WAIT",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.11180126667022705,
+          0.4466971158981323,
+          0.4415016174316406
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0046_jason_camera_1_PASSTHRU_df0c6c45",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.05447489023208618,
+          0.9392770528793335,
+          0.006248037330806255
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0047_jason_camera_1_PASSTHRU_396609a4",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.05162477865815163,
+          0.9421553015708923,
+          0.006219953764230013
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0029_vithaal_camera_1_PASSTHRU_b08e425c",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.04643621668219566,
+          0.9470162987709045,
+          0.006547451950609684
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0053_vithaal_camera_1_PASSTHRU_c43355ab",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.4147621691226959,
+          0.5762841105461121,
+          0.008953728713095188
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0061_vithaal_camera_1_PASSTHRU_ca3593ca",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.19625838100910187,
+          0.7953336834907532,
+          0.00840790756046772
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0057_jason_camera_1_WAIT_05b6af75",
+        "true": "WAIT",
+        "predicted": "WAIT",
+        "probabilities": [
+          0.04128897562623024,
+          0.049375198781490326,
+          0.9093357920646667
+        ]
+      },
+      {
+        "recording": "session_20260929_take_0033_vithaal_camera_1_WAIT_96b4cb84",
+        "true": "WAIT",
+        "predicted": "WAIT",
+        "probabilities": [
+          0.04182259738445282,
+          0.05079742148518562,
+          0.9073799848556519
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0003_jason_camera_1_INTERACTION_602e2185",
+        "true": "INTERACTION",
+        "predicted": "INTERACTION",
+        "probabilities": [
+          0.8234153389930725,
+          0.16967728734016418,
+          0.006907319650053978
+        ]
+      },
+      {
+        "recording": "session_20261013_take_0037_jason_camera_1_PASSTHRU_fc41ff01",
+        "true": "PASSTHRU",
+        "predicted": "PASSTHRU",
+        "probabilities": [
+          0.09131650626659393,
+          0.9018844962120056,
+          0.006799015216529369
+        ]
+      }
+    ]
+  },
+  "object_weight_norm": 0.007584527600556612,
+  "zero_object_max_logit_change": 0.01575392484664917,
+  "checkpoint_reload_exact": true,
+  "protected_checkpoints_unchanged": true,
+  "reserved_test_processed": false,
+  "trained": true,
+  "training_config": {
+    "seed": 20261117,
+    "maximum_epochs": 100,
+    "patience": 20,
+    "learning_rate": 1e-05,
+    "batch_size": 8,
+    "optimizer": "AdamW",
+    "weight_decay": 0.001,
+    "gradient_clip": 5.0,
+    "selection": "lowest unweighted validation cross-entropy; minimum improvement 0.0001",
+    "scheduler": "ReduceLROnPlateau factor 0.5 patience 5",
+    "sampling": "inverse-frequency replacement by training recording; random eight-frame crop",
+    "validation": "center valid eight-frame crop per validation recording",
+    "frozen": "CNN and YOLO (cached features)",
+    "trainable": "LSTM and classification head",
+    "device": "cuda:0",
+    "torch": "2.10.0+cu128",
+    "cache_signature": "4e56c09cc766283c3a21bcb6ca04cdf086e1f07cc7aa97c74e97e1fe59919018"
+  },
+  "limitations": [
+    "Existing within-session split: sessions/participants overlap across subsets.",
+    "YOLO training-source overlap with intent evaluation splits is unverified.",
+    "CNN projection comes from the previously validation-selected baseline.",
+    "Supplied labels and previously reviewed cores are retained, not independently relabeled.",
+    "Only 16 validation recordings; used for model selection, not final unbiased test accuracy.",
+    "Zero-object ablation is a sensitivity check, not a separately trained no-YOLO control."
+  ]
+}

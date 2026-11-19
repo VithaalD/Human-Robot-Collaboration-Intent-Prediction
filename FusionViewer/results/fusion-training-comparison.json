@@ -1,0 +1,33 @@
+{
+  "runs": [
+    {
+      "run": "C:\\Users\\vitha\\AppData\\Local\\Temp\\hrc-yolo11-integration\\project\\.runtime\\fusion-training\\20261117_124206",
+      "learning_rate": 0.0001,
+      "epochs_completed": 21,
+      "best_epoch": 1,
+      "validation_correct": 14,
+      "validation_loss": 0.5438107252120972,
+      "macro_f1": 0.8412698412698413,
+      "run_checkpoint": "C:\\Users\\vitha\\AppData\\Local\\Temp\\hrc-yolo11-integration\\project\\.runtime\\fusion-training\\20261117_124206\\best_checkpoint.pth",
+      "run_checkpoint_sha256": "41ea66e0aa34453d364389690e4c85bbca19121945453c0e9a20fcf0bc0f4c9c"
+    },
+    {
+      "run": "C:\\Users\\vitha\\AppData\\Local\\Temp\\hrc-yolo11-integration\\project\\.runtime\\fusion-training\\20261117_124253",
+      "learning_rate": 1e-05,
+      "epochs_completed": 21,
+      "best_epoch": 1,
+      "validation_correct": 15,
+      "validation_loss": 0.19750922918319702,
+      "macro_f1": 0.9267399267399267,
+      "run_checkpoint": "C:\\Users\\vitha\\AppData\\Local\\Temp\\hrc-yolo11-integration\\project\\.runtime\\fusion-training\\20261117_124253\\best_checkpoint.pth",
+      "run_checkpoint_sha256": "a0bffde07724fe8f833c0bc54d27dbba218c3b55cc4f2e8b2e30ca425f405c0a"
+    }
+  ],
+  "selection_rule": "lowest validation loss among trained candidates",
+  "selected_run": "C:\\Users\\vitha\\AppData\\Local\\Temp\\hrc-yolo11-integration\\project\\.runtime\\fusion-training\\20261117_124253",
+  "baseline_validation_loss": 0.15748465061187744,
+  "baseline_validation_correct": 15,
+  "improved_over_baseline": false,
+  "deployment_decision": "Retain baseline; trained fusion candidate available for live evaluation. No demonstrated improvement.",
+  "reserved_test_processed": false
+}
